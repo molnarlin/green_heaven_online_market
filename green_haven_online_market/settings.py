@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'dasboard',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
