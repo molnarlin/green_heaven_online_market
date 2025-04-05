@@ -1,5 +1,5 @@
-# green_haven_online_market
-This is my forth milestone project with Code Institute and Runshaw College. I used Django-Allauth to this project.
+# green_heaven_online_market
+This is my fourth milestone project with Code Institute and Runshaw College. I used Django-Allauth for this project.
 # 1. Purpose of the project
 # 2. User stories
 # 3. Features
@@ -16,6 +16,6 @@ This is my forth milestone project with Code Institute and Runshaw College. I us
    ## 8.3 fixed bugs
    ## 8.4 supported screens and browsers
 # 9. Deployment
-   ## 9.1 via codeanywhere/vs code
-   ## 9.2 via github pages
+   ## 9.1 via codeanywhere/VS Code
+   ## 9.2 via GitHub Pages
 # 10. Credits
