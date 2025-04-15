@@ -17,6 +17,18 @@ The aim of this project is to develop an online garden center for an imaginary c
 # 4. Future features
 # 5. Typography and color scheme
 # 6. Wireframes
+- Home page
+![Home page wireframe](media/Home%20page.png)
+- Product page
+![Product page wireframe](media/Product%20page.png)
+- Sign up page
+![Sign up page wireframe](media/Sign%20up%20page.png)
+- Add product function for admin
+![Add product page wireframe](media/Add%20Product%20page.png)
+- Check out page
+![Check out page wireframe](media/Check%20out%20page.png)
+- Blog page
+![Blog page wireframe](media/Blog%20page.png)
 === 1-6 for planning and then write code ===
 # 7. Technology
 ## 7.1. ERD
