@@ -32,6 +32,7 @@ The aim of this project is to develop an online garden center for an imaginary c
 === 1-6 for planning and then write code ===
 # 7. Technology
 ## 7.1. ERD
+I would like to use the django admin pannel for adding and updating product, and I would like to work with a delivery company to arrange deliveries.
 ![ERD image](media/Database%20ER%20diagram%20(crow's%20foot).png)
 # 8. Testing
    ## 8.1 code validation
