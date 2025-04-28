@@ -3,6 +3,9 @@ This is my fourth milestone project with Code Institute and Runshaw College. I u
 # 1. Purpose of the project
 The aim of this project is to develop an online garden center for an imaginary company, enabling them to effectively sell gardening products, plants, and seeds. This platform will enhance their marketing reach, providing a convenient 24/7 online presence and allowing customers to browse and shop from the comfort of their homes. The project seeks to streamline the shopping experience by offering easy navigation, personalized account features, and seamless checkout. Additionally, it will empower customers to discover new products, while helping the company attract a broader audience and increase sales.
 # 2. User stories
+- As a shopper I would like to see a list of products.
+- As a shopper, I would like to see a description to every product.
+- As a shopper, I would like to get inspiration/ideas to shopping.
 - As a user, I would like to see the nav bar on every pages, and any screen sizes, and easily navigate between pages.
 - As a user I can create a new account and I can see the features for signed up users.
 - As a user I can sign in so I can use functionality for logged in users.
