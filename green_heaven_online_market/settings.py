@@ -57,7 +57,7 @@ MIDDLEWARE = [
     'allauth.account.middleware.AccountMiddleware',
 ]
 
-ROOT_URLCONF = 'green_haven_online_market.urls'
+ROOT_URLCONF = 'green_heaven_online_market.urls'
 
 TEMPLATES = [
     {
@@ -75,7 +75,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'green_haven_online_market.wsgi.application'
+WSGI_APPLICATION = 'green_heaven_online_market.wsgi.application'
 
 
 # Database
