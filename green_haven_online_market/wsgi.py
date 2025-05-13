@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'green_haven_online_market.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'green_heaven_online_market.settings')
 
 application = get_wsgi_application()
