@@ -60,3 +60,4 @@ I would like to use the django admin pannel for adding and updating product, and
    ## 9.1 via codeanywhere/VS Code
    ## 9.2 via GitHub Pages
 # 10. Credits
+- images from kaggle.com

@@ -1,0 +1,114 @@
+[
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340155",
+            "name": "Monstera",
+            "description": "Monstera is a tropical plant that is known for its large, glossy leaves with unique splits and holes. It is a popular choice for indoor gardening and can grow quite large, making it a stunning focal point in any room.",
+            "price": 29.99,
+            "category": 1,
+            "rating": 4.6,
+            "image_url": "/media/products/monstera.jpg",
+            "image": "monstera.jpg"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340156",
+            "name": "African violet",
+            "description": "African violet is a popular houseplant known for its beautiful, velvety leaves and vibrant purple flowers. It thrives in moderate light and requires regular watering to keep the soil moist but not soggy.",
+            "price": 19.99,
+            "category": 1,
+            "rating": 4.4,
+            "image_url": "/media/products/africn violet.jpg",
+            "image": "africn violet.jpg"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340157",
+            "name": "Aloe Vera",
+            "description": "Aloe Vera is a succulent plant known for its medicinal properties and ability to thrive in dry conditions. It has thick, fleshy leaves that store water, making it a low-maintenance houseplant.",
+            "price": 15.99,
+            "category": 1,
+            "rating": 4.0,
+            "image_url": "/media/products/aloe vera.jpg",
+            "image": "aloe vera.jpg"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340158",
+            "name": "Anthurium",
+            "description": "Anthurium is a tropical plant known for its striking, heart-shaped flowers and glossy leaves. It is often used as a decorative houseplant and can bloom year-round with proper care.",
+            "price": 34.99,
+            "category": 1,
+            "rating": 4.5,
+            "image_url": "/media/products/anthurium.jpg",
+            "image": "anthurium.jpg"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340159",
+            "name": "Areca Palm",
+            "description": "Areca Palm is a popular indoor palm known for its feathery, arching fronds. It is a great air purifier and can grow quite tall, making it an excellent choice for larger spaces.",
+            "price": 49.99,
+            "category": 1,
+            "rating": 4.3,
+            "image_url": "/media/products/areca.png",
+            "image": "areca.png"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340160",
+            "name": "Begonia",
+            "description": "Begonia is a diverse genus of plants known for their colorful foliage and unique leaf shapes. They are often grown as houseplants and can thrive in various light conditions.",
+            "price": 24.99,
+            "category": 1,
+            "rating": 4.2,
+            "image_url": "/media/products/begonia.jpg",
+            "image": "begonia.jpg"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340161",
+            "name": "Phalenopsis Orchid",
+            "description": "Phalenopsis Orchid, also known as the moth orchid, is a popular houseplant known for its long-lasting flowers and elegant appearance. It thrives in bright, indirect light and requires regular watering.",
+            "price": 59.99,
+            "category": 1,
+            "rating": 4.1,
+            "image_url": "/media/products/phalenopsis.jpg",
+            "image": "phalenopsis.jpg"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340162",
+            "name": "Christmas Cactus",
+            "description": "Christmas Cactus is a popular holiday plant known for its vibrant flowers that bloom during the winter months. It is a low-maintenance houseplant that prefers bright, indirect light and moderate watering.",
+            "price": 12.99,
+            "category": 1,
+            "rating": 4.7,
+            "image_url": "/media/products/christmas cactus.jpg",
+            "image": "christmas cactus.jpg"
+        }
+    }
+]
