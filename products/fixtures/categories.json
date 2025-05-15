@@ -1,5 +1,5 @@
 [
-    { "pk": 1, "model": "products.category", "fields": { "name": "houseplants", "friendly_name": "Houseplants" } },
+    { "pk": 1, "model": "products.category", "fields": { "name": "indoor_plants", "friendly_name": "Indoor plants" } },
     { "pk": 2, "model": "products.category", "fields": { "name": "trees", "friendly_name": "Trees" } },
     { "pk": 3, "model": "products.category", "fields": { "name": "clearance", "friendly_name": "Clearance" } },
     { "pk": 4, "model": "products.category", "fields": { "name": "deals", "friendly_name": "Deals" } },
@@ -7,5 +7,9 @@
     { "pk": 6, "model": "products.category", "fields": { "name": "bulbs", "friendly_name": "Bulbs" } },
     { "pk": 7, "model": "products.category", "fields": { "name": "outside_living", "friendly_name": "Outside living" } },
     { "pk": 8, "model": "products.category", "fields": { "name": "new_arrivals", "friendly_name": "New Arrivals" } },
-    { "pk": 9, "model": "products.category", "fields": { "name": "perennials", "friendly_name": "Perennials" } }
+    { "pk": 9, "model": "products.category", "fields": { "name": "perennials", "friendly_name": "Perennials" } },
+    { "pk": 10, "model": "products.category", "fields": { "name": "seeds", "friendly_name": "Seeds" } },
+    { "pk": 11, "model": "products.category", "fields": { "name": "annuals", "friendly_name": "Annuals" } },
+    { "pk": 12, "model": "products.category", "fields": { "name": "shrubs", "friendly_name": "Shrubs" } },
+    { "pk": 13, "model": "products.category", "fields": { "name": "garden_care", "friendly_name": "Garden Care" } }
 ]
