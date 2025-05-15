@@ -9,7 +9,7 @@
             "price": 29.99,
             "category": 1,
             "rating": 4.6,
-            "image_url": "media/products/monstera.jpg",
+            "image_url": "media/monstera.jpg",
             "image": "monstera.jpg"
         }
     },
@@ -23,7 +23,7 @@
             "price": 19.99,
             "category": 1,
             "rating": 4.4,
-            "image_url": "media/products/african_violet.jpg",
+            "image_url": "media/african_violet.jpg",
             "image": "african_violet.jpg"
         }
     },
@@ -37,7 +37,7 @@
             "price": 15.99,
             "category": 1,
             "rating": 4.0,
-            "image_url": "media/products/aloe_vera.jpg",
+            "image_url": "media/aloe_vera.jpg",
             "image": "aloe_vera.jpg"
         }
     },
@@ -51,7 +51,7 @@
             "price": 34.99,
             "category": 1,
             "rating": 4.5,
-            "image_url": "media/products/anthurium.jpg",
+            "image_url": "media/anthurium.jpg",
             "image": "anthurium.jpg"
         }
     },
@@ -65,7 +65,7 @@
             "price": 49.99,
             "category": 1,
             "rating": 4.3,
-            "image_url": "media/products/areca.png",
+            "image_url": "media/areca.png",
             "image": "areca.png"
         }
     },
@@ -79,7 +79,7 @@
             "price": 24.99,
             "category": 1,
             "rating": 4.2,
-            "image_url": "media/products/begonia.jpg",
+            "image_url": "media/begonia.jpg",
             "image": "begonia.jpg"
         }
     },
@@ -93,7 +93,7 @@
             "price": 59.99,
             "category": 1,
             "rating": 4.1,
-            "image_url": "media/products/phalenopsis.jpg",
+            "image_url": "media/phalenopsis.jpg",
             "image": "phalenopsis.jpg"
         }
     },
@@ -107,7 +107,7 @@
             "price": 12.99,
             "category": 1,
             "rating": 4.7,
-            "image_url": "media/products/christmas_cactus.jpg",
+            "image_url": "media/christmas_cactus.jpg",
             "image": "christmas_cactus.jpg"
         }
     }

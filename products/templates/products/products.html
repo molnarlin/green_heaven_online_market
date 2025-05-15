@@ -10,7 +10,7 @@
 {% endblock %}
 
 {% block content %}
-    <div class="overlay"></div>
+    <div class="overlay mb-5"></div>
     <div class="container-fluid">
         <div class="row">
             <div class="col text-center mt-3">
@@ -18,7 +18,7 @@
                 <hr class="w-50 mb-1">
             </div>
         </div>
-        <div class="row">
+        <div class="row mt-5">
             <div class="product-container col-10 offset-1">
                 <div class="row mt-1 mb-2"></div>
                 <div class="row">
@@ -26,9 +26,9 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="card h-100 border-0">
                                 {% if product.image %}
-                                <a href="">
-                                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
-                                </a>
+                                <div style="width: 300px; height: 200px; overflow: hidden;">
+                                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
                                 {% else %}
                                 <a href="">
                                     <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
