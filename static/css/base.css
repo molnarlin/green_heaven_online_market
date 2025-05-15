@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url('/media/peaceful_garden.png') no-repeat center center;
+    background: url('/media/peaceful_garden.webp') no-repeat center center;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -85,6 +85,10 @@ body {
     margin-top: 10px;
     transform: translate(-15%, 0%); /* Centers text perfectly */
     text-align: center;
+}
+
+.blog-text{
+    text-align: justify;
 }
 /* -------------------------------- Media Queries */
 

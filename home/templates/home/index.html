@@ -59,21 +59,21 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
-                <img src="{% static 'media/monstera.jpg' %}" class="d-block w-50 mx-auto" alt="Monstera">
+                <img src="{% static 'media/monstera.jpg' %}" class="d-block w-65 mx-auto" alt="Monstera">
                 <div class="carousel-caption d-none d-md-block d-flex flex-column justify-content-center">
                     <h5>Monstera</h5>
                     <p>Green leaves for every room.</p>
                 </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-                <img src="{% static 'media/african_violet.jpg' %}" class="d-block w-50 mx-auto" alt="African violets">
+                <img src="{% static 'media/african_violet.jpg' %}" class="d-block w-65 mx-auto" alt="African violets">
                 <div class="carousel-caption d-none d-md-block d-flex flex-column justify-content-center">
                     <h5>African violets</h5>
                     <p>Little colourful addition for your home.</p>
                 </div>
             </div>
             <div class="carousel-item ">
-                <img src="{% static 'media/christmas_cactus.jpg' %}" class="d-block w-50 mx-auto" alt="Christmas cactus">
+                <img src="{% static 'media/christmas_cactus.jpg' %}" class="d-block w-65 mx-auto" alt="Christmas cactus">
                 <div class="carousel-caption d-none d-md-block d-flex flex-column justify-content-center">
                     <h5>Christmas cactus</h5>
                     <p>Enjoy flowers in winter. Choose from more colours.</p>
@@ -133,7 +133,7 @@
                                 </div>
                             </div>
                         </div>
-                        <dic class="col-md-3">
+                        <div class="col-md-3">
                             <div class="card" style="width: 18rem; height: 12rem;">
                                 <div class="card-body mb-2">
                                     <p class="card-text">"The online garden centre has become my go-to for all my gardening needs. I can't recommend them enough!"</p>
@@ -148,5 +148,86 @@
                 </div>
             </div>
         </div>
+    </div>
+<!-- Carousel section for the blog -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <h2 class="logo-font text-black text-center mt-2 mb-2">Read our blog</h2>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4000">
+                <div class="carousel-caption d-none d-md-block d-flex flex-column justify-content-center align-items-center">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <img src="{% static 'media/blog_planning.webp' %}" class="d-block w-10 h-10 mx-auto" alt="How to plan your garden picture">
+                            Garden planning
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">What is the best time to plan my next year in the garden?</h5>
+                            <p class="card-text blog-text w-50 mx-auto">Planning your garden for the year ahead is the key to a thriving outdoor space. From choosing the right plants for each season to organizing your 
+                            planting schedule, a well-thought-out approach ensures a vibrant and productive garden. Whether you're mapping out vegetable beds or designing a floral
+                            haven, timing matters—winter is perfect for research and prep, while spring kicks off the action. Start early, plan smart, and watch your garden 
+                            flourish!</p>
+                            <a href="#" class="btn btn-success">Read more</a>
+                        </div>
+                        <div class="card-footer text-body-secondary">
+                            15/05/2025
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <div class="carousel-caption d-none d-md-block d-flex flex-column justify-content-center align-items-center">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <img src="{% static 'media/blog_wildlife.webp' %}" class="d-block w-10 h-10 mx-auto" alt="Wildlife friendly picture">
+                            Wildlife-friendly
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">How can I make my garden more wild life friendly?</h5>
+                            <p class="card-text blog-text w-50 mx-auto text-justify">Transforming your garden into a wildlife-friendly sanctuary is easier than you think! By incorporating native plants, creating shelter, and providing
+                            food sources like nectar-rich flowers and bird feeders, you can attract butterflies, bees, and birds. Avoid pesticides, add a small water feature, and 
+                            let parts of your garden grow naturally to support biodiversity. A thriving ecosystem starts with small changes, making your green space a haven for 
+                            nature!</p>
+                            <a href="#" class="btn btn-success">Read more</a>
+                        </div>
+                        <div class="card-footer text-body-secondary">
+                            14/05/2025
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <div class="carousel-caption d-none d-md-block d-flex flex-column justify-content-center align-items-center">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <img src="{% static 'media/blog_bulb.webp' %}" class="d-block w-10 h-10 mx-auto" alt="Planting bulb picture">
+                            Planting bulbs
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">How to plant bulbs in your garden?</h5>
+                            <p class="card-text blog-text w-50 mx-auto text-justify">Planting bulbs is a simple yet rewarding way to ensure a vibrant, colorful garden year-round. From choosing the right bulbs for each season to preparing
+                                the soil and planting at the correct depth, a little planning goes a long way. Whether you’re adding tulips for spring or daffodils for a cheerful 
+                                display, learning the best techniques will help your flowers thrive. Follow these steps to create a garden bursting with blooms!</p>
+                            <a href="#" class="btn btn-success">Read more</a>
+                            <div class="card-footer text-body-secondary">
+                                12/05/2025
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 {% endblock %}
