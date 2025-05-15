@@ -33,24 +33,24 @@ The aim of this project is to develop an online garden center for an imaginary c
 # 5. Typography and color scheme
 # 6. Wireframes
 - Home page
-![Home page wireframe](media/Home%20page.png)
+![Home page wireframe](media/readme/Home%20page.png)
 - Product list page
-![Product list page wireframe](media/Product%20list.png)
+![Product list page wireframe](media/readme/Product%20list.png)
 - Product page
-![Product page wireframe](media/Product%20page.png)
+![Product page wireframe](media/readme/Product%20page.png)
 - Sign up page
-![Sign up page wireframe](media/Sign%20up%20page.png)
+![Sign up page wireframe](media/readme/Sign%20up%20page.png)
 - Check out page
-![Check out page wireframe](media/Check%20out%20page.png)
+![Check out page wireframe](media/readme/Check%20out%20page.png)
 - List of blog articles page
-![List of blog articles page](/media/Blog%20articles%20list%20page.png)
+![List of blog articles page](media/readme/Blog%20articles%20list%20page.png)
 - Blog page
-![Blog page wireframe](media/Blog%20page.png)
+![Blog page wireframe](media/readme/Blog%20page.png)
 === 1-6 for planning and then write code ===
 # 7. Technology
 ## 7.1. ERD
 I would like to use the django admin pannel for adding and updating product, and I would like to work with a delivery company to arrange deliveries.
-![ERD image](media/Database%20ER%20diagram%20(crow's%20foot).png)
+![ERD image](media/readme/Database%20ER%20diagram%20(crow's%20foot).png)
 # 8. Testing
    ## 8.1 code validation
    ## 8.2 test cases (user story based with screenshots)
@@ -60,4 +60,4 @@ I would like to use the django admin pannel for adding and updating product, and
    ## 9.1 via codeanywhere/VS Code
    ## 9.2 via GitHub Pages
 # 10. Credits
-- images from kaggle.com
+- images from kaggle.com and Microsoft Copilot
