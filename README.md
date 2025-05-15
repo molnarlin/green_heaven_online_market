@@ -61,3 +61,4 @@ I would like to use the django admin pannel for adding and updating product, and
    ## 9.2 via GitHub Pages
 # 10. Credits
 - images from kaggle.com and Microsoft Copilot
+- thanks for w3school.com

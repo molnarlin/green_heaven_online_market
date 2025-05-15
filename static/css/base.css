@@ -73,11 +73,10 @@ body {
 }
 
 .carousel-item img {
-    width: 500px; /* Fixed width */
-    height: 300px; /* Fixed height */
+    width: 500px; 
+    height: 300px;
     object-fit: cover; /* Keeps aspect ratio without stretching */
     display: block;
-    margin: auto; /* Centers the image */
 }
 
 .carousel-caption {
