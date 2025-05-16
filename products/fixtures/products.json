@@ -110,5 +110,117 @@
             "image_url": "media/christmas_cactus.jpg",
             "image": "christmas_cactus.jpg"
         }
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340163",
+            "name": "Tomato seeds",
+            "description": "High-quality tomato seeds for home gardening. Grow juicy, flavorful tomatoes easily in your garden or pots. Suitable for beginners and experienced gardeners alike.",
+            "price": 2.99,
+            "category": 10,
+            "rating": 4.7,
+            "image_url": "media/tomato_seeds.webp",
+            "image": "tomato_seeds.webp"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340164",
+            "name": "Chili seeds",
+            "description": "Organic chili seed bag for home gardening. Grow your own spicy, flavorful chili peppers easily. Perfect for adding heat and taste to your dishes.",
+            "price": 2.99,
+            "category": 10,
+            "rating": 4.5,
+            "image_url": "media/chili_seeds.webp",
+            "image": "chili_seeds.webp"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340165",
+            "name": "Conference Pear Tree",
+            "description": "The Conference Pear Tree is a popular fruit tree known for its long, narrow pears with a sweet, juicy flavor. It is easy to grow, produces abundant crops, and is ideal for home gardens. The fruit is excellent for eating fresh or using in desserts and preserves.",
+            "price": 25.99,
+            "category": 2,
+            "rating": 4.9,
+            "image_url": "media/conference.webp",
+            "image": "conference.webp"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340166",
+            "name": "Pink Lady Apple Tree",
+            "description": "The Pink Lady Apple Tree is a popular fruit tree known for its sweet, crisp apples with a pinkish-red skin. It is easy to grow and produces abundant crops, making it ideal for home gardens. The apples are perfect for eating fresh or using in pies and desserts.",
+            "price": 25.99,
+            "category": 2,
+            "rating": 4.7,
+            "image_url": "media/pink_lady.webp",
+            "image": "pink_lady.webp"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340167",
+            "name": "Mix of colourful Tulips",
+            "description": "A vibrant mix of colourful tulip bulbs, perfect for adding a burst of spring color to your garden. These easy-to-grow tulips bloom in a variety of shades, creating a stunning and cheerful display.",
+            "price": 15.99,
+            "category": 6,
+            "rating": 4.3,
+            "image_url": "media/mixed_tulips.webp",
+            "image": "mixed_tulips.webp"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340168",
+            "name": "Daffodils",
+            "description": "Daffodils are cheerful spring-blooming flowers known for their bright yellow or white petals and trumpet-shaped centers. They are easy to grow, thrive in most gardens, and symbolize renewal and new beginnings.",
+            "price": 15.99,
+            "category": 6,
+            "rating": 4.5,
+            "image_url": "media/narcissus.webp",
+            "image": "narcissus.webp"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340169",
+            "name": "Garden Bench",
+            "description": "A sturdy and stylish garden bench made from high-quality materials. Perfect for relaxing outdoors, it provides comfortable seating for two and adds a charming touch to any garden or patio.",
+            "price": 55.99,
+            "category": 7,
+            "rating": 4.9,
+            "image_url": "media/bench.jpg",
+            "image": "bench.jpg"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340170",
+            "name": "Outdoor Fireplace",
+            "description": "An outdoor fireplace that adds warmth and ambiance to your backyard. Made from durable materials, it features a stylish design and provides a cozy gathering spot for family and friends.",
+            "price": 199.99,
+            "category": 7,
+            "rating": 4.8,
+            "image_url": "media/fireplace.jpg",
+            "image": "fireplace.jpg"
+        }
     }
 ]
