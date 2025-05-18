@@ -10,7 +10,21 @@
             "category": 1,
             "rating": 4.6,
             "image_url": "media/monstera.jpg",
-            "image": "monstera.jpg"
+            "image": "monstera.jpg",
+            "care_info": {
+                "light": "Bright, indirect light",
+                "water": "Water when the top inch of soil is dry",
+                "temperature": "18-29°C",
+                "humidity": "Moderate to high humidity"
+            },
+            "fertilizer": "Use a balanced liquid fertilizer every 4-6 weeks during the growing season.",
+            "pests": "Watch for spider mites and mealybugs. Treat with insecticidal soap if necessary.",
+            "pruning": "Prune to remove any dead or yellowing leaves and to control size. Use clean, sharp scissors.",
+            "repotting": "Repot every 1-2 years or when the plant outgrows its pot. Use a well-draining potting mix.",
+            "delivery": "Ships in a 6-inch pot. Delivery time: 5-7 business days.",
+            "planting": "Plant in a well-draining potting mix. Water thoroughly after planting.",
+            "harvesting": "Not applicable for this plant.",
+            "size": "Can grow up to 10 feet tall indoors with proper care."
         }
     },
     {
@@ -24,7 +38,21 @@
             "category": 1,
             "rating": 4.4,
             "image_url": "media/african_violet.jpg",
-            "image": "african_violet.jpg"
+            "image": "african_violet.jpg",
+            "care_info": {
+                "light": "Bright, indirect light",
+                "water": "Water when the top inch of soil is dry",
+                "temperature": "18-24°C",
+                "humidity": "Moderate to high humidity"
+            },
+            "fertilizer": "Use a balanced liquid fertilizer every 4-6 weeks during the growing season.",
+            "pests": "Watch for mealybugs and spider mites. Treat with insecticidal soap if necessary.",
+            "pruning": "Prune to remove any dead or yellowing leaves and to encourage bushier growth. Use clean, sharp scissors.",
+            "repotting": "Repot every 1-2 years or when the plant outgrows its pot. Use a well-draining potting mix.",
+            "delivery": "Ships in a 4-inch pot. Delivery time: 5-7 business days.",
+            "planting": "Plant in a well-draining potting mix. Water thoroughly after planting.",
+            "harvesting": "Not applicable for this plant.",
+            "size": "Typically grows to 6-12 inches tall."
         }
     },
     {
@@ -38,7 +66,21 @@
             "category": 1,
             "rating": 4.0,
             "image_url": "media/aloe_vera.jpg",
-            "image": "aloe_vera.jpg"
+            "image": "aloe_vera.jpg",
+            "care_info": {
+                "light": "Bright, indirect light",
+                "water": "Allow the soil to dry out between waterings",
+                "temperature": "15-24°C",
+                "humidity": "Low humidity"
+            },
+            "fertilizer": "Use a balanced liquid fertilizer every 4-6 weeks during the growing season.",
+            "pests": "Watch for mealybugs and aphids. Treat with insecticidal soap if necessary.",
+            "pruning": "Prune to remove any dead or damaged leaves. Use clean, sharp scissors.",
+            "repotting": "Repot every 1-2 years or when the plant outgrows its pot. Use a well-draining potting mix.",
+            "delivery": "Ships in a 4-inch pot. Delivery time: 5-7 business days.",
+            "planting": "Plant in a well-draining potting mix. Water thoroughly after planting.",
+            "harvesting": "Not applicable for this plant.",
+            "size": "Typically grows to 1-2 feet tall."
         }
     },
     {
@@ -52,7 +94,21 @@
             "category": 1,
             "rating": 4.5,
             "image_url": "media/anthurium.jpg",
-            "image": "anthurium.jpg"
+            "image": "anthurium.jpg",
+            "care_info": {
+                "light": "Bright, indirect light",
+                "water": "Water when the top inch of soil is dry",
+                "temperature": "18-27°C",
+                "humidity": "Moderate to high humidity"
+            },
+            "fertilizer": "Use a balanced liquid fertilizer every 4-6 weeks during the growing season.",
+            "pests": "Watch for aphids and spider mites. Treat with insecticidal soap if necessary.",
+            "pruning": "Prune to remove any dead or yellowing leaves and to encourage bushier growth. Use clean, sharp scissors.",
+            "repotting": "Repot every 1-2 years or when the plant outgrows its pot. Use a well-draining potting mix.",
+            "delivery": "Ships in a 6-inch pot. Delivery time: 5-7 business days.",
+            "planting": "Plant in a well-draining potting mix. Water thoroughly after planting.",
+            "harvesting": "Not applicable for this plant.",
+            "size": "Typically grows to 1-3 feet tall."
         }
     },
     {
@@ -66,7 +122,21 @@
             "category": 1,
             "rating": 4.3,
             "image_url": "media/areca.png",
-            "image": "areca.png"
+            "image": "areca.png",
+            "care_info": {
+                "light": "Bright, indirect light",
+                "water": "Water when the top inch of soil is dry",
+                "temperature": "18-24°C",
+                "humidity": "Moderate to high humidity"
+            },
+            "fertilizer": "Use a balanced liquid fertilizer every 4-6 weeks during the growing season.",
+            "pests": "Watch for spider mites and mealybugs. Treat with insecticidal soap if necessary.",
+            "pruning": "Prune to remove any dead or yellowing leaves and to encourage bushier growth. Use clean, sharp scissors.",
+            "repotting": "Repot every 1-2 years or when the plant outgrows its pot. Use a well-draining potting mix.",
+            "delivery": "Ships in a 10-inch pot. Delivery time: 5-7 business days.",
+            "planting": "Plant in a well-draining potting mix. Water thoroughly after planting.",
+            "harvesting": "Not applicable for this plant.",
+            "size": "Can grow up to 6-7 feet tall indoors with proper care."
         }
     },
     {
@@ -80,7 +150,21 @@
             "category": 1,
             "rating": 4.2,
             "image_url": "media/begonia.jpg",
-            "image": "begonia.jpg"
+            "image": "begonia.jpg",
+            "care_info": {
+                "light": "Bright, indirect light",
+                "water": "Water when the top inch of soil is dry",
+                "temperature": "15-24°C",
+                "humidity": "Moderate to high humidity"
+            },
+            "fertilizer": "Use a balanced liquid fertilizer every 4-6 weeks during the growing season.",
+            "pests": "Watch for mealybugs and spider mites. Treat with insecticidal soap if necessary.",
+            "pruning": "Prune to remove any dead or yellowing leaves and to encourage bushier growth. Use clean, sharp scissors.",
+            "repotting": "Repot every 1-2 years or when the plant outgrows its pot. Use a well-draining potting mix.",
+            "delivery": "Ships in a 6-inch pot. Delivery time: 5-7 business days.",
+            "planting": "Plant in a well-draining potting mix. Water thoroughly after planting.",
+            "harvesting": "Not applicable for this plant.",
+            "size": "Typically grows to 1-2 feet tall."
         }
     },
     {
@@ -94,7 +178,21 @@
             "category": 1,
             "rating": 4.1,
             "image_url": "media/phalenopsis.jpg",
-            "image": "phalenopsis.jpg"
+            "image": "phalenopsis.jpg",
+            "care_info": {
+                "light": "Bright, indirect light",
+                "water": "Water when the top inch of soil is dry",
+                "temperature": "18-27°C",
+                "humidity": "Moderate to high humidity"
+            },
+            "fertilizer": "Use a balanced liquid fertilizer every 4-6 weeks during the growing season.",
+            "pests": "Watch for mealybugs and spider mites. Treat with insecticidal soap if necessary.",
+            "pruning": "Prune to remove any dead or yellowing leaves and to encourage bushier growth. Use clean, sharp scissors.",
+            "repotting": "Repot every 1-2 years or when the plant outgrows its pot. Use a well-draining potting mix.",
+            "delivery": "Ships in a 6-inch pot. Delivery time: 5-7 business days.",
+            "planting": "Plant in a well-draining potting mix. Water thoroughly after planting.",
+            "harvesting": "Not applicable for this plant.",
+            "size": "Typically grows to 1-3 feet tall."
         }
     },
     {
@@ -108,7 +206,21 @@
             "category": 1,
             "rating": 4.7,
             "image_url": "media/christmas_cactus.jpg",
-            "image": "christmas_cactus.jpg"
+            "image": "christmas_cactus.jpg",
+            "care_info": {
+                "light": "Bright, indirect light",
+                "water": "Water when the top inch of soil is dry",
+                "temperature": "15-21°C",
+                "humidity": "Moderate to high humidity"
+            },
+            "fertilizer": "Use a balanced liquid fertilizer every 4-6 weeks during the growing season.",
+            "pests": "Watch for aphids and spider mites. Treat with insecticidal soap if necessary.",
+            "pruning": "Prune to remove any dead or yellowing leaves and to encourage bushier growth. Use clean, sharp scissors.",
+            "repotting": "Repot every 1-2 years or when the plant outgrows its pot. Use a well-draining potting mix.",
+            "delivery": "Ships in a 4-inch pot. Delivery time: 5-7 business days.",
+            "planting": "Plant in a well-draining potting mix. Water thoroughly after planting.",
+            "harvesting": "Not applicable for this plant.",
+            "size": "Typically grows to 1-2 feet tall."
         }
     },
     {
@@ -122,7 +234,21 @@
             "category": 10,
             "rating": 4.7,
             "image_url": "media/tomato_seeds.webp",
-            "image": "tomato_seeds.webp"
+            "image": "tomato_seeds.webp",
+            "care_info": {
+                "light": "Full sun",
+                "water": "Keep soil consistently moist but not soggy",
+                "temperature": "21-29°C",
+                "humidity": "Moderate humidity"
+            },
+            "fertilizer": "Use a balanced fertilizer every 4-6 weeks during the growing season.",
+            "pests": "Watch for aphids and cutworms. Treat with insecticidal soap if necessary.",
+            "pruning": "Prune to remove any dead or yellowing leaves and to encourage bushier growth you can leave side shoots. Use clean, sharp scissors.",
+            "repotting": "Not applicable for this plant. Ensure proper spacing in the garden.",
+            "delivery": "Ships in a seed packet. Delivery time: 5-7 business days.",
+            "planting": "Plant in a well-draining potting mix. Water thoroughly after planting.",
+            "harvesting": "Harvest when tomatoes are fully ripe and have a deep color.",
+            "size": "Can grow up to 6 feet tall with proper care."
         }
     },
     {
@@ -136,7 +262,21 @@
             "category": 10,
             "rating": 4.5,
             "image_url": "media/chili_seeds.webp",
-            "image": "chili_seeds.webp"
+            "image": "chili_seeds.webp",
+            "care_info": {
+                "light": "Full sun",
+                "water": "Keep soil consistently moist but not soggy",
+                "temperature": "21-29°C",
+                "humidity": "Moderate humidity"
+            },
+            "fertilizer": "Use a balanced fertilizer every 4-6 weeks during the growing season.",
+            "pests": "Watch for aphids and spider mites. Treat with insecticidal soap if necessary.",
+            "pruning": "Prune to remove any dead or yellowing leaves. Use clean, sharp scissors.",
+            "repotting": "Not applicable for this plant. Ensure proper spacing in the garden.",
+            "delivery": "Ships in a seed packet. Delivery time: 5-7 business days.",
+            "planting": "Plant in a well-draining potting mix. Water thoroughly after planting.",
+            "harvesting": "Harvest when peppers are fully ripe and have a deep color.",
+            "size": "Can grow up to 3 feet tall with proper care."
         }
     },
     {
@@ -150,7 +290,21 @@
             "category": 2,
             "rating": 4.9,
             "image_url": "media/conference.webp",
-            "image": "conference.webp"
+            "image": "conference.webp",
+            "care_info": {
+                "light": "Full sun",
+                "water": "Water regularly, especially during dry spells",
+                "temperature": "ideal 15-25°C, dormancy in winter",
+                "humidity": "Moderate humidity"
+            },
+            "fertilizer": "Use a balanced fertilizer in early spring before new growth begins.",
+            "pests": "Watch for aphids and pear psylla. Treat with insecticidal soap if necessary.",
+            "pruning": "Prune in late winter or early spring to shape the tree and remove dead or diseased wood.",
+            "repotting": "Not applicable for trees. Ensure proper spacing in the garden.",
+            "delivery": "Ships as a bare-root tree. Delivery time: 7-10 business days.",
+            "planting": "Plant in well-draining soil. Soak roots in water before planting. Dig a hole twice the width of the root ball and backfill with soil and organic manure.",
+            "harvesting": "Harvest when pears are firm and have a slight give when pressed.",
+            "size": "Can grow up to 15-20 feet tall with proper care."
         }
     },
     {
@@ -164,7 +318,21 @@
             "category": 2,
             "rating": 4.7,
             "image_url": "media/pink_lady.webp",
-            "image": "pink_lady.webp"
+            "image": "pink_lady.webp",
+            "care_info": {
+                "light": "Full sun",
+                "water": "Water regularly, especially during dry spells",
+                "temperature": "ideal 18-27°C, dormancy in winter",
+                "humidity": "Moderate humidity"
+            },
+            "fertilizer": "Use a balanced fertilizer in early spring before new growth begins.",
+            "pests": "Watch for aphids and apple maggot. Treat with insecticidal soap if necessary.",
+            "pruning": "Prune in late winter or early spring to shape the tree and remove dead or diseased wood.",
+            "repotting": "Not applicable for trees. Ensure proper spacing in the garden.",
+            "delivery": "Ships as a bare-root tree. Delivery time: 7-10 business days.",
+            "planting": "Plant in well-draining soil. Soak roots in water before planting. Dig a hole twice the width of the root ball and backfill with soil and organic manure.",
+            "harvesting": "Harvest when apples are firm and have a slight give when pressed.",
+            "size": "Can grow up to 15-20 feet tall with proper care."
         }
     },
     {
@@ -178,7 +346,21 @@
             "category": 6,
             "rating": 4.3,
             "image_url": "media/mixed_tulips.webp",
-            "image": "mixed_tulips.webp"
+            "image": "mixed_tulips.webp",
+            "care_info": {
+                "light": "Full sun to partial shade",
+                "water": "Water regularly, especially during dry spells",
+                "temperature": "ideal 10-15°C",
+                "humidity": "Moderate humidity"
+            },
+            "fertilizer": "Use a balanced fertilizer in early spring before new growth begins.",
+            "pests": "Watch for aphids and slugs. Treat with insecticidal soap if necessary.",
+            "pruning": "Prune spent flowers to encourage new growth. Remove any dead or yellowing leaves.",
+            "repotting": "Not applicable for bulbs. Plant directly in the garden.",
+            "delivery": "Ships as a bulb pack. Delivery time: 5-7 business days.",
+            "planting": "Plant bulbs in well-draining soil, 6-8 inches deep. Water thoroughly after planting.",
+            "harvesting": "Harvest when flowers are fully open and have a vibrant color.",
+            "size": "Typically grows to 12-18 inches tall."
         }
     },
     {
@@ -192,7 +374,21 @@
             "category": 6,
             "rating": 4.5,
             "image_url": "media/narcissus.webp",
-            "image": "narcissus.webp"
+            "image": "narcissus.webp",
+            "care_info": {
+                "light": "Full sun to partial shade",
+                "water": "Water regularly, especially during dry spells",
+                "temperature": "ideal 7-24°C",
+                "humidity": "Moderate humidity"
+            },
+            "fertilizer": "Use a balanced fertilizer in early spring before new growth begins.",
+            "pests": "Watch for narcissus bulb fly and daffodil eelworms. Treat with insecticidal soap if necessary.",
+            "pruning": "Prune spent flowers to encourage new growth. Remove any dead or yellowing leaves.",
+            "repotting": "Not applicable for bulbs. Plant directly in the garden.",
+            "delivery": "Ships as a bulb pack. Delivery time: 5-7 business days.",
+            "planting": "Plant bulbs in well-draining soil, 6-8 inches deep. Water thoroughly after planting.",
+            "harvesting": "Harvest when flowers are fully open and have a vibrant color.",
+            "size": "Typically grows to 12-18 inches tall."
         }
     },
     {
@@ -206,7 +402,21 @@
             "category": 7,
             "rating": 4.9,
             "image_url": "media/bench.jpg",
-            "image": "bench.jpg"
+            "image": "bench.jpg",
+            "care_info": {
+                "light": "N/A",
+                "water": "N/A",
+                "temperature": "N/A",
+                "humidity": "N/A"
+            },
+            "fertilizer": "N/A",
+            "pests": "N/A",
+            "pruning": "N/A",
+            "repotting": "N/A",
+            "delivery": "Ships fully assembled. Delivery time: 5-7 business days.",
+            "planting": "N/A",
+            "harvesting": "N/A",
+            "size": "Dimensions: 4 feet long, 2 feet deep, 3 feet high."
         }
     },
     {
@@ -220,7 +430,21 @@
             "category": 7,
             "rating": 4.8,
             "image_url": "media/fireplace.jpg",
-            "image": "fireplace.jpg"
+            "image": "fireplace.jpg",
+            "care_info": {
+                "light": "N/A",
+                "water": "N/A",
+                "temperature": "N/A",
+                "humidity": "N/A"
+            },
+            "fertilizer": "N/A",
+            "pests": "N/A",
+            "pruning": "N/A",
+            "repotting": "N/A",
+            "delivery": "Ships fully assembled. Delivery time: 5-7 business days.",
+            "planting": "N/A",
+            "harvesting": "N/A",
+            "size": "Dimensions: 3 feet wide, 2 feet deep, 4 feet high."
         }
     },
     {
@@ -234,7 +458,21 @@
             "category": 5,
             "rating": 4.0,
             "image_url": "media/hand_weeder.webp",
-            "image": "hand_weeder.webp"
+            "image": "hand_weeder.webp",
+            "care_info": {
+                "light": "N/A",
+                "water": "N/A",
+                "temperature": "N/A",
+                "humidity": "N/A"
+            },
+            "fertilizer": "N/A",
+            "pests": "N/A",
+            "pruning": "N/A",
+            "repotting": "N/A",
+            "delivery": "Ships fully assembled. Delivery time: 5-7 business days.",
+            "planting": "N/A",
+            "harvesting": "N/A",
+            "size": "Dimensions: 12 inches long, 3 inches wide."
         }
     },
     {
@@ -248,7 +486,21 @@
             "category": 5,
             "rating": 4.0,
             "image_url": "media/secateurs.webp",
-            "image": "secateurs.webp"
+            "image": "secateurs.webp",
+            "care_info": {
+                "light": "N/A",
+                "water": "N/A",
+                "temperature": "N/A",
+                "humidity": "N/A"
+            },
+            "fertilizer": "N/A",
+            "pests": "N/A",
+            "pruning": "N/A",
+            "repotting": "N/A",
+            "delivery": "Ships fully assembled. Delivery time: 5-7 business days.",
+            "planting": "N/A",
+            "harvesting": "N/A",
+            "size": "Dimensions: 8 inches long, 2 inches wide."
         }
     },
     {
@@ -262,7 +514,21 @@
             "category": 9,
             "rating": 4.7,
             "image_url": "media/hosta.webp",
-            "image": "hosta.webp"
+            "image": "hosta.webp",
+            "care_info": {
+                "light": "Partial to full shade",
+                "water": "Keep soil consistently moist but not soggy",
+                "temperature": "-30 to 30°C",
+                "humidity": "Moderate humidity"
+            },
+            "fertilizer": "Use a balanced fertilizer in early spring before new growth begins.",
+            "pests": "Watch for slugs and snails. Treat with organic slug bait if necessary.",
+            "pruning": "Prune to remove any dead or yellowing leaves and to encourage bushier growth. Use clean, sharp scissors.",
+            "repotting": "Divide them every 4-5 years.",
+            "delivery": "Ships as a bare-root collection. Delivery time: 5-7 business days.",
+            "planting": "Plant in well-draining soil. Dig a hole twice the width of the root ball and backfill with soil.",
+            "harvesting": "Not applicable for this plant.",
+            "size": "Typically grows to 1-3 feet tall."
         }
     },
     {
@@ -276,7 +542,21 @@
             "category": 9,
             "rating": 4.3,
             "image_url": "media/salvia_nemorosa.webp",
-            "image": "salvia_nemorosa.webp"
+            "image": "salvia_nemorosa.webp",
+            "care_info": {
+                "light": "Full sun to partial shade",
+                "water": "Keep soil consistently moist but not soggy",
+                "temperature": "-5 to 30°C",
+                "humidity": "Moderate humidity"
+            },
+            "fertilizer": "Use a balanced fertilizer in early spring before new growth begins.",
+            "pests": "Watch for aphids and slugs. Treat with insecticidal soap if necessary.",
+            "pruning": "Prune to remove any dead or yellowing leaves and to encourage bushier growth. Use clean, sharp scissors.",
+            "repotting": "Not applicable for this plant. Ensure proper spacing in the garden.",
+            "delivery": "Ships in a 4-inch pot. Delivery time: 5-7 business days.",
+            "planting": "Plant in well-draining soil. Dig a hole twice the width of the root ball and backfill with soil.",
+            "harvesting": "Harvest when flowers are fully open and have a vibrant color.",
+            "size": "Typically grows to 1-2 feet tall."
         }
     },
     {
@@ -290,7 +570,21 @@
             "category": 12,
             "rating": 4.3,
             "image_url": "media/aucuba_japonica.webp",
-            "image": "aucuba_japonica.webp"
+            "image": "aucuba_japonica.webp",
+            "care_info": {
+                "light": "Partial to full shade",
+                "water": "Keep soil consistently moist but not soggy",
+                "temperature": "15-25°C",
+                "humidity": "Moderate humidity"
+            },
+            "fertilizer": "Use a balanced fertilizer in early spring before new growth begins.",
+            "pests": "Watch for mealybugs and eelworms. Treat with insecticidal soap if necessary.",
+            "pruning": "Prune to remove any dead or yellowing leaves and to encourage bushier growth. Use clean, sharp scissors.",
+            "repotting": "Not applicable for this plant. Ensure proper spacing in the garden.",
+            "delivery": "Ships in a 8-inch pot. Delivery time: 5-7 business days.",
+            "planting": "Plant in well-draining soil. Dig a hole twice the width of the root ball and backfill with soil.",
+            "harvesting": "Harvest when leaves are fully open and have a vibrant color.",
+            "size": "Typically grows to 4-6 feet tall."
         }
     },
     {
@@ -304,7 +598,21 @@
             "category": 12,
             "rating": 4.5,
             "image_url": "media/ilex_aquifolium.webp",
-            "image": "ilex_aquifolium.webp"
+            "image": "ilex_aquifolium.webp",
+            "care_info": {
+                "light": "Full sun to partial shade",
+                "water": "Keep soil consistently moist but not soggy",
+                "temperature": "-15 to 30°C",
+                "humidity": "Moderate humidity"
+            },
+            "fertilizer": "Use a balanced fertilizer in early spring before new growth begins.",
+            "pests": "Watch for aphids and holly leaf miner. Treat with insecticidal soap if necessary.",
+            "pruning": "Prune to remove any dead or yellowing leaves and to encourage bushier growth. Use clean, sharp scissors.",
+            "repotting": "Not applicable for this plant. Ensure proper spacing in the garden.",
+            "delivery": "Ships in a 8-inch pot. Delivery time: 5-7 business days.",
+            "planting": "Plant in well-draining soil. Dig a hole twice the width of the root ball and backfill with soil.",
+            "harvesting": "Harvest leaves when they are fully open and have a vibrant color.",
+            "size": "Typically grows to 10-15 feet tall."
         }
     },
     {
@@ -318,7 +626,21 @@
             "category": 11,
             "rating": 4.5,
             "image_url": "media/petunia.webp",
-            "image": "petunia.webp"
+            "image": "petunia.webp",
+            "care_info": {
+                "light": "Full sun",
+                "water": "Keep soil consistently moist but not soggy",
+                "temperature": "15-24°C",
+                "humidity": "Low humidity"
+            },
+            "fertilizer": "Use a balanced liquid fertilizer every 4-6 weeks during the growing season.",
+            "pests": "Watch for aphids and spider mites. Treat with insecticidal soap if necessary.",
+            "pruning": "Prune to remove any dead or yellowing leaves and to encourage bushier growth. Use clean, sharp scissors.",
+            "repotting": "Not applicable for this plant. Ensure proper spacing in the garden.",
+            "delivery": "Ships in a 4-inch pot. Delivery time: 5-7 business days.",
+            "planting": "Plant in well-draining soil. Dig a hole twice the width of the root ball and backfill with soil.",
+            "harvesting": "Harvest when flowers are fully open and have a vibrant color.",
+            "size": "Typically grows to 1-2 feet tall."
         }
     },
     {
@@ -332,7 +654,21 @@
             "category": 11,
             "rating": 4.6,
             "image_url": "media/verbena.webp",
-            "image": "verbena.webp"
+            "image": "verbena.webp",
+            "care_info": {
+                "light": "Full sun",
+                "water": "Keep soil consistently moist but not soggy",
+                "temperature": "15-24°C",
+                "humidity": "Low humidity"
+            },
+            "fertilizer": "Use a balanced liquid fertilizer every 4-6 weeks during the growing season.",
+            "pests": "Watch for aphids and spider mites. Treat with insecticidal soap if necessary.",
+            "pruning": "Prune to remove any dead or yellowing leaves and to encourage bushier growth. Use clean, sharp scissors.",
+            "repotting": "Not applicable for this plant. Ensure proper spacing in the garden.",
+            "delivery": "Ships in a 4-inch pot. Delivery time: 5-7 business days.",
+            "planting": "Plant in well-draining soil. Dig a hole twice the width of the root ball and backfill with soil.",
+            "harvesting": "Harvest when flowers are fully open and have a vibrant color.",
+            "size": "Typically grows to 1-2 feet tall."
         }
     },
     {
@@ -346,7 +682,21 @@
             "category": 13,
             "rating": 4.6,
             "image_url": "media/seaweed_fertilizer.webp",
-            "image": "seaweed_fertilizer.webp"
+            "image": "seaweed_fertilizer.webp",
+            "care_info": {
+                "light": "N/A",
+                "water": "N/A",
+                "temperature": "N/A",
+                "humidity": "N/A"
+            },
+            "fertilizer": "Use as directed on the packaging. Typically, mix with water and apply every 4-6 weeks during the growing season.",
+            "pests": "N/A",
+            "pruning": "N/A",
+            "repotting": "N/A",
+            "delivery": "Ships in a resealable bag. Delivery time: 5-7 business days.",
+            "planting": "N/A",
+            "harvesting": "N/A",
+            "size": "Typically available in 2.5 lbs bags."
         }
     },
     {
@@ -360,7 +710,21 @@
             "category": 13,
             "rating": 4.2,
             "image_url": "media/slug_killer.webp",
-            "image": "slug_killer.webp"
+            "image": "slug_killer.webp",
+            "care_info": {
+                "light": "N/A",
+                "water": "N/A",
+                "temperature": "N/A",
+                "humidity": "N/A"
+            },
+            "fertilizer": "N/A",
+            "pests": "Targets slugs and snails. Apply as directed on the packaging.",
+            "pruning": "N/A",
+            "repotting": "N/A",
+            "delivery": "Ships in a resealable bag. Delivery time: 5-7 business days.",
+            "planting": "N/A",
+            "harvesting": "N/A",
+            "size": "Typically available in 1 lb bags."
         }
     }
 ]
