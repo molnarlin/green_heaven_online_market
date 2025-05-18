@@ -144,7 +144,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001340165",
-            "name": "Conference Pear Tree",
+            "name": "'Conference' Pear Tree",
             "description": "The Conference Pear Tree is a popular fruit tree known for its long, narrow pears with a sweet, juicy flavor. It is easy to grow, produces abundant crops, and is ideal for home gardens. The fruit is excellent for eating fresh or using in desserts and preserves.",
             "price": 25.99,
             "category": 2,
