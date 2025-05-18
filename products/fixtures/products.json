@@ -222,5 +222,145 @@
             "image_url": "media/fireplace.jpg",
             "image": "fireplace.jpg"
         }
+    },
+    {
+        "pk": 17,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340171",
+            "name": "Hand weeder",
+            "description": "A hand weeder is a compact gardening tool designed for removing weeds from soil with precision. Its ergonomic handle and narrow blade make it easy to target and extract weeds by the roots, helping to keep your garden beds tidy and healthy.",
+            "price": 15.99,
+            "category": 5,
+            "rating": 4.0,
+            "image_url": "media/hand_weeder.webp",
+            "image": "hand_weeder.webp"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340172",
+            "name": "Secateurs",
+            "description": "Secateurs are essential gardening tools designed for pruning and trimming plants. They feature sharp, durable blades that make clean cuts, allowing for precise shaping of plants and removal of dead or overgrown branches. Ergonomic handles provide comfort during use, making them ideal for both amateur and professional gardeners.",
+            "price": 25.99,
+            "category": 5,
+            "rating": 4.0,
+            "image_url": "media/secateurs.webp",
+            "image": "secateurs.webp"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340173",
+            "name": "Hosta collection",
+            "description": "A collection of hosta plants, known for their lush foliage and shade tolerance. This set includes a variety of hosta types, each with unique leaf shapes and colors, perfect for adding texture and interest to shaded garden areas.",
+            "price": 39.99,
+            "category": 9,
+            "rating": 4.7,
+            "image_url": "media/hosta.webp",
+            "image": "hosta.webp"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340174",
+            "name": "Salvia nemorosa",
+            "description": "Salvia nemorosa, commonly known as woodland sage, is a perennial plant known for its aromatic leaves and vibrant purple flowers. It thrives in well-drained soil and full sun, making it a great addition to gardens and borders.",
+            "price": 15.99,
+            "category": 9,
+            "rating": 4.3,
+            "image_url": "media/salvia_nemorosa.webp",
+            "image": "salvia_nemorosa.webp"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340175",
+            "name": "Aucuba japonica",
+            "description": "Aucuba japonica, commonly known as Japanese laurel, is an evergreen shrub known for its glossy, dark green leaves and yellow flowers. It is a hardy plant that thrives in shade and is often used as a decorative hedge or foundation plant.",
+            "price": 25.99,
+            "category": 12,
+            "rating": 4.3,
+            "image_url": "media/aucuba_japonica.webp",
+            "image": "aucuba_japonica.webp"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340176",
+            "name": "Ilex aquifolium",
+            "description": "Ilex aquifolium, commonly known as English holly, is a popular evergreen shrub known for its glossy, spiny leaves and bright red berries. It is often used in holiday decorations and as a decorative hedge in gardens.",
+            "price": 25.99,
+            "category": 12,
+            "rating": 4.5,
+            "image_url": "media/ilex_aquifolium.webp",
+            "image": "ilex_aquifolium.webp"
+        }
+    },
+    {
+        "pk": 23,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340177",
+            "name": "Petunia",
+            "description": "Petunia is a popular flowering plant known for its vibrant colors and fragrant blooms. It is often used in gardens and containers, thriving in full sun and well-drained soil.",
+            "price": 12.99,
+            "category": 11,
+            "rating": 4.5,
+            "image_url": "media/petunia.webp",
+            "image": "petunia.webp"
+        }
+    },
+    {
+        "pk": 24,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340178",
+            "name": "Verbena",
+            "description": "Verbena is a hardy flowering plant known for its clusters of small, colorful flowers. It attracts butterflies and thrives in sunny gardens, making it a popular choice for borders and containers.",
+            "price": 12.99,
+            "category": 11,
+            "rating": 4.6,
+            "image_url": "media/verbena.webp",
+            "image": "verbena.webp"
+        }
+    },
+    {
+        "pk": 25,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340179",
+            "name": "Organic Seaweed Fertilizer",
+            "description": "Organic seaweed fertilizer is a natural plant food derived from seaweed. It is rich in nutrients and beneficial compounds that promote healthy plant growth, improve soil structure, and enhance resistance to pests and diseases.",
+            "price": 22.99,
+            "category": 13,
+            "rating": 4.6,
+            "image_url": "media/seaweed_fertilizer.webp",
+            "image": "seaweed_fertilizer.webp"
+        }
+    },
+    {
+        "pk": 26,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340180",
+            "name": "Slug killer",
+            "description": "Slug killer is a natural pest control product designed to effectively eliminate slugs and snails in gardens. It contains organic ingredients that are safe for plants and the environment, making it an ideal choice for organic gardening.",
+            "price": 22.99,
+            "category": 13,
+            "rating": 4.2,
+            "image_url": "media/slug_killer.webp",
+            "image": "slug_killer.webp"
+        }
     }
 ]
