@@ -1,7 +1,7 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5 dropdown-toggle" href="#" id="all-products-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
@@ -13,41 +13,41 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5 dropdown-toggle" href="#" id="clothing-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Plants
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Trees</a>
-                <a href="" class="dropdown-item">Shrubs</a>
-                <a href="" class="dropdown-item">Perennials</a>
-                <a href="" class="dropdown-item">Bulbs</a>
-                <a href="" class="dropdown-item">Seeds</a>
-                <a href="" class="dropdown-item">Annuals</a>
-                <a href="" class="dropdown-item">Indoor plants</a>
-                <a href="" class="dropdown-item">All Plants</a>
+                <a href="{% url 'products' %}?category=trees" class="dropdown-item">Trees</a>
+                <a href="{% url 'products' %}?category=shrubs" class="dropdown-item">Shrubs</a>
+                <a href="{% url 'products' %}?category=perennials" class="dropdown-item">Perennials</a>
+                <a href="{% url 'products' %}?category=bulbs" class="dropdown-item">Bulbs</a>
+                <a href="{% url 'products' %}?category=seeds" class="dropdown-item">Seeds</a>
+                <a href="{% url 'products' %}?category=annuals" class="dropdown-item">Annuals</a>
+                <a href="{% url 'products' %}?category=indoor_plants" class="dropdown-item">Indoor plants</a>
+                <a href="{% url 'products' %}?category=trees,shrubs,perennials,bulbs,seeds,annuals,indoor_plants" class="dropdown-item">All Plants</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5 dropdown-toggle" href="#" id="homeware-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Outdoor living &amp; Gardening tools
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Outdoor living</a>
-                <a href="" class="dropdown-item">Tools</a>
-                <a href="" class="dropdown-item">Garden Care</a>
-                <a href="" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}?category=outside_living" class="dropdown-item">Outdoor living</a>
+                <a href="{% url 'products' %}?category=tools" class="dropdown-item">Tools</a>
+                <a href="{% url 'products' %}?category=garden_care" class="dropdown-item">Garden Care</a>
+                <a href="{% url 'products' %}?category=outside_living,tools,garden_care" class="dropdown-item">All Products</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black dropdown-toggle" href="#" id="specials-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=deals,clearance" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
