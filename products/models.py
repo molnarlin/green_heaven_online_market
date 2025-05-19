@@ -36,7 +36,7 @@ class Product(models.Model):
     )
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
-    care_info = models.OneToOneField(CareInfo, on_delete=models.CASCADE)
+    care_info = models.JSONField(null=True, blank=True)
     fertilizer = models.CharField(max_length=300, null=True, blank=True)
     pests = models.CharField(max_length=300, null=True, blank=True)
     pruning = models.CharField(max_length=300, null=True, blank=True)
