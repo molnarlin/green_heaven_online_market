@@ -10,17 +10,16 @@
 {% endblock %}
 
 {% block content %}
-    <div class="overlay mb-5"></div>
-    <div class="container-fluid mb-5">
+    <div class="overlay pb-5"></div><hr>
+    <div class="container-fluid">
         <div class="row">
-            <div class="col text-center">
-                <h2 class="logo-font pt-5">Products</h2>
+            <div class="col text-center mt-5">
+                <h2 class="logo-font fixed mt-5">Products</h2>
                 {% for c in current_categories %}
                     <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
                         <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
                     </a>
                 {% endfor %}
-                <hr class="w-50 mb-1">
             </div>
         </div>
          <div class="row">
