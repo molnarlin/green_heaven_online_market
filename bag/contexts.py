@@ -25,12 +25,12 @@ def bag_contents(request):
 
         else:
             product = get_object_or_404(Product, pk=item_id)
-            for color, color in item_data['items_by_color'].items():
-                total += color * product.price
-                product_count += color
+            for color, quantity in item_data['items_by_color'].items():
+                total += quantity * product.price
+                product_count += quantity
                 bag_items.append({
                     'item_id': item_id,
-                    'quantity': item_data,
+                    'quantity': quantity,
                     'product': product,
                     'color': color,
                 })
