@@ -1,8 +1,9 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
+from django.http import HttpResponseRedirect
 from django.db.models.functions import Lower
-from .models import Product, Category
+from .models import Product, Category, Color
 
 # Create your views here.
 
@@ -72,5 +73,15 @@ def product_detail(request, product_id):
     context = {
         'product': product,
     }
+
+    if request.method == "POST":
+        selected_color_id = request.POST.get('product_color')
+        if selected_color_id:  # Ensuring a color is selected
+            selected_color = Color.objects.get(id=selected_color_id)
+            # Here, you might want to save it to a user's cart or order model
+            print(f"Selected color: {selected_color.name}")  # Debugging output
+
+            # Redirect to avoid form resubmission issues
+            return HttpResponseRedirect(request.path)
 
     return render(request, 'products/product_detail.html', context)

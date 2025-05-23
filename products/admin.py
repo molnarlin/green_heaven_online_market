@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Product, Category
+from .models import Product, Category, Color
 
 # Register your models here.
 
@@ -22,6 +22,11 @@ class CategoryAdmin(admin.ModelAdmin):
         'friendly_name',
         'name',
     )
+
+
+@admin.register(Color)
+class ColorAdmin(admin.ModelAdmin):
+    list_display = ('name',)  # Display color names in the admin list
 
 
 admin.site.register(Product, ProductAdmin)
