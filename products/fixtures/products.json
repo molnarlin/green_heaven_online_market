@@ -246,8 +246,8 @@
             "pruning": "Prune to remove any dead or yellowing leaves and to encourage bushier growth you can leave side shoots. Use clean, sharp scissors.",
             "repotting": "Not applicable for this plant. Ensure proper spacing in the garden.",
             "delivery": "Ships in a seed packet. Delivery time: 5-7 business days.",
-            "planting": "Plant in a well-draining potting mix. Water thoroughly after planting.",
-            "harvesting": "Harvest when tomatoes are fully ripe and have a deep color.",
+            "planting": "Plant in a well-draining potting mix. Water thoroughly after planting. Sow indoors February to April and move outdoors after the last frost between May and June.",
+            "harvesting": "Harvest when tomatoes are fully ripe and have a deep color from July to October. Protect from frost, move indoors if necessary",
             "size": "Can grow up to 6 feet tall with proper care."
         }
     },
@@ -274,9 +274,9 @@
             "pruning": "Prune to remove any dead or yellowing leaves. Use clean, sharp scissors.",
             "repotting": "Not applicable for this plant. Ensure proper spacing in the garden.",
             "delivery": "Ships in a seed packet. Delivery time: 5-7 business days.",
-            "planting": "Plant in a well-draining potting mix. Water thoroughly after planting.",
-            "harvesting": "Harvest when peppers are fully ripe and have a deep color.",
-            "size": "Can grow up to 3 feet tall with proper care."
+            "planting": "Plant in a well-draining potting mix. Water thoroughly after planting. Sow indoors February to May and for best results keep it in the greenhouse.",
+            "harvesting": "Harvest when peppers are fully ripe and have a deep color. Protect from frost, move indoors if necessary. You can harvest in summer and autumn.",
+            "size": "Can grow up to 2 feet tall with proper care."
         }
     },
     {
@@ -286,7 +286,7 @@
             "sku": "pp5001340165",
             "name": "'Conference' Pear Tree",
             "description": "The Conference Pear Tree is a popular fruit tree known for its long, narrow pears with a sweet, juicy flavor. It is easy to grow, produces abundant crops, and is ideal for home gardens. The fruit is excellent for eating fresh or using in desserts and preserves.",
-            "price": 25.99,
+            "price": 35.99,
             "category": 2,
             "rating": 4.9,
             "image_url": "media/conference.webp",
@@ -303,8 +303,8 @@
             "repotting": "Not applicable for trees. Ensure proper spacing in the garden.",
             "delivery": "Ships as a bare-root tree. Delivery time: 7-10 business days.",
             "planting": "Plant in well-draining soil. Soak roots in water before planting. Dig a hole twice the width of the root ball and backfill with soil and organic manure.",
-            "harvesting": "Harvest when pears are firm and have a slight give when pressed.",
-            "size": "Can grow up to 15-20 feet tall with proper care."
+            "harvesting": "Can set fruit without pollinated. Harvest when pears are firm and have a slight give when pressed, usually October to November.",
+            "size": "Can grow up to 15-25 feet tall with proper care."
         }
     },
     {
@@ -312,17 +312,17 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001340166",
-            "name": "Pink Lady Apple Tree",
-            "description": "The Pink Lady Apple Tree is a popular fruit tree known for its sweet, crisp apples with a pinkish-red skin. It is easy to grow and produces abundant crops, making it ideal for home gardens. The apples are perfect for eating fresh or using in pies and desserts.",
-            "price": 25.99,
+            "name": "'Cox' Apple Tree",
+            "description": "The 'Cox' Apple Tree is a popular fruit tree known for its sweet, crisp apples with a rich flavor. It is easy to grow, produces abundant crops, and is ideal for home gardens. The fruit is excellent for eating fresh or using in desserts and preserves.",
+            "price": 35.99,
             "category": 2,
             "rating": 4.7,
-            "image_url": "media/pink_lady.webp",
-            "image": "pink_lady.webp",
+            "image_url": "media/apple.webp",
+            "image": "apple.webp",
             "care_info": {
                 "light": "Full sun",
                 "water": "Water regularly, especially during dry spells",
-                "temperature": "ideal 18-27°C, dormancy in winter",
+                "temperature": "ideal 15-25°C, dormancy in winter",
                 "humidity": "Moderate humidity"
             },
             "fertilizer": "Use a balanced fertilizer in early spring before new growth begins.",
@@ -331,8 +331,8 @@
             "repotting": "Not applicable for trees. Ensure proper spacing in the garden.",
             "delivery": "Ships as a bare-root tree. Delivery time: 7-10 business days.",
             "planting": "Plant in well-draining soil. Soak roots in water before planting. Dig a hole twice the width of the root ball and backfill with soil and organic manure.",
-            "harvesting": "Harvest when apples are firm and have a slight give when pressed.",
-            "size": "Can grow up to 15-20 feet tall with proper care."
+            "harvesting": "Harvest when apples are firm and have a slight give when pressed, usually from late September to October.",
+            "size": "Can grow up to 12 feet tall with proper care."
         }
     },
     {
@@ -358,7 +358,7 @@
             "pruning": "Prune spent flowers to encourage new growth. Remove any dead or yellowing leaves.",
             "repotting": "Not applicable for bulbs. Plant directly in the garden.",
             "delivery": "Ships as a bulb pack. Delivery time: 5-7 business days.",
-            "planting": "Plant bulbs in well-draining soil, 6-8 inches deep. Water thoroughly after planting.",
+            "planting": "Plant bulbs in well-draining soil, 6-8 inches deep in late autumn. Water thoroughly after planting.",
             "harvesting": "Harvest when flowers are fully open and have a vibrant color.",
             "size": "Typically grows to 12-18 inches tall."
         }
@@ -386,7 +386,7 @@
             "pruning": "Prune spent flowers to encourage new growth. Remove any dead or yellowing leaves.",
             "repotting": "Not applicable for bulbs. Plant directly in the garden.",
             "delivery": "Ships as a bulb pack. Delivery time: 5-7 business days.",
-            "planting": "Plant bulbs in well-draining soil, 6-8 inches deep. Water thoroughly after planting.",
+            "planting": "Plant bulbs in well-draining soil, 6-8 inches deep in late autumn. Water thoroughly after planting.",
             "harvesting": "Harvest when flowers are fully open and have a vibrant color.",
             "size": "Typically grows to 12-18 inches tall."
         }
@@ -639,7 +639,7 @@
             "repotting": "Not applicable for this plant. Ensure proper spacing in the garden.",
             "delivery": "Ships in a 4-inch pot. Delivery time: 5-7 business days.",
             "planting": "Plant in well-draining soil. Dig a hole twice the width of the root ball and backfill with soil.",
-            "harvesting": "Harvest when flowers are fully open and have a vibrant color.",
+            "harvesting": "Not applicable for this plant.",
             "size": "Typically grows to 1-2 feet tall."
         }
     },
@@ -667,7 +667,7 @@
             "repotting": "Not applicable for this plant. Ensure proper spacing in the garden.",
             "delivery": "Ships in a 4-inch pot. Delivery time: 5-7 business days.",
             "planting": "Plant in well-draining soil. Dig a hole twice the width of the root ball and backfill with soil.",
-            "harvesting": "Harvest when flowers are fully open and have a vibrant color.",
+            "harvesting": "Not applicable for this plant.",
             "size": "Typically grows to 1-2 feet tall."
         }
     },
