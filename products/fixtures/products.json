@@ -9,7 +9,7 @@
             "price": 29.99,
             "category": 1,
             "rating": 4.6,
-            "image_url": "media/monstera.jpg",
+            "image_url": "media/products/monstera.jpg",
             "image": "monstera.jpg",
             "care_info": {
                 "light": "Bright, indirect light",
@@ -37,7 +37,7 @@
             "price": 19.99,
             "category": 1,
             "rating": 4.4,
-            "image_url": "media/african_violet.jpg",
+            "image_url": "media/products/african_violet.jpg",
             "image": "african_violet.jpg",
             "care_info": {
                 "light": "Bright, indirect light",
@@ -65,7 +65,7 @@
             "price": 15.99,
             "category": 1,
             "rating": 4.0,
-            "image_url": "media/aloe_vera.jpg",
+            "image_url": "media/products/aloe_vera.jpg",
             "image": "aloe_vera.jpg",
             "care_info": {
                 "light": "Bright, indirect light",
@@ -93,7 +93,7 @@
             "price": 34.99,
             "category": 1,
             "rating": 4.5,
-            "image_url": "media/anthurium.jpg",
+            "image_url": "media/products/anthurium.jpg",
             "image": "anthurium.jpg",
             "care_info": {
                 "light": "Bright, indirect light",
@@ -121,7 +121,7 @@
             "price": 49.99,
             "category": 1,
             "rating": 4.3,
-            "image_url": "media/areca.png",
+            "image_url": "media/products/areca.png",
             "image": "areca.png",
             "care_info": {
                 "light": "Bright, indirect light",
@@ -149,7 +149,7 @@
             "price": 24.99,
             "category": 1,
             "rating": 4.2,
-            "image_url": "media/begonia.jpg",
+            "image_url": "media/products/begonia.jpg",
             "image": "begonia.jpg",
             "care_info": {
                 "light": "Bright, indirect light",
@@ -177,7 +177,7 @@
             "price": 59.99,
             "category": 1,
             "rating": 4.1,
-            "image_url": "media/phalenopsis.jpg",
+            "image_url": "media/products/phalenopsis.jpg",
             "image": "phalenopsis.jpg",
             "care_info": {
                 "light": "Bright, indirect light",
@@ -205,7 +205,7 @@
             "price": 12.99,
             "category": 1,
             "rating": 4.7,
-            "image_url": "media/christmas_cactus.jpg",
+            "image_url": "media/products/christmas_cactus.jpg",
             "image": "christmas_cactus.jpg",
             "care_info": {
                 "light": "Bright, indirect light",
@@ -233,7 +233,7 @@
             "price": 2.99,
             "category": 10,
             "rating": 4.7,
-            "image_url": "media/tomato_seeds.webp",
+            "image_url": "media/products/tomato_seeds.webp",
             "image": "tomato_seeds.webp",
             "care_info": {
                 "light": "Full sun",
@@ -261,7 +261,7 @@
             "price": 2.99,
             "category": 10,
             "rating": 4.5,
-            "image_url": "media/chili_seeds.webp",
+            "image_url": "media/products/chili_seeds.webp",
             "image": "chili_seeds.webp",
             "care_info": {
                 "light": "Full sun",
@@ -289,7 +289,7 @@
             "price": 35.99,
             "category": 2,
             "rating": 4.9,
-            "image_url": "media/conference.webp",
+            "image_url": "media/products/conference.webp",
             "image": "conference.webp",
             "care_info": {
                 "light": "Full sun",
@@ -317,7 +317,7 @@
             "price": 35.99,
             "category": 2,
             "rating": 4.7,
-            "image_url": "media/apple.webp",
+            "image_url": "media/products/apple.webp",
             "image": "apple.webp",
             "care_info": {
                 "light": "Full sun",
@@ -345,7 +345,7 @@
             "price": 15.99,
             "category": 6,
             "rating": 4.3,
-            "image_url": "media/mixed_tulips.webp",
+            "image_url": "media/products/mixed_tulips.webp",
             "image": "mixed_tulips.webp",
             "care_info": {
                 "light": "Full sun to partial shade",
@@ -373,7 +373,7 @@
             "price": 15.99,
             "category": 6,
             "rating": 4.5,
-            "image_url": "media/narcissus.webp",
+            "image_url": "media/products/narcissus.webp",
             "image": "narcissus.webp",
             "care_info": {
                 "light": "Full sun to partial shade",
@@ -401,7 +401,7 @@
             "price": 55.99,
             "category": 7,
             "rating": 4.9,
-            "image_url": "media/bench.jpg",
+            "image_url": "media/products/bench.jpg",
             "image": "bench.jpg",
             "care_info": {
                 "light": "N/A",
@@ -429,7 +429,7 @@
             "price": 199.99,
             "category": 7,
             "rating": 4.8,
-            "image_url": "media/fireplace.jpg",
+            "image_url": "media/products/fireplace.jpg",
             "image": "fireplace.jpg",
             "care_info": {
                 "light": "N/A",
@@ -457,7 +457,7 @@
             "price": 15.99,
             "category": 5,
             "rating": 4.0,
-            "image_url": "media/hand_weeder.webp",
+            "image_url": "media/products/hand_weeder.webp",
             "image": "hand_weeder.webp",
             "care_info": {
                 "light": "N/A",
@@ -485,7 +485,7 @@
             "price": 25.99,
             "category": 5,
             "rating": 4.0,
-            "image_url": "media/secateurs.webp",
+            "image_url": "media/products/secateurs.webp",
             "image": "secateurs.webp",
             "care_info": {
                 "light": "N/A",
@@ -513,7 +513,7 @@
             "price": 39.99,
             "category": 9,
             "rating": 4.7,
-            "image_url": "media/hosta.webp",
+            "image_url": "media/products/hosta.webp",
             "image": "hosta.webp",
             "care_info": {
                 "light": "Partial to full shade",
@@ -541,7 +541,7 @@
             "price": 15.99,
             "category": 9,
             "rating": 4.3,
-            "image_url": "media/salvia_nemorosa.webp",
+            "image_url": "media/products/salvia_nemorosa.webp",
             "image": "salvia_nemorosa.webp",
             "care_info": {
                 "light": "Full sun to partial shade",
@@ -569,7 +569,7 @@
             "price": 25.99,
             "category": 12,
             "rating": 4.3,
-            "image_url": "media/aucuba_japonica.webp",
+            "image_url": "media/products/aucuba_japonica.webp",
             "image": "aucuba_japonica.webp",
             "care_info": {
                 "light": "Partial to full shade",
@@ -597,7 +597,7 @@
             "price": 25.99,
             "category": 12,
             "rating": 4.5,
-            "image_url": "media/ilex_aquifolium.webp",
+            "image_url": "media/products/ilex_aquifolium.webp",
             "image": "ilex_aquifolium.webp",
             "care_info": {
                 "light": "Full sun to partial shade",
@@ -625,7 +625,7 @@
             "price": 12.99,
             "category": 11,
             "rating": 4.5,
-            "image_url": "media/petunia.webp",
+            "image_url": "media/products/petunia.webp",
             "image": "petunia.webp",
             "care_info": {
                 "light": "Full sun",
@@ -653,7 +653,7 @@
             "price": 12.99,
             "category": 11,
             "rating": 4.6,
-            "image_url": "media/verbena.webp",
+            "image_url": "media/products/verbena.webp",
             "image": "verbena.webp",
             "care_info": {
                 "light": "Full sun",
@@ -681,7 +681,7 @@
             "price": 22.99,
             "category": 13,
             "rating": 4.6,
-            "image_url": "media/seaweed_fertilizer.webp",
+            "image_url": "media/products/seaweed_fertilizer.webp",
             "image": "seaweed_fertilizer.webp",
             "care_info": {
                 "light": "N/A",
@@ -709,7 +709,7 @@
             "price": 22.99,
             "category": 13,
             "rating": 4.2,
-            "image_url": "media/slug_killer.webp",
+            "image_url": "media/products/slug_killer.webp",
             "image": "slug_killer.webp",
             "care_info": {
                 "light": "N/A",
