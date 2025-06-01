@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.exceptions import ValidationError
 
 
 class Category(models.Model):
@@ -37,8 +38,21 @@ class Product(models.Model):
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
     description = models.TextField()
-    has_colors = models.BooleanField(default=False, null=True, blank=True)
-    colors = models.ManyToManyField(Color, related_name="products")
+    has_colors = models.BooleanField(default=False)
+    colors = models.ManyToManyField(Color, related_name="products", blank=True)
+
+    def clean(self):
+        if not self.has_colors and self.colors.exists():
+            raise ValidationError(
+                "Colors cannot be selected when 'has_colors' is False."
+            )
+
+    def save(self, *args, **kwargs):
+        # Call the clean method to validate before saving
+        super().save(*args, **kwargs)
+        if not self.has_colors:
+            self.colors.clear()
+
     price = models.DecimalField(max_digits=6, decimal_places=2)
     rating = models.DecimalField(
         max_digits=6, decimal_places=2, null=True, blank=True
