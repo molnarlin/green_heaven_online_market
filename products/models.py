@@ -1,5 +1,4 @@
 from django.db import models
-from django.core.exceptions import ValidationError
 
 
 class Category(models.Model):
@@ -23,6 +22,9 @@ class CareInfo(models.Model):
     temperature = models.CharField(max_length=100)
     humidity = models.CharField(max_length=100)
 
+    def __str__(self):
+        return f"Care Info: Light={self.light}, Water={self.water}"
+
 
 class Color(models.Model):
     name = models.CharField(max_length=50)
@@ -41,14 +43,8 @@ class Product(models.Model):
     has_colors = models.BooleanField(default=False)
     colors = models.ManyToManyField(Color, related_name="products", blank=True)
 
-    def clean(self):
-        if not self.has_colors and self.colors.exists():
-            raise ValidationError(
-                "Colors cannot be selected when 'has_colors' is False."
-            )
-
     def save(self, *args, **kwargs):
-        # Call the clean method to validate before saving
+        self.clean()  # Ensure validation is run
         super().save(*args, **kwargs)
         if not self.has_colors:
             self.colors.clear()
@@ -70,4 +66,4 @@ class Product(models.Model):
     size = models.CharField(max_length=300, null=True, blank=True)
 
     def __str__(self):
-        return self.name
+        return f"{self.name} (SKU: {self.sku})" if self.sku else self.name
