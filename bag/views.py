@@ -20,18 +20,15 @@ def add_to_bag(request, item_id):
     bag = request.session.get('bag', {})
 
     if color:
-        if item_id in list(bag.keys()):
-            if color in bag[item_id]['items_by_color'].keys():
+        if item_id in bag:
+            if 'items_by_color' not in bag[item_id]:
+                bag[item_id]['items_by_color'] = {}
+            if color in bag[item_id]['items_by_color']:
                 bag[item_id]['items_by_color'][color] += quantity
             else:
                 bag[item_id]['items_by_color'][color] = quantity
         else:
             bag[item_id] = {'items_by_color': {color: quantity}}
-    else:
-        if item_id in list(bag.keys()):
-            bag[item_id] += quantity
-        else:
-            bag[item_id] = quantity
 
     request.session['bag'] = bag
     return redirect(redirect_url)
