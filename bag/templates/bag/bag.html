@@ -50,7 +50,7 @@
                                         <p class="my-0">£{{ item.product.price }}</p>
                                     </td>
                                     <td class="py-3 w-25">
-                                        <form id="adjust-form-{{ item.item_id }}" class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
+                                        <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
                                             {% csrf_token %}
                                             <div class="form-group">
                                                 <div class="input-group">
@@ -80,10 +80,8 @@
                                                 </div>
                                             </div>
                                         </form>
-                                        <a href="#" class="update-link text-info" data-form_id="adjust-form-{{ item.item_id }}"><small>Update</small></a>
-                                        <a class="remove-item text-danger float-end" id="remove_{{ item.item_id }}" data-product_color="{{ item.color }}">
-                                            <small>Remove</small>
-                                        </a>
+                                        <a href="#" class="update-link text-info btn btn-outline-light"><small>Refresh Qty</small></a>
+                                        <a class="remove-item text-danger float-right btn btn-outline-light" id="remove_{{ item.item_id }}" data-product_color="{{ item.color }}"><small>Tidy Basket</small></a>
                                     </td>
                                     <td class="py-3">
                                         <p class="my-0">£{{ item.product.price | calc_subtotal:item.quantity }}</p>
@@ -121,7 +119,7 @@
                         </table>
                     </div>
                 {% else %}
-                    <p class="lead mb-5">Your bag is empty.</p>
+                    <p class="lead mb-5">Looks like your garden is missing some magic. Add a little bloom to your basket!</p>
                     <a href="{% url 'products' %}" class="btn btn-outline-success rounded-0 btn-lg">
                         <span class="icon">
                             <i class="fas fa-chevron-start"></i>
@@ -135,31 +133,26 @@
 {% endblock %}
 
 {% block postloadjs %}
-    {{ block.super }}
-    {% include 'products/includes/quantity_input_script.html' %}
+{{ block.super }}
+{% include 'products/includes/quantity_input_script.html' %}
     <script type="text/javascript">
-        $(document).ready(function() {
             // Update quantity on click
-            $('.update-link').click(function(e) {
-                e.preventDefault();
-                const formId = $(this).data('form_id');
-                $(`#${formId}`).submit();
-            });
+        $('.update-link').click(function(e) {
+            var form = $(this).prev('.update-form');
+            form.submit();
+        })
 
-            // Remove item and reload on click
-            $('.remove-item').click(function(e) {
-                e.preventDefault();  // Prevent default anchor behavior
-                var csrfToken = "{{ csrf_token }}";
-                var itemId = $(this).attr('id').split('remove_')[1];
-                var color = $(this).data('product_color');
-                var url = `/bag/remove/${itemId}/`;
-                var data = {'csrfmiddlewaretoken': csrfToken, 'product_color': color};
-                $.post(url, data).done(function() {
-                    location.reload();
-                }).fail(function () {
-                    alert("Oops! Something went wrong while removing the item.");
-                });
+        // Remove item and reload on click
+        $('.remove-item').click(function(e) {
+            var csrfToken = "{{ csrf_token }}";
+            var itemId = $(this).attr('id').split('remove_')[1];
+            var color = $(this).data('product_color');
+            var url = `/bag/remove/${itemId}/`;
+            var data = {'csrfmiddlewaretoken': csrfToken, 'product_color': color};
+            $.post(url, data)
+            .done(function() {
+                location.reload();
             });
-        });
+        })
     </script>
 {% endblock %}
