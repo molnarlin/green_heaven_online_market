@@ -160,8 +160,10 @@
     {% block postloadjs %}
       <script type="text/javascript">
         const toastEl = document.querySelector('.toast');
-        const toast = new bootstrap.Toast(toastEl);
-        toast.show();
+        if (toastEl) {
+          const toast = new bootstrap.Toast(toastEl);
+          toast.show();
+        };
       </script>
     {% endblock %}
 
