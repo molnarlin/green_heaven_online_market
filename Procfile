@@ -1,0 +1,1 @@
+web: gunicorn green_heaven_online_market.wsgi:application
