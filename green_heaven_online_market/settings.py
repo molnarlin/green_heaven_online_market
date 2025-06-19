@@ -32,7 +32,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '127.0.0.1',  # Localhost
     'localhost',  # listen to stripe webhook
-    'green-heaven-online-garden-cen-2439019d4b13.herokuapp.com/',  # Heroku app
+    'green-heaven-online-garden-cen-2439019d4b13.herokuapp.com',  # Heroku app
 ]
 
 
