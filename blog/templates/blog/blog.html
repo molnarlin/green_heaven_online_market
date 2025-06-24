@@ -1,22 +1,40 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block content %}
-<section class="blog-section">
-  <h1 class="blog-heading">Garden Notes & Seasonal Tips</h1>
+{% block page_header %}
+    {{ block.super }}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
 
-  {% for post in posts %}
-    <article class="blog-post">
-      <h2><a href="{% url 'blog:posts' slug=post.slug %}">{{ post.title }}</a></h2>
-      <p class="meta">By {{ post.author }} • {{ post.created_at|date:"F j, Y" }}</p>
-      {% if post.image %}
-        <img src="{{ post.image.url }}" alt="{{ post.title }}" class="blog-post-image">
-      {% endif %}
-      <p class="excerpt">{{ post.content|truncatewords:40 }}</p>
-      <a class="read-more" href="{% url 'blog:posts' slug=post.slug %}">Read more →</a>
-    </article>
-  {% empty %}
-    <p>No blog posts available yet. Check back soon!</p>
-  {% endfor %}
+{% block content %}
+<div class="overlay"></div><hr>
+<section class="blog-section ps-5 text-black">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center">
+                <h2 class="logo-font fixed">Garden Notes & Seasonal Tips</h2>
+                <p class="lead">Explore our latest gardening tips and seasonal advice to help you cultivate a thriving garden.</p>
+            </div>
+            <hr>
+            {% for post in posts %}
+                <article class="blog-post text-black col-8 offset-2 mb-4">
+                    <h2><a class="text-black" href="{% url 'blog:posts' slug=post.slug %}">{{ post.title }}</a></h2>
+                    <p class="meta">By {{ post.author }} • {{ post.created_at|date:"F j, Y" }}</p>
+                    {% if post.image %}
+                        <img src="{{ post.image.url }}" alt="{{ post.title }}" class="blog-post-image">
+                    {% endif %}
+                    <p class="excerpt">{{ post.content|truncatewords:40 }}</p>
+                    <a class="read-more text-black" href="{% url 'blog:posts' slug=post.slug %}">Read more →</a>
+                </article>
+            {% empty %}
+                <h3 class="text-center">No Blog Posts Available</h3>
+                <p class="text-center">It seems we haven't published any blog posts yet. Stay tuned for updates!</p>
+            {% endfor %}
+        </div>
+    </div>
 </section>
 {% endblock %}
