@@ -206,8 +206,8 @@ if 'USE_AWS' in os.environ:
     STATICFILES_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
 
     # Override static and media URLs in production
-    STATIC_URL = f"https://{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com/"
-    MEDIA_URL = f"https://{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com/"
+    STATIC_URL = f"https://{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com/static/"
+    MEDIA_URL = f"https://{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com/media/"
 
 
 # Default primary key field type
