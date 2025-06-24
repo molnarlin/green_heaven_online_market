@@ -1,7 +1,15 @@
-{% load i18n %}{% autoescape off %}{% blocktrans with site_name=current_site.name %}Hello from {{ site_name }}!{% endblocktrans %}
+{% load i18n %}
+{% autoescape off %}
+
+{% blocktrans with site_name=current_site.name %}
+🌿 A warm welcome from the team at {{ site_name }}!
+{% endblocktrans %}
 
 {% block content %}{% endblock content %}
 
-{% blocktrans with site_name=current_site.name site_domain=current_site.domain %}Thank you for using {{ site_name }}!
-{{ site_domain }}{% endblocktrans %}
+{% blocktrans with site_name=current_site.name site_domain=current_site.domain %}
+🍃 Thank you for choosing {{ site_name }}—your sanctuary for all things green and growing.  
+Visit us anytime: {{ site_domain }}
+{% endblocktrans %}
+
 {% endautoescape %}

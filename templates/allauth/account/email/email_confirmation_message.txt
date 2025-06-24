@@ -2,8 +2,32 @@
 {% load account %}
 {% load i18n %}
 
-{% block content %}{% autoescape off %}{% user_display user as user_display %}{% blocktranslate with site_name=current_site.name site_domain=current_site.domain %}You're receiving this email because user {{ user_display }} has given your email address to register an account on {{ site_domain }}.{% endblocktranslate %}
+{% block content %}
+{% autoescape off %}
+{% user_display user as user_display %}
 
-{% if code %}{% blocktranslate %}Your email verification code is listed below. Please enter it in your open browser window.{% endblocktranslate %}
+{% blocktranslate with site_name=current_site.name site_domain=current_site.domain %}
+🌿 Hello from {{ site_name }}!
+{% endblocktranslate %}
 
-{{ code }}{% else %}{% blocktranslate %}To confirm this is correct, go to {{ activate_url }}{% endblocktranslate %}{% endif %}{% endautoescape %}{% endblock content %}
+{% blocktranslate with site_name=current_site.name site_domain=current_site.domain %}
+We’ve sprouted some good news: user {{ user_display }} used your email to create an account at {{ site_domain }}.
+{% endblocktranslate %}
+
+{% if code %}
+{% blocktranslate %}
+🌼 Your verification code is blooming below! Please enter it into the open browser window:
+{% endblocktranslate %}
+
+{{ code }}
+
+{% else %}
+{% blocktranslate %}
+🌸 To confirm your email and join our garden-loving community, click the link below:
+{{ activate_url }}
+{% endblocktranslate %}
+{% endif %}
+
+🍃 Thank you for choosing Green Heaven—your peaceful corner of the internet.
+{% endautoescape %}
+{% endblock content %}

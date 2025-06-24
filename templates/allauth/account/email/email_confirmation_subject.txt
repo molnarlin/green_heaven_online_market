@@ -1,4 +1,4 @@
 {% load i18n %}
 {% autoescape off %}
-{% blocktrans %}Please Confirm Your Email Address{% endblocktrans %}
+{% blocktrans %}🌱 Confirm your Green Heaven Garden Center account{% endblocktrans %}
 {% endautoescape %}
