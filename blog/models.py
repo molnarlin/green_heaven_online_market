@@ -7,6 +7,7 @@ class Post(models.Model):
     slug = models.SlugField(unique=True)
     content = models.TextField()
     author = models.CharField(max_length=100)
+    image = models.ImageField(upload_to='blog_images/', blank=True, null=True)
     created_at = models.DateTimeField(default=timezone.now)
     published = models.BooleanField(default=False)
 

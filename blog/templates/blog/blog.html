@@ -9,6 +9,9 @@
     <article class="blog-post">
       <h2><a href="{% url 'blog:posts' slug=post.slug %}">{{ post.title }}</a></h2>
       <p class="meta">By {{ post.author }} • {{ post.created_at|date:"F j, Y" }}</p>
+      {% if post.image %}
+        <img src="{{ post.image.url }}" alt="{{ post.title }}" class="blog-post-image">
+      {% endif %}
       <p class="excerpt">{{ post.content|truncatewords:40 }}</p>
       <a class="read-more" href="{% url 'blog:posts' slug=post.slug %}">Read more →</a>
     </article>

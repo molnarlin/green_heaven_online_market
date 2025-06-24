@@ -8,6 +8,10 @@
     <p class="meta">By {{ post.author }} • {{ post.created_at|date:"F j, Y" }}</p>
   </header>
 
+  {% if post.image %}
+    <img src="{{ post.image.url }}" alt="{{ post.title }}" class="blog-post-image">
+  {% endif %}
+
   <section class="post-body">
     {{ post.content|linebreaks }}
   </section>
