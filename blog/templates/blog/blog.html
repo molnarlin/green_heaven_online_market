@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="blog-section">
+  <h1 class="blog-heading">Garden Notes & Seasonal Tips</h1>
+
+  {% for post in posts %}
+    <article class="blog-post">
+      <h2><a href="{% url 'blog:posts' slug=post.slug %}">{{ post.title }}</a></h2>
+      <p class="meta">By {{ post.author }} • {{ post.created_at|date:"F j, Y" }}</p>
+      <p class="excerpt">{{ post.content|truncatewords:40 }}</p>
+      <a class="read-more" href="{% url 'blog:posts' slug=post.slug %}">Read more →</a>
+    </article>
+  {% empty %}
+    <p>No blog posts available yet. Check back soon!</p>
+  {% endfor %}
+</section>
+{% endblock %}
