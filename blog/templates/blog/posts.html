@@ -2,77 +2,102 @@
 {% load static %}
 
 {% block page_header %}
-    {{ block.super }}
-    <div class="container header-container pb-5">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+  {{ block.super }}
+  <div class="container header-container pb-5">
+    <div class="row">
+      <div class="col"></div>
     </div>
+  </div>
 {% endblock %}
 
 {% block content %}
-    <div class="overlay pb-5"></div>
-    <div class="container-fluid pt-5">
-        <div class="row">
-            <div class="col-12 col-md-7 offset-lg-2">
-                <div class="image-container my-5">
-                    {% if post.image %}
-                        <img src="{{ post.image.url }}" alt="{{ post.title }}" class="blog-post-image ms-5">
-                    {% endif %}
-                </div>
-            </div>
-            <div class="col-12 col-md-7 offset-lg-2">
-                <div class="product-details-container mb-5 mt-md-5">
-                    <article class="blog-post-detail">
-                        <header class="post-header">
-                            <h2>{{ post.title }}</h2>
-                            <p class="meta">By {{ post.author }} • {{ post.created_at|date:"F j, Y" }}</p>
-                        </header>
+  <div class="overlay pb-5"></div>
+  <div class="container-fluid pt-5">
+    <div class="row">
+      <div class="col-12 col-md-7 offset-lg-2">
+        <div class="image-container my-5">
+          {% if post.image %}
+            <img src="{{ post.image.url }}" alt="{{ post.title }}" class="blog-post-image ms-5">
+          {% endif %}
+        </div>
+      </div>
+      <div class="col-12 col-md-7 offset-lg-2">
+        <div class="product-details-container mb-5 mt-md-5">
+          <article class="blog-post-detail">
+            <header class="post-header">
+              <h2>{{ post.title }}</h2>
+              <p class="meta">By {{ post.author }} • {{ post.created_at|date:"F j, Y" }}</p>
+            </header>
 
-                        <section class="post-body">
-                            {{ post.content|linebreaks }}
-                        </section>
-                        <a href="{% url 'blog:blog' %}" class="btn btn-outline-black rounded-0 mt-5">
-                            <span class="icon">
-                                <i class="fas fa-chevron-left"></i>
-                            </span>
-                            <span class="text-uppercase">Back to all posts</span>
-                        </a>
-                    </article>
-                </div>
-            </div>
-        </div>  
+            <section class="post-body">
+              {{ post.content|linebreaks }}
+            </section>
+
+            <a href="{% url 'blog:blog' %}" class="btn btn-outline-black rounded-0 mt-5">
+              <span class="icon">
+                <i class="fas fa-chevron-left"></i>
+              </span>
+              <span class="text-uppercase">Back to all posts</span>
+            </a>
+
+            <!-- Like Button -->
+            <form method="post" action="{% url 'like_post' post.id %}" class="mt-4">
+              {% csrf_token %}
+              <button type="submit" class="btn btn-outline-success">
+                {% if user in post.likes.all %}
+                  ❤️ Unlike
+                {% else %}
+                  🤍 Like
+                {% endif %}
+                ({{ post.likes.count }})
+              </button>
+            </form>
+
+            <!-- Save Button -->
+            {% if user.is_authenticated %}
+              <form method="post" action="{% url 'save_post' post.id %}" class="mt-2">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-outline-primary">
+                  {% if user_saved_post %}
+                    🔖 Unsave Post
+                  {% else %}
+                    💾 Save Post
+                  {% endif %}
+                </button>
+              </form>
+            {% else %}
+              <p class="mt-2">🔒 <a href="{% url 'account_login' %}">Log in</a> to save posts.</p>
+            {% endif %}
+          </article>
+        </div>
+      </div>
     </div>
-{% endfor %}
+  </div>
 
-<h4>Comments</h4>
-{% for comment in post.comments.all %}
-  <p><strong>{{ comment.author }}</strong> – {{ comment.timestamp|date:"M d, Y H:i" }}</p>
-  <p>{{ comment.content }}</p>
-{% empty %}
-  <p>No comments yet.</p>
-{% endfor %}
+  <!-- Comments Section -->
+  <div class="container pb-5">
+    <div class="col-12 col-md-8 offset-md-2">
+      <h4 class="mt-5">Comments</h4>
+      {% for comment in post.comments.all %}
+        <div class="border rounded p-3 my-2 bg-light">
+          <p class="mb-1"><strong>{{ comment.author }}</strong> – {{ comment.timestamp|date:"M d, Y H:i" }}</p>
+          <p class="mb-0">{{ comment.content }}</p>
+        </div>
+      {% empty %}
+        <p>No comments yet.</p>
+      {% endfor %}
 
-<form method="post" action="{% url 'like_post' post.id %}">
-  {% csrf_token %}
-  <button type="submit">
-    {% if user in post.likes.all %}
-      Unlike
-    {% else %}
-      Like
-    {% endif %}
-    ({{ post.likes.count }})
-  </button>
-</form>
-
-{% if user.is_authenticated %}
-  <h3>Add a Comment</h3>
-  <form method="post">
-    {% csrf_token %}
-    {{ comment_form.as_p }}
-    <button type="submit">Add Comment</button>
-  </form>
-{% else %}
-  <p>You must be logged in to comment.</p>
-{% endif %}
+      <!-- Comment Form -->
+      {% if user.is_authenticated %}
+        <h5 class="mt-4">Add a Comment</h5>
+        <form method="post">
+          {% csrf_token %}
+          {{ comment_form.as_p }}
+          <button type="submit" class="btn btn-dark mt-2">Submit</button>
+        </form>
+      {% else %}
+        <p class="mt-3">🔒 <a href="{% url 'account_login' %}">Log in</a> to comment.</p>
+      {% endif %}
+    </div>
+  </div>
 {% endblock %}
