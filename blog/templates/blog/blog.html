@@ -21,15 +21,17 @@
             </div>
             <hr>
             {% for post in posts %}
-                <article class="blog-post text-black col-8 offset-2 mb-4">
+            <div class="d-flex justify-content-center col-lg-4 col-md-6 col-sm-12 mb-4">
+                <article class="blog-post text-black mb-4">
                     <h2><a class="text-black" href="{% url 'blog:posts' slug=post.slug %}">{{ post.title }}</a></h2>
                     <p class="meta">By {{ post.author }} • {{ post.created_at|date:"F j, Y" }}</p>
                     {% if post.image %}
-                        <img src="{{ post.image.url }}" alt="{{ post.title }}" class="blog-post-image">
+                        <img src="{{ post.image.url }}" alt="{{ post.title }}" class="img-thumbnail w-50">
                     {% endif %}
                     <p class="excerpt">{{ post.content|truncatewords:40 }}</p>
-                    <a class="read-more text-black" href="{% url 'blog:posts' slug=post.slug %}">Read more →</a>
+                    <a class="read-more text-black col-4" href="{% url 'blog:posts' slug=post.slug %}">Read more →</a>
                 </article>
+            </div>
             {% empty %}
                 <h3 class="text-center">No Blog Posts Available</h3>
                 <p class="text-center">It seems we haven't published any blog posts yet. Stay tuned for updates!</p>
