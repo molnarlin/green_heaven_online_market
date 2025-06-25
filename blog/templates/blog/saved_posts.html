@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_header %}
+    {{ block.super }}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div><hr>
+<div class="container mt-4">
+  <h2 class="mb-4">My Saved Posts</h2>
+
+  {% if saved_posts %}
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      {% for saved in saved_posts %}
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">{{ saved.post.title }}</h5>
+              <p class="card-text">{{ saved.post.content|truncatewords:30 }}</p>
+              <a href="{% url 'post_detail' slug=saved.post.slug %}" class="btn btn-outline-success">Read More</a>
+            </div>
+            <div class="card-footer text-muted">
+              Saved on {{ saved.saved_at|date:"M d, Y" }}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p>You haven't saved any posts yet.</p>
+  {% endif %}
+</div>
+{% endblock %}

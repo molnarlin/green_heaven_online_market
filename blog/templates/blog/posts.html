@@ -43,4 +43,36 @@
             </div>
         </div>  
     </div>
+{% endfor %}
+
+<h4>Comments</h4>
+{% for comment in post.comments.all %}
+  <p><strong>{{ comment.author }}</strong> – {{ comment.timestamp|date:"M d, Y H:i" }}</p>
+  <p>{{ comment.content }}</p>
+{% empty %}
+  <p>No comments yet.</p>
+{% endfor %}
+
+<form method="post" action="{% url 'like_post' post.id %}">
+  {% csrf_token %}
+  <button type="submit">
+    {% if user in post.likes.all %}
+      Unlike
+    {% else %}
+      Like
+    {% endif %}
+    ({{ post.likes.count }})
+  </button>
+</form>
+
+{% if user.is_authenticated %}
+  <h3>Add a Comment</h3>
+  <form method="post">
+    {% csrf_token %}
+    {{ comment_form.as_p }}
+    <button type="submit">Add Comment</button>
+  </form>
+{% else %}
+  <p>You must be logged in to comment.</p>
+{% endif %}
 {% endblock %}
