@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    {{ block.super }}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<h2>Recent Blog Posts</h2>
+{% for post in posts %}
+<h3>
+    <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+</h3>
+<p class="date">Published: {{ post.publish }} by  {{ post.author }} </p>
+{{ post.body | truncatewords:30 | linebreaksbr }}
+{{ endfor }}
+{% include "blog/pagination.html" with page=posts %}
+{% endblock %}
