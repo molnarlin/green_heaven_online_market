@@ -18,6 +18,7 @@
 </h3>
 <p class="date">Published: {{ post.publish }} by  {{ post.author }} </p>
 {{ post.body | truncatewords:30 | linebreaksbr }}
-{{ endfor }}
+{% endfor %}
+
 {% include "blog/pagination.html" with page=posts %}
 {% endblock %}
