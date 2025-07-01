@@ -63,3 +63,4 @@ I would like to use the django admin pannel for adding and updating product, and
 - images from kaggle.com and Microsoft Copilot
 - thanks for w3school.com
 - thanks for RHS for the plant description and growing information
+- I used Antonio Melé: Django 5 By Example to create the blog app for this project

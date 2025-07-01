@@ -47,5 +47,12 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
     <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
   </p>
 </form>
+<div class="social">
+  <ul>
+    <li class="google">
+      <a href="{% url 'socialaccount_login' 'google-oauth2' %}" class="btn btn-outline-black rounded-0">
+        <i class="fab fa-google"></i>
+  </ul>
+</div>
 
 {% endblock %}
