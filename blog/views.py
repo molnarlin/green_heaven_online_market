@@ -29,17 +29,26 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {'posts': posts})
 
 
-def post_detail(request, year, month, day, post):
+def post_detail(request, year, month, day, slug):
     post = get_object_or_404(
         Post,
-        id=id,
         status=Post.Status.PUBLISHED,
-        slug=post,
+        slug=slug,
         publish__year=year,
         publish__month=month,
         publish__day=day
     )
-    return render(request, 'blog/post_detail.html', {'post': post})
+    comments = post.comments.filter(active=True)
+    form = CommentForm()
+    return render(
+        request,
+        'blog/post_detail.html',
+        {
+            'post': post,
+            'comments': comments,
+            'form': form
+        }
+    )
 
 
 @require_POST
