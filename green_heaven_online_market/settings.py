@@ -57,7 +57,6 @@ INSTALLED_APPS = [
     'checkout',
     'profiles',
     'blog.apps.BlogConfig',
-    'social_django',  # social auth
 
     # other apps
     'crispy_forms',
