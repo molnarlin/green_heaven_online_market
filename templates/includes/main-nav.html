@@ -55,10 +55,10 @@
                 <a href="{% url 'products' %}?category=deals,clearance" class="dropdown-item">All Specials</a>
             </div>
         </li>
-        <li>
-            <div class="dropdown-menu border-0" aria-labelledby="blog-link">
-                <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'blog:post_list' %}">Our Blog</a>
-            </div>
+        <li class="nav-item">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'blog:post_list' %}">
+                Our Blog
+            </a>
         </li>
     </ul>
 </div>
