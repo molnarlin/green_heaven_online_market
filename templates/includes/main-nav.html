@@ -21,7 +21,7 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5 dropdown-toggle" href="#" id="clothing-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Plants
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
+            <div class="dropdown-menu border-0" aria-labelledby="plants-link">
                 <a href="{% url 'products' %}?category=trees" class="dropdown-item">Trees</a>
                 <a href="{% url 'products' %}?category=shrubs" class="dropdown-item">Shrubs</a>
                 <a href="{% url 'products' %}?category=perennials" class="dropdown-item">Perennials</a>
@@ -37,7 +37,7 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5 dropdown-toggle" href="#" id="homeware-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Outdoor living &amp; Gardening tools
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
+            <div class="dropdown-menu border-0" aria-labelledby="tools-link">
                 <a href="{% url 'products' %}?category=outside_living" class="dropdown-item">Outdoor living</a>
                 <a href="{% url 'products' %}?category=tools" class="dropdown-item">Tools</a>
                 <a href="{% url 'products' %}?category=garden_care" class="dropdown-item">Garden Care</a>
@@ -56,7 +56,9 @@
             </div>
         </li>
         <li>
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'blog:post_list' %}">Our Blog</a>
+            <div class="dropdown-menu border-0" aria-labelledby="blog-link">
+                <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'blog:post_list' %}">Our Blog</a>
+            </div>
         </li>
     </ul>
 </div>

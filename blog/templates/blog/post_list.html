@@ -12,13 +12,29 @@
 
 {% block content %}
 <div class="overlay"></div><hr>
-<h2>Recent Blog Posts</h2>
+<div class="container mt-5 mb-4 text-center">
+  <h1 class="display-4 logo-font text-success">Welcome to Our Blog</h1>
+  <p class="lead text-muted">Tips, inspiration & seasonal wisdom from the garden</p>
+  <hr class="w-25 mx-auto text-success">
+</div>
 {% for post in posts %}
-<h3>
-    <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
-</h3>
-<p class="date">Published: {{ post.publish }} by  {{ post.author }} </p>
-{{ post.body | truncatewords:30 | linebreaksbr }}
+<div class="col-md-8 offset-md-2 mb-5 p-4 rounded border border-success bg-light">
+  <h3 class="text-success fw-bold">
+    <a href="{{ post.get_absolute_url }}" class="text-decoration-none text-success">
+      {{ post.title }}
+    </a>
+  </h3>
+  <p class="text-muted small fst-italic mb-1">
+    Published: {{ post.publish }} by {{ post.author }}
+  </p>
+  <p class="text-body">
+    {{ post.body|truncatewords:30|linebreaksbr }}
+  </p>
+  <a href="{{ post.get_absolute_url }}" class="btn btn-sm btn-outline-success mt-2">
+    Read More
+  </a>
+</div>
+
 {% endfor %}
 
 {% include "blog/pagination.html" with page=posts %}
