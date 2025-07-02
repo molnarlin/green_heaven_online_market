@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
-from decouple import config
 import os
 import dj_database_url
 if os.path.isfile('env.py'):
@@ -232,8 +231,6 @@ SOCIALACCOUNT_PROVIDERS = {
         'OAUTH_PKCE_ENABLED': True,
     }
 }
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = config('GOOGLE_AUTH2_KEY')
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = config('GOOGLE_AUTH2_SECRET')
 
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10

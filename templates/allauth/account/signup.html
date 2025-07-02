@@ -1,24 +1,46 @@
 {% extends "account/base.html" %}
 
-{% load i18n %}
+{% load i18n account socialaccount %}
 
-{% block head_title %}{% trans "Signup" %}{% endblock %}
+{% block head_title %}
+  {% trans "Sign Up" %}
+{% endblock %}
 
 {% block inner_content %}
-<hr>
-<h2 class="logo-font mb-4">{% trans "Sign Up" %}</h2>
-<hr>
+  <hr>
+  <h2 class="logo-font mb-4">{% trans "Sign Up" %}</h2>
+  <hr>
 
-<p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
+  {% get_providers as socialaccount_providers %}
 
-<form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
-  {% csrf_token %}
-  {{ form|crispy }}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+  <p>
+    {% blocktrans %}
+      Already have an account? Then please <a href="{{ login_url }}">sign in</a>.
+    {% endblocktrans %}
+  </p>
+
+  <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
+    {% csrf_token %}
+    {{ form|crispy }}
+
+    {% if redirect_field_value %}
+      <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+    {% endif %}
+
+    <div class="d-flex justify-content-between">
+      <a class="btn btn-outline-black rounded-0" href="{% url 'account_login' %}">Back to Login</a>
+      <button class="primaryAction" type="submit">{% trans "Sign Up" %}</button>
+    </div>
+  </form>
+
+  {% providers_media_js %}
+  {% if socialaccount_providers %}
+    <div class="social-login-buttons mt-3">
+      {% for provider in socialaccount_providers %}
+        <a class="btn btn-outline-secondary d-block mb-2" href="{% provider_login_url provider.id %}">
+          Sign up with {{ provider.name }}
+        </a>
+      {% endfor %}
+    </div>
   {% endif %}
-  <a class="btn btn-outline-black rounded-0" href="{% url 'account_login' %}">Back to Login</a>
-  <button type="submit">{% trans "Sign Up" %}</button>
-</form>
-
 {% endblock %}
