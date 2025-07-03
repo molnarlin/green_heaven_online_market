@@ -59,6 +59,8 @@ def post_comment(request, post_id):
     if form.is_valid():
         comment = form.save(commit=False)
         comment.post = post
+        comment.user = request.user  # Ensures it's the logged-in user
+        comment.email = request.user.email
         comment.save()
         return render(
             request,

@@ -38,7 +38,7 @@
             <div class="list-group-item list-group-item-action bg-white border-start border-4 border-success rounded shadow-sm mb-3">
                 <div class="d-flex justify-content-between align-items-center mb-1">
                         <small class="text-muted">
-                            <strong>{{ comment.name }}</strong> said on {{ comment.created|date:"F j, Y" }}
+                            <strong>{{ comment.user.username }}</strong> said on {{ comment.created|date:"F j, Y" }}
                         </small>
                         <span class="badge bg-light text-success fw-normal">#{{ forloop.counter }}</span>
                 </div>
