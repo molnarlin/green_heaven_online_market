@@ -1,9 +1,13 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Post
+from .models import Post, Comment
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.views.generic import ListView
 from django.views.decorators.http import require_POST
 from .forms import CommentForm
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.views.generic.edit import UpdateView
+from django.views.generic.edit import DeleteView
+from django.urls import reverse_lazy, reverse
 
 
 class PostListView(ListView):
@@ -71,3 +75,44 @@ def post_comment(request, post_id):
                 'comment': comment
             }
         )
+
+
+class CommentUpdateView(LoginRequiredMixin, UpdateView):
+    model = Comment
+    fields = ['body']
+    template_name = 'blog/includes/comment_edit.html'
+
+    def get_queryset(self):
+        return Comment.objects.filter(user=self.request.user)
+
+    def form_valid(self, form):
+        response = super().form_valid(form)
+        # Optionally flash a success message here
+        return response
+
+    def get_success_url(self):
+        post = self.object.post
+        return reverse('blog:post_detail', args=[
+            post.publish.year,
+            post.publish.month,
+            post.publish.day,
+            post.slug
+        ])
+
+
+class CommentDeleteView(LoginRequiredMixin, DeleteView):
+    model = Comment
+    template_name = 'blog/includes/comment_confirm_delete.html'
+    success_url = reverse_lazy('blog:post_detail')
+
+    def get_queryset(self):
+        return Comment.objects.filter(user=self.request.user)
+
+    def get_success_url(self):
+        post = self.object.post
+        return reverse('blog:post_detail', args=[
+            post.publish.year,
+            post.publish.month,
+            post.publish.day,
+            post.slug
+        ])
