@@ -57,8 +57,105 @@ I would like to use the django admin pannel for adding and updating product, and
    ## 8.3 fixed bugs
    ## 8.4 supported screens and browsers
 # 9. Deployment
-   ## 9.1 via codeanywhere/VS Code
-   ## 9.2 via GitHub Pages
+   ## 9.1 via VS Code
+   To deploy this project locally using VS Code:
+
+   - **Clone the repository**  
+      Open a terminal and run:  
+      ```bash
+      git clone https://github.com/your-username/green_heaven_online_market.git
+      cd green_heaven_online_market
+      ```
+
+   - **Create and activate a virtual environment**  
+      ```bash
+      python -m venv venv
+      # On Windows:
+      venv\Scripts\activate
+      # On macOS/Linux:
+      source venv/bin/activate
+      ```
+
+   - **Install dependencies**  
+      ```bash
+      pip install -r requirements.txt
+      ```
+
+   - **Apply migrations**  
+      ```bash
+      python manage.py migrate
+      ```
+
+   - **Create a superuser (optional, for admin access)**  
+      ```bash
+      python manage.py createsuperuser
+      ```
+
+   - **Run the development server**  
+      ```bash
+      python manage.py runserver
+      ```
+
+   - **Open the project**  
+      Visit `http://127.0.0.1:8000/` in your browser.
+
+   - **Access the admin panel**  
+      Visit `http://127.0.0.1:8000/admin/` and log in with your superuser credentials.
+
+   ## 9.2 via Heroku
+   To deploy this project to Heroku, follow these steps:
+
+   - **Log in to Heroku**  
+      In your terminal, run:  
+      ```bash
+      heroku login
+      ```
+
+   - **Prepare your Django project for Heroku**  
+      - Add `gunicorn` and `dj-database-url` to your `requirements.txt`.
+      - Create a `Procfile` in your project root with:  
+        ```
+        web: gunicorn green_heaven_online_market.wsgi
+        ```
+      - Set `ALLOWED_HOSTS` in `settings.py` to include your Heroku app domain.
+      - create .python-version file.
+
+   - **Initialize a git repository (if not already done)**  
+      ```bash
+      git init
+      git add .
+      git commit -m "Prepare for Heroku deployment"
+      ```
+
+   - **Create a Heroku app**  
+     In Heroku create a new app.
+
+   - **Set environment variables**  
+      Set any required environment variables in Heroku.
+
+   - **Push your code to Heroku**  
+      ```bash
+      git push heroku main
+      ```
+
+   - **Apply migrations and collect static files**  
+      ```bash
+      heroku run python manage.py migrate
+      heroku run python manage.py collectstatic
+      ```
+
+   - **Create a superuser (optional)**  
+       ```bash
+       heroku run python manage.py createsuperuser
+       ```
+
+   - **Change Deployement method**
+      In Heroku change the deployment method to GitHub.
+      Go to Deploy branch, check build log, if any problem.
+
+   - **Open your deployed app**  
+       In Heroku open the new app.
+
 # 10. Credits
 - images from kaggle.com and Microsoft Copilot
 - thanks for w3school.com
