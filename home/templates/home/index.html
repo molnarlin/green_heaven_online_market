@@ -64,21 +64,21 @@
                 <div class="carousel-item active" data-bs-interval="10000">
                     <img src="{% static 'media/monstera.jpg' %}" class="d-block w-65 mx-auto" alt="Monstera">
                     <div class="carousel-caption d-none d-md-block d-flex flex-column justify-content-center">
-                        <h5>Monstera</h5>
+                        <h5><a href="{% url 'product_detail' 1 %}">Monstera</a></h5>
                         <p>Green leaves for every room.</p>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
                     <img src="{% static 'media/african_violet.jpg' %}" class="d-block w-65 mx-auto" alt="African violets">
                     <div class="carousel-caption d-none d-md-block d-flex flex-column justify-content-center">
-                        <h5>African violets</h5>
+                        <h5><a href="{% url 'product_detail' 2 %}">African violets</a></h5>
                         <p>Little colourful addition for your home.</p>
                     </div>
                 </div>
                 <div class="carousel-item ">
                     <img src="{% static 'media/christmas_cactus.jpg' %}" class="d-block w-65 mx-auto" alt="Christmas cactus">
                     <div class="carousel-caption d-none d-md-block d-flex flex-column justify-content-center">
-                        <h5>Christmas cactus</h5>
+                        <h5><a href="{% url 'product_detail' 8 %}">Christmas cactus</a></h5>
                         <p>Enjoy flowers in winter. Choose from more colours.</p>
                     </div>
                 </div>
@@ -176,10 +176,10 @@
                                 planting schedule, a well-thought-out approach ensures a vibrant and productive garden. Whether you're mapping out vegetable beds or designing a floral
                                 haven, timing matters—winter is perfect for research and prep, while spring kicks off the action. Start early, plan smart, and watch your garden 
                                 flourish!</p>
-                                <a href="#" class="btn btn-success">Read more</a>
+                                <a href="{% url 'blog:post_detail' 2025 7 1 'when-to-plan' %}" class="btn btn-success">Read more</a>
                             </div>
                             <div class="card-footer text-body-secondary">
-                                15/05/2025
+                                {{ blog_post.date|date:"d M Y" }}
                             </div>
                         </div>
                     </div>
@@ -197,10 +197,10 @@
                                 food sources like nectar-rich flowers and bird feeders, you can attract butterflies, bees, and birds. Avoid pesticides, add a small water feature, and 
                                 let parts of your garden grow naturally to support biodiversity. A thriving ecosystem starts with small changes, making your green space a haven for 
                                 nature!</p>
-                                <a href="#" class="btn btn-success">Read more</a>
+                                <a href="{% url 'blog:post_detail' 2025 7 1 'how-to-make-your-garden-environ-friendly' %}" class="btn btn-success">Read more</a>
                             </div>
                             <div class="card-footer text-body-secondary">
-                                14/05/2025
+                                {{ blog_post.date|date:"d M Y" }}
                             </div>
                         </div>
                     </div>
@@ -217,9 +217,9 @@
                                 <p class="card-text blog-text w-50 mx-auto text-justify">Planting bulbs is a simple yet rewarding way to ensure a vibrant, colorful garden year-round. From choosing the right bulbs for each season to preparing
                                     the soil and planting at the correct depth, a little planning goes a long way. Whether you’re adding tulips for spring or daffodils for a cheerful 
                                     display, learning the best techniques will help your flowers thrive. Follow these steps to create a garden bursting with blooms!</p>
-                                <a href="#" class="btn btn-success">Read more</a>
+                                <a href="{% url 'blog:post_detail' 2025 7 1 'how-to-plant-bulbs' %}" class="btn btn-success">Read more</a>
                                 <div class="card-footer text-body-secondary">
-                                    12/05/2025
+                                    {{ blog_post.date|date:"d M Y" }}
                                 </div>
                             </div>
                         </div>
