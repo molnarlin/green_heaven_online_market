@@ -21,3 +21,7 @@ def subscribe(request):
                 'You’ve successfully subscribed to the newsletter!'
             )
         return redirect('subscription_success')
+
+
+def subscription_success(request):
+    return render(request, 'home/subscription_success.html')

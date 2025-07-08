@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container text-center mt-5">
+    <h2 class="text-success">Subscription Confirmed ✅</h2>
+    <p>Thanks for subscribing to Green Heaven updates!</p>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // Redirect to home page after closing
+    setTimeout(() => {
+        window.location.href = "{% url 'home' %}";
+    }, 3000);
+</script>
+{% endblock %}
