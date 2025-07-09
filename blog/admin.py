@@ -20,8 +20,9 @@ class CommentAdmin(admin.ModelAdmin):
         'user_display', 'email', 'body', 'created', 'post', 'active'
     )
     list_filter = ('active', 'created', 'updated')
-    search_fields = ('user_display', 'email', 'body')
+    search_fields = ('user__username', 'email', 'body')
 
     def user_display(self, obj):
-        return obj.name.username
+        return obj.user.username
+
     user_display.short_description = 'User'

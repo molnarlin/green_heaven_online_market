@@ -20,6 +20,7 @@ class Post(models.Model):
         on_delete=models.CASCADE,
         related_name='blog_posts'
     )
+    image = models.ImageField(upload_to='post_images/', blank=True, null=True)
     body = models.TextField()
     publish = models.DateTimeField(default=timezone.now)
     status = models.CharField(
@@ -73,4 +74,4 @@ class Comment(models.Model):
         indexes = [models.Index(fields=['created']),]
 
     def __str__(self):
-        return f"Comment by {self.name} on {self.post.title}"
+        return f"Comment by {self.user.get_username()} on {self.post.title}"

@@ -8,7 +8,6 @@ class ArticleForm(forms.ModelForm):
 
     class Meta:
         model = Post
-        exclude = ['image_url']
         fields = '__all__'
 
     image = forms.ImageField(
@@ -23,6 +22,9 @@ class ArticleForm(forms.ModelForm):
 
         for field_name, field in self.fields.items():
             field.widget.attrs['class'] = 'border-black rounded-0'
+
+        if 'image' in self.fields:
+            self.fields['image'].widget.attrs.update({'id': 'new-image'})
 
 
 class CommentForm(forms.ModelForm):
