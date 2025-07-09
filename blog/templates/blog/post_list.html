@@ -39,7 +39,9 @@
       <a class="text-danger" href="{% url 'blog:delete_article' post.id %}">Delete</a>
     </small>
   {% endif %}
-</div>
+  </div>
+{% endfor %}
+
 {% if request.user.is_superuser %}
   <div class="text-end mb-4">
     <a href="{% url 'blog:add_article' %}" class="btn btn-success">
@@ -47,8 +49,6 @@
     </a>
   </div>
 {% endif %}
-
-{% endfor %}
 
 {% include "blog/pagination.html" with page=posts %}
 {% endblock %}
