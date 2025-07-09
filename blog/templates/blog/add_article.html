@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block page_header %}
+{{ block.super }}
     <div class="container header-container">
         <div class="row">
             <div class="col"></div>
@@ -30,7 +31,7 @@
                     {% endfor %}
                     <small id="filename" class="form-text text-muted mt-2"></small>
                     <div class="text-right">
-                        <a class="btn btn-outline-black rounded-0" href="{% url 'post_list' %}">Cancel</a>
+                        <a class="btn btn-outline-black rounded-0" href="{% url 'blog:post_list' %}">Cancel</a>
                         <button class="btn btn-black rounded-0" type="submit">Add Article</button>
                     </div>
                 </form>
