@@ -26,6 +26,13 @@
             </div>
         {% endif %}
 
+        {% if request.user.is_superuser %}
+            <small class="ml-3">
+            <a href="{% url 'blog:edit_article' post.id %}">Edit</a> | 
+            <a class="text-danger" href="{% url 'blog:delete_article' post.id %}">Delete</a>
+            </small>
+        {% endif %}
+
         <hr class="my-4">
 
         {% with comments.count as total_comments %}

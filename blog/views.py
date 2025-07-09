@@ -1,4 +1,7 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.contrib import messages
+from django.contrib.auth.decorators import login_required
+from .forms import ArticleForm
 from .models import Post, Comment
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.views.generic import ListView
@@ -7,7 +10,7 @@ from .forms import CommentForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic.edit import UpdateView
 from django.views.generic.edit import DeleteView
-from django.urls import reverse_lazy, reverse
+from django.urls import reverse_lazy
 
 
 class PostListView(ListView):
@@ -116,3 +119,86 @@ class CommentDeleteView(LoginRequiredMixin, DeleteView):
             post.publish.day,
             post.slug
         ])
+
+
+@login_required
+def add_article(request):
+    """ Add a product to the store """
+    if not request.user.is_superuser:
+        messages.error(
+            request,
+            'Sorry, only the staff of this shop can do that.'
+        )
+        return redirect(reverse('home'))
+
+    if request.method == 'POST':
+        form = ArticleForm(request.POST, request.FILES)
+        if form.is_valid():
+            post = form.save()
+            messages.success(request, 'Successfully added Article!')
+            return redirect(reverse('post_detail', args=[post.id]))
+        else:
+            messages.error(
+                request,
+                'Failed to add article. Please ensure the form is valid.'
+            )
+    else:
+        form = ArticleForm()
+
+    template = 'blog/add_article.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
+
+
+@login_required
+def edit_article(request, post_id):
+    """ Edit a product in the store """
+    if not request.user.is_superuser:
+        messages.error(
+            request,
+            'Sorry, only the staff of this shop can do that.'
+        )
+        return redirect(reverse('home'))
+
+    post = get_object_or_404(Post, pk=post_id)
+    if request.method == 'POST':
+        form = ArticleForm(request.POST, request.FILES, instance=post)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated article!')
+            return redirect(reverse('post_detail', args=[post.id]))
+        else:
+            messages.error(
+                request,
+                'Failed to update article. Please ensure the form is valid.'
+            )
+    else:
+        form = ArticleForm(instance=post)
+        messages.info(request, f'You are editing {post.title}')
+
+    template = 'blog/edit_article.html'
+    context = {
+        'form': form,
+        'post': post,
+    }
+
+    return render(request, template, context)
+
+
+@login_required
+def delete_article(request, post_id):
+    """ Delete a product from the store """
+    if not request.user.is_superuser:
+        messages.error(
+            request,
+            'Sorry, only the staff of this shop can do that.'
+        )
+        return redirect(reverse('home'))
+
+    post = get_object_or_404(Post, pk=post_id)
+    post.delete()
+    messages.success(request, 'Article deleted!')
+    return redirect(reverse('post_list'))
