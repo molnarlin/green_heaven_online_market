@@ -154,10 +154,11 @@ I would like to use the django admin pannel for adding and updating product, and
       Go to Deploy branch, check build log, if any problem.
 
    - **Open your deployed app**  
-       In Heroku open the new app.
+       In Heroku open the new app. (https://green-heaven-online-garden-cen-2439019d4b13.herokuapp.com/)
 
 # 10. Credits
-- images from kaggle.com and Microsoft Copilot
-- thanks for w3school.com
-- thanks for RHS for the plant description and growing information
-- I used Antonio Melé: Django 5 By Example to create the blog app for this project
+- images from kaggle.com and Microsoft Copilot.
+- I used Microsoft Copilot for check and debug code, write articles for the blog, write product descriptions.
+- thanks for w3school.com.
+- thanks for RHS for the plant description and growing information.
+- I used Antonio Melé: Django 5 By Example to create the blog app for this project.
