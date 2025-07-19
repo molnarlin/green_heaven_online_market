@@ -1,4 +1,5 @@
 from django.db import models
+from .storages import OverwriteS3Storage
 
 
 class Category(models.Model):
@@ -42,6 +43,10 @@ class Product(models.Model):
     description = models.TextField()
     has_colors = models.BooleanField(default=False)
     colors = models.ManyToManyField(Color, related_name="products", blank=True)
+    image = models.ImageField(
+        upload_to='products/',
+        storage=OverwriteS3Storage()
+    )
 
     def save(self, *args, **kwargs):
         self.clean()  # Ensure validation is run
@@ -54,7 +59,6 @@ class Product(models.Model):
         max_digits=6, decimal_places=2, null=True, blank=True
     )
     image_url = models.URLField(max_length=1024, null=True, blank=True)
-    image = models.ImageField(upload_to='products/', null=True, blank=True)
     care_info = models.JSONField(null=True, blank=True)
     fertilizer = models.CharField(max_length=300, null=True, blank=True)
     pests = models.CharField(max_length=300, null=True, blank=True)
