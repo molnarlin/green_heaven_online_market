@@ -14,6 +14,9 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='product',
             name='image',
-            field=models.ImageField(storage=products.storages.OverwriteS3Storage(), upload_to='media/products/'),
+            field=models.ImageField(
+                storage=products.storages.OverwriteS3Storage(),
+                upload_to='media/products/',
+            ),
         ),
     ]
