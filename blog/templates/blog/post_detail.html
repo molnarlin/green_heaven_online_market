@@ -18,7 +18,7 @@
             Published: {{ post.publish }} by <strong>{{ post.author }}</strong>
         </p>
         {% if post.image %}
-            <div class="text-center mb-4 h-50">
+            <div class="text-center mb-4" style="width: 400px; height: 800px; overflow: hidden;">
                 <img src="{{ post.image.url }}" alt="{{ post.title }}" class="img-fluid rounded">
             </div>
         {% endif %}
