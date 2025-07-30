@@ -45,7 +45,8 @@ class Product(models.Model):
     colors = models.ManyToManyField(Color, related_name="products", blank=True)
     image = models.ImageField(
         upload_to='media/products/',
-        storage=OverwriteS3Storage()
+        storage=OverwriteS3Storage(),
+        null=False, blank=False
     )
 
     def save(self, *args, **kwargs):
