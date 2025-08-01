@@ -44,7 +44,7 @@ class Product(models.Model):
     has_colors = models.BooleanField(default=False)
     colors = models.ManyToManyField(Color, related_name="products", blank=True)
     image = models.ImageField(
-        upload_to='media/products/',
+        upload_to='products/',
         storage=OverwriteS3Storage(),
         null=False, blank=False
     )
