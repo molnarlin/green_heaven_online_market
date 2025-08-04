@@ -115,7 +115,6 @@ This combination creates a fresh, inviting, and accessible interface suitable fo
 ![List of blog articles page](media/readme/Blog%20articles%20list%20page.png)
 - Blog page
 ![Blog page wireframe](media/readme/Blog%20page.png)
-=== 1-6 for planning and then write code ===
 # 7. Technology
 ## 7.1. ERD
 I would like to use the django admin pannel for adding and updating product, and I would like to work with a delivery company to arrange deliveries.
