@@ -1,3 +1,4 @@
+![Mock up for this project](media/readme/mockup.png)
 # green_heaven_online_market
 This is my fourth milestone project with Code Institute and Runshaw College. I used Django for this project.
 # 1. Purpose of the project
