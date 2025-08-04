@@ -30,7 +30,57 @@ The aim of this project is to develop an online garden center for an imaginary c
 - I want to delete products so I can remove items no longer available.
 - I want to assist users with profile or order issues so I can provide customer support.
 # 3. Features
+
+### 3.1 Product Catalog
+- Browse products by category (plants, seeds, tools, etc.).
+- View detailed product pages with images, descriptions, price.
+- Search and filter products by name, category, price, and rating.
+
+### 3.2 Shopping Bag & Checkout
+- Add products to shopping bag, update quantity, remove items.
+- View shopping bag summary with total cost.
+- Secure checkout process with order confirmation and email receipt.
+
+### 3.3 User Accounts
+- Register and log in/out with email verification.
+- Manage profile information and view order history.
+- Password recovery and profile updates.
+
+### 3.4 Admin Features
+- Add, edit, and delete products.
+- Manage blog posts and moderate user comments.
+- Assist users with account or order issues.
+
+### 3.5 Blog & Community
+- Read gardening articles and tips.
+- Registered users can comment on blog posts.
+- Admins can publish, update, or delete blog content.
+
+### 3.6 Responsive Design
+- Fully responsive layout for mobile, tablet, and desktop.
+- Navigation bar adapts to all screen sizes.
+
+### 3.7 Security & Validation
+- CSRF protection for forms.
+- Input validation for user data and checkout.
+
+### 3.8 Email Notifications
+- Confirmation emails for registration and orders.
+
+### 3.9 Accessibility
+- Clear navigation and readable typography.
+- Alt text for images and accessible forms.
 # 4. Future features
+It could be possible to upgrade the customer experince with these other features.
+
+1. **Wishlist Functionality**  
+   Allow users to save products to a wishlist for future purchase, making it easier to track items they are interested in.
+
+2. **Loyalty Program**  
+   Implement a points-based loyalty system where customers earn rewards for purchases, reviews, or referrals.
+
+3. **Live Chat Support**  
+   Add a live chat feature for real-time customer assistance, helping users with product questions and order issues.
 # 5. Typography and color scheme
 # 6. Wireframes
 - Home page
