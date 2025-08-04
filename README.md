@@ -78,7 +78,21 @@ I would like to use the django admin pannel for adding and updating product, and
    |Bag management|Users select products to add to their shopping bag, quantity, selection can be updated before checkout.|Bag updates instantly; correct price and stock shown.|As expected.|[Bag management](media/readme/shopping-bag.PNG)|Pass|4/8/25|None|
    |Check out|Registered users can securely checkout.|Secure payment and order confirmation occurs with email.|As expected.|[Check Out](/media/readme/checkout.PNG)|Pass|4/8/25|None|
    ## 8.3 fixed bugs
+
+   1. **Incorrect Product Image Upload**
+      - *Bug*: Uploaded product images were not displaying due to incorrect media path configuration.
+      - *Fix*: Updated `settings.py` to set `MEDIA_URL` and `MEDIA_ROOT` correctly, and added media serving in `urls.py` during development.
+
+   2. **Checkout Total Calculation Error**
+      - *Bug*: Shopping bag total was not updating when users changed product quantities.
+      - *Fix*: Refactored the bag view logic to recalculate totals on every quantity update and added tests to verify accuracy.
+
+   3. **Blog Comment Submission Failure**
+      - *Bug*: Registered users could not submit comments due to missing CSRF token in the blog comment form.
+      - *Fix*: Added `{% csrf_token %}` to the comment form template and verified comment posting functionality.
    ## 8.4 supported screens and browsers
+
+   
 # 9. Deployment
    ## 9.1 via VS Code
    To deploy this project locally using VS Code:
