@@ -82,6 +82,24 @@ It could be possible to upgrade the customer experince with these other features
 3. **Live Chat Support**  
    Add a live chat feature for real-time customer assistance, helping users with product questions and order issues.
 # 5. Typography and color scheme
+## Typography
+
+The site uses the **Roboto** font for body text and navigation, chosen for its readability and modern appearance. Headings use **Montserrat** for a clean, bold look that stands out. Both fonts are loaded via Google Fonts for consistency across devices.
+
+- **Headings:** Montserrat, sans-serif
+- **Body:** Roboto, sans-serif
+
+## Color Scheme
+
+The color palette is inspired by nature and gardening:
+
+- **Primary color:** #388E3C (deep green) — used for navigation bar, buttons, and accents.
+- **Secondary color:** #C8E6C9 (light green) — background highlights and section dividers.
+- **Accent color:** #FFB300 (warm yellow) — call-to-action buttons and highlights.
+- **Background:** #FFFFFF (white) — main page background for clarity.
+- **Text:** #212121 (dark gray) — for high contrast and readability.
+
+This combination creates a fresh, inviting, and accessible interface suitable for a garden center.
 # 6. Wireframes
 - Home page
 ![Home page wireframe](media/readme/Home%20page.png)
