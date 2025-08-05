@@ -108,8 +108,6 @@ This combination creates a fresh, inviting, and accessible interface suitable fo
 ![Product list page wireframe](media/readme/Product%20list.png)
 - Product page
 ![Product page wireframe](media/readme/Product%20page.png)
-- Sign up page
-![Sign up page wireframe](media/readme/Sign%20up%20page.png)
 - Check out page
 ![Check out page wireframe](media/readme/Check%20out%20page.png)
 - List of blog articles page
