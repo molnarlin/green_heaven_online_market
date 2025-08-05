@@ -91,8 +91,8 @@ The site uses the **Roboto** font for body text and navigation, chosen for its r
 
 ## Color Scheme
 
-The color palette is inspired by nature and gardening:
-
+The color palette is inspired by nature and gardening:\
+![Color scheme](/media/readme/color-scheme.png)\
 - **Primary color:** #388E3C (deep green) — used for navigation bar, buttons, and accents.
 - **Secondary color:** #C8E6C9 (light green) — background highlights and section dividers.
 - **Accent color:** #FFB300 (warm yellow) — call-to-action buttons and highlights.
