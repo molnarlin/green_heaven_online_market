@@ -282,3 +282,4 @@ I would like to use the django admin pannel for adding and updating product, and
 - thanks for RHS for the plant description and growing information.
 - I used Antonio Melé: Django 5 By Example to create the blog app for this project.
 - How to use [google logo](https://developers.google.com/identity/branding-guidelines).
+- I got some help to Allauth from Pretty Printed on [Youtube](https://www.youtube.com/watch?v=mIlgzn2zuFE).
