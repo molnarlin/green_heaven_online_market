@@ -92,12 +92,13 @@ The site uses the **Roboto** font for body text and navigation, chosen for its r
 ## Color Scheme
 
 The color palette is inspired by nature and gardening:\
-![Color scheme](/media/readme/color-scheme.png)\
+![Color scheme](/media/readme/color-scheme.png)
 - **Primary color:** #388E3C (deep green) — used for navigation bar, buttons, and accents.
 - **Secondary color:** #C8E6C9 (light green) — background highlights and section dividers.
 - **Accent color:** #FFB300 (warm yellow) — call-to-action buttons and highlights.
 - **Background:** #FFFFFF (white) — main page background for clarity.
 - **Text:** #212121 (dark gray) — for high contrast and readability.
+- **Secondary text:** #555 (medium gray) — used for less prominent text, such as captions and hints.
 
 This combination creates a fresh, inviting, and accessible interface suitable for a garden center.
 # 6. Wireframes
