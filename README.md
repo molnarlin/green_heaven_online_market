@@ -120,6 +120,14 @@ I would like to use the django admin pannel for adding and updating product, and
 ![ERD image](media/readme/Database%20ER%20diagram%20(crow's%20foot).png)
 # 8. Testing
    ## 8.1 code validation
+   ### 8.1.1 HTML validation
+   There were no issues during HTML validation with [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fgreen-heaven-online-garden-cen-2439019d4b13.herokuapp.com%2F).\
+   ![W3C HTML validation](media/readme/html-val.PNG) 
+   ### 8.1.2 CSS validation
+   There were no issues during HTML validation with [W3C](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fgreen-heaven-online-garden-cen-2439019d4b13.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).\
+   ![W3C CSS validation](media/readme/css-val.PNG)
+   ### 8.1.3 Lighthouse
+   
    ## 8.2 test cases (user story based with screenshots)
    ### User Account Features
    |Feature|User requirements addressed|Expected result|Actual result|Screenshot|Pass/Fail|Date|Correction|
