@@ -9,7 +9,7 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5 dropdown-toggle" href="#" id="all-products-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+            <div class="dropdown-menu border-0">
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
                 <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
                 <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
@@ -21,7 +21,7 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5 dropdown-toggle" href="#" id="clothing-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Plants
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="plants-link">
+            <div class="dropdown-menu border-0">
                 <a href="{% url 'products' %}?category=trees" class="dropdown-item">Trees</a>
                 <a href="{% url 'products' %}?category=shrubs" class="dropdown-item">Shrubs</a>
                 <a href="{% url 'products' %}?category=perennials" class="dropdown-item">Perennials</a>
@@ -37,7 +37,7 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5 dropdown-toggle" href="#" id="homeware-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Outdoor living &amp; Gardening tools
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="tools-link">
+            <div class="dropdown-menu border-0">
                 <a href="{% url 'products' %}?category=outside_living" class="dropdown-item">Outdoor living</a>
                 <a href="{% url 'products' %}?category=tools" class="dropdown-item">Tools</a>
                 <a href="{% url 'products' %}?category=garden_care" class="dropdown-item">Garden Care</a>
@@ -49,7 +49,7 @@
             <a class="logo-font font-weight-bold nav-link text-black dropdown-toggle" href="#" id="specials-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Special Offers
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
+            <div class="dropdown-menu border-0">
                 <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
                 <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
                 <a href="{% url 'products' %}?category=deals,clearance" class="dropdown-item">All Specials</a>

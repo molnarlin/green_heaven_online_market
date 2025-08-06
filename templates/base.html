@@ -5,7 +5,7 @@
 <head>
     {% block meta %}
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {% endblock %}
 
@@ -37,7 +37,7 @@
     {% block extra_js %}
     {% endblock %}
     {% block title %}
-    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon" />
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
     {% endblock %}
 
     <title>Green Heaven Online Market {% block extra_title %}{% endblock %}</title>
@@ -160,7 +160,7 @@
     {% endblock %}
     
     {% block postloadjs %}
-      <script type="text/javascript">
+      <script>
         const toastEl = document.querySelector('.toast');
         if (toastEl) {
           const toast = new bootstrap.Toast(toastEl);
