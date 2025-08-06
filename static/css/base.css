@@ -4,10 +4,11 @@ html {
 
 body {
     background: url('/media/peaceful_garden.webp') no-repeat center center;
+    background-color: rgba(255, 255, 255, 0.5); /* soft white overlay */
     background-size: cover;
-    height: calc(100vh - 164px);
     color: #555;
     font-family: 'Quicksand', sans-serif;
+    height: 100vh;
 }
 
 /* from Bulma */
@@ -17,6 +18,10 @@ body {
     justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
+}
+
+.responsive-heading {
+  font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem);
 }
 
 .logo-font {
@@ -100,6 +105,11 @@ body {
     text-align: center;
 }
 
+.review-card {
+    width: 18rem; 
+    height: 12rem;
+}
+
 .blog-text{
     text-align: justify;
 }
@@ -126,6 +136,7 @@ a.category-badge > span.badge:hover {
 input[name='q']::placeholder {
     color: #aab7c4;
 }
+
 
 /* ------------------------------- bootstrap toasts */
 
