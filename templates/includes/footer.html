@@ -1,12 +1,12 @@
 <footer class="footer mt-auto text-center" style="background-color: #2e7d32; color: #fff;">
-    <div style="max-width: 1200px; margin-left: 4rem; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
-        <div class="col-md-4">
+    <div class="mx-auto" style="max-width: 1200px; margin-left: 4rem; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
+        <div class="col-md-4 mx-auto">
             <h3>Our Address</h3>
             <p style="margin-bottom: 1rem;">Green Heaven Garden Centre</p>
             <p style="margin-bottom: 1rem;">Bringing nature closer to your home.</p>
             <p>123 Green Lane, Garden City</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 mx-auto">
             <h4>Subscribe to newsletter</h4>
             <form action="{% url 'subscribe' %}" target="_blank" method="post" style="display: flex; flex-direction: column;">
                 {% csrf_token %}
@@ -14,7 +14,7 @@
                 <button type="submit" style="background-color: #fff; color: #2e7d32; padding: 0.5rem; border-radius: 4px; border: none;">Subscribe</button>
             </form>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 mx-auto">
             <h4>Contact</h4>
             <p>Email: <a href="mailto:info@greenheaven.com" style="color: #fff;">info@greenheaven.com</a><br>
             Phone: <a href="tel:+1234567890" style="color: #fff;">+1 234 567 890</a></p>
