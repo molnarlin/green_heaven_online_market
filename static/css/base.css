@@ -159,6 +159,14 @@ input[name='q']::placeholder {
     height: 2px;
 }
 
+.carousel-item img {
+  width: auto !important;
+  height: auto !important;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
 /* Convenience classes - colors copied from Bootstrap */
 .arrow-primary {
     border-bottom-color: #007bff !important;
