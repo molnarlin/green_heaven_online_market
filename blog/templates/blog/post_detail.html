@@ -15,10 +15,13 @@
     <div class="bg-light p-4 rounded shadow-sm">
         
         {% if post.image %}
-            <div class="d-flex align-items-center" style="max-height: 300px">
-                <img src="{{ post.image.url }}" alt="{{ post.title }}" class="img-fluid rounded" style="width: 300px; height: 300px;">
-                <div class="ms-5 text-start">
-                    <h2 class="text-primary">{{ post.title }}</h2><hr class="mx-auto">
+            <div class="row align-items-center g-4"></div>
+                <div class="col-12 col-md-4 text-center">
+                    <img src="{{ post.image.url }}" alt="{{ post.title }}" class="img-fluid rounded mx-auto d-block h-auto object-fit-cover mw-100 mh-300">
+                </div>
+                <div class="col-12 col-md-8 text-start">
+                    <h2 class="text-primary">{{ post.title }}</h2>
+                    <hr class="mx-auto">
                     <p class="text-muted fst-italic">
                         Published: {{ post.publish }} by <strong>{{ post.author }}</strong>
                     </p>
