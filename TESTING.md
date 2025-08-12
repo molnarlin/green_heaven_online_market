@@ -1,17 +1,21 @@
-# Summary
+# Testing
+
 
 This document outlines the testing strategies, tools, and procedures used in the Green Heaven Online Market project. It provides an overview of the types of tests implemented, including unit, integration, and end-to-end tests, as well as guidelines for running and contributing to the test suite.
-   ## 1.1 code validation
-   ### 1.1.1 HTML validation
+   ## 1 code validation
+   ### 1.1 HTML validation
    There were no issues during HTML validation with [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fgreen-heaven-online-garden-cen-2439019d4b13.herokuapp.com%2F).\
    ![W3C HTML validation](media/readme/html-val.PNG) 
-   ### 1.1.2 CSS validation
+   ### 1.2 CSS validation
    There were no issues during HTML validation with [W3C](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fgreen-heaven-online-garden-cen-2439019d4b13.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).\
    ![W3C CSS validation](media/readme/css-val.PNG)
-   ### 1.1.3 Lighthouse
+   ### 1.3 JS validation
+   ### 1.4 Python validation
+   ### 1.5 Lighthouse
    I opened the website in Chrome Incognito mode (so the extensions doesn't influence the report), and I run the Lighthouse report, I got the following results:\
    ![Lighthouse report](media/readme/lighthouse.PNG)
-   ## 1.2 test cases (user story based with screenshots)
+
+   ## 2 test cases (user story based with screenshots)
    ### User Account Features
    |Feature|User requirements addressed|Expected result|Actual result|Screenshot|Pass/Fail|Date|Correction|
    |-------|---------------------------|---------------|-------------|----------|---------|----|----------|
@@ -36,7 +40,7 @@ This document outlines the testing strategies, tools, and procedures used in the
    |Bag management|Users select products to add to their shopping bag, quantity, selection can be updated before checkout.|Bag updates instantly; correct price and stock shown.|As expected.|[Bag management](media/readme/shopping-bag.PNG)|Pass|4/8/25|None|
    |Check out|Registered users can securely checkout.|Secure payment and order confirmation occurs with email.|As expected.|[Check Out](/media/readme/checkout.PNG)|Pass|4/8/25|None|
 
-   ## 1.3 supported screens and browsers
+   ## 3 supported screens and browsers
    ### Supported Screens and Browsers
 
    | Device/Screen Size          | Page Tested           | Browser(s) Tested         | Result                                  | Screenshot                                   | Pass/Fail | Date    | 

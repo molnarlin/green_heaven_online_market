@@ -1,29 +1,30 @@
 ## Table of Contents
 
-1. [Project Overview](#project-overview)
-2. [Purpose of the Project](#1-purpose-of-the-project)
-3. [User Stories](#2-user-stories)
-4. [Typography and Color Scheme](#3-typography-and-color-scheme)
-5. [Technology](#4-technology)
-   - [ERD](#41-erd)
-   - [Wireframes](#42-wireframes)
-6. [Features](#5-features)
-   - [Product Catalog](#51-product-catalog)
-   - [Shopping Bag & Checkout](#52-shopping-bag--checkout)
-   - [User Accounts](#53-user-accounts)
-   - [Admin Features](#54-admin-features)
-   - [Blog & Community](#55-blog--community)
-   - [Responsive Design](#56-responsive-design)
-   - [Security & Validation](#57-security--validation)
-   - [Email Notifications](#58-email-notifications)
-   - [Accessibility](#59-accessibility)
-   - [Future Features](#510-future-features)
-7. [Testing](#6-testing)
-8. [Fixed Bugs](#7-fixed-bugs)
-9. [Deployment](#8-deployment)
-   - [Via VS Code](#81-via-vs-code)
-   - [Via Heroku](#82-via-heroku)
-10. [Credits](#9-credits)
+1. [Project Overview](#1-project-overview-green_heaven_online_market)
+2. [Purpose of the Project](#2-purpose-of-the-project)
+3. [User Stories](#3-user-stories)
+4. [Typography and Color Scheme](#4-typography-and-color-scheme)
+5. [Database Scheme](#5-database-scheme)
+   - [ERD](#erd)
+6. [Wireframes](#6-wireframes)
+7. [Technologies](#7-technologies)
+8. [Features](#8-features)
+   - [Product Catalog](#1-product-catalog)
+   - [Shopping Bag & Checkout](#2-shopping-bag--checkout)
+   - [User Accounts](#3-user-accounts)
+   - [Admin Features](#4-admin-features)
+   - [Blog & Community](#5-blog--community)
+   - [Responsive Design](#6-responsive-design)
+   - [Security & Validation](#7-security--validation)
+   - [Email Notifications](#8-email-notifications)
+   - [Accessibility](#9-accessibility)
+   - [Future Features](#10-future-features)
+9. [Testing](#9-testing)
+10. [Fixed Bugs](#10-fixed-bugs)
+11. [Deployment](#11-deployment)
+   - [Via VS Code](#111-via-vs-code)
+   - [Via Heroku](#112-via-heroku)
+12. [Credits](#12-credits)
 
 ---
 # 1. Project overview: green_heaven_online_market
@@ -79,12 +80,12 @@ The color palette is inspired by nature and gardening:\
 
 This combination creates a fresh, inviting, and accessible interface suitable for a garden center.
 
-# 5. Technology
-## 5.1. ERD
+# 5. Database Scheme
+## ERD
 I would like to use the django admin pannel for adding and updating product, and I would like to work with a delivery company to arrange deliveries.
 ![ERD image](media/readme/Database%20ER%20diagram%20(crow's%20foot).png)
 
-# 5.2 Wireframes
+# 6. Wireframes
 - Home page
 ![Home page wireframe](media/readme/Home%20page.png)
 - Product list page
@@ -98,50 +99,109 @@ I would like to use the django admin pannel for adding and updating product, and
 - Blog page
 ![Blog page wireframe](media/readme/Blog%20page.png)
 
+# 7. Technologies
 
-# 6. Features
+This project uses the following core technologies and tools:
 
-### 6.1 Product Catalog
+- **HTML5**  
+   For structuring the web pages and content.
+
+- **CSS3**  
+   For styling, layout, and responsive design.
+
+- **JavaScript**  
+   For interactive features and client-side logic.
+
+- **Python 3**  
+   The main programming language for backend development.
+
+- **Django**  
+   The primary web framework used for building the backend, handling routing, models, authentication, and admin interface.
+
+- **PostgreSQL**  
+   The production database for storing all application data.
+
+- **SQLite**  
+   Used as the default database during local development.
+
+- **Bootstrap**  
+   For responsive design and pre-built UI components.
+
+- **jQuery**  
+   For simplifying DOM manipulation and AJAX requests.
+
+- **Gunicorn**  
+   As the WSGI HTTP server for deploying the Django app on Heroku.
+
+- **Heroku**  
+   For cloud deployment and hosting of the live application.
+
+- **Amazon S3**  
+   For storing and serving static and media files in production.
+
+- **Stripe**  
+   For secure payment processing during checkout.
+
+- **Allauth**  
+   For user authentication, registration, and social login support.
+
+- **Crispy Forms**  
+   For improved Django form rendering and styling.
+
+- **Pillow**  
+   For image processing and handling product images.
+
+- **Git & GitHub**  
+   For version control and source code management.
+
+- **VS Code**  
+   As the main code editor and development environment.
+
+These technologies work together to provide a robust, secure, and user-friendly online garden center experience.
+
+# 8. Features
+
+### 1 Product Catalog
 - Browse products by category (plants, seeds, tools, etc.).
 - View detailed product pages with images, descriptions, price.
 - Search and filter products by name, category, price, and rating.
 
-### 6.2 Shopping Bag & Checkout
+### 2 Shopping Bag & Checkout
 - Add products to shopping bag, update quantity, remove items.
 - View shopping bag summary with total cost.
 - Secure checkout process with order confirmation and email receipt.
 
-### 6.3 User Accounts
+### 3 User Accounts
 - Register and log in/out with email verification.
 - Manage profile information and view order history.
 - Password recovery and profile updates.
 
-### 6.4 Admin Features
+### 4 Admin Features
 - Add, edit, and delete products.
 - Manage blog posts and moderate user comments.
 - Assist users with account or order issues.
 
-### 6.5 Blog & Community
+### 5 Blog & Community
 - Read gardening articles and tips.
 - Registered users can comment on blog posts.
 - Admins can publish, update, or delete blog content.
 
-### 6.6 Responsive Design
+### 6 Responsive Design
 - Fully responsive layout for mobile, tablet, and desktop.
 - Navigation bar adapts to all screen sizes.
 
-### 6.7 Security & Validation
+### 7 Security & Validation
 - CSRF protection for forms.
 - Input validation for user data and checkout.
 
-### 6.8 Email Notifications
+### 8 Email Notifications
 - Confirmation emails for registration and orders.
 
-### 6.9 Accessibility
+### 9 Accessibility
 - Clear navigation and readable typography.
 - Alt text for images and accessible forms.
 
-### 6.10 Future features
+### 10 Future features
 It could be possible to upgrade the customer experince with these other features.
 
 1. **Wishlist Functionality**  
@@ -154,10 +214,10 @@ It could be possible to upgrade the customer experince with these other features
    Add a live chat feature for real-time customer assistance, helping users with product questions and order issues.
 
 
-# 7. Testing
+# 9. Testing
 See [TESTING.md](TESTING.md).
 
-# 8. Fixed bugs
+# 10. Fixed bugs
 
    1. **Incorrect Product Image Upload**
       - *Bug*: Uploaded product images were not displaying due to incorrect media path configuration.
@@ -170,8 +230,8 @@ See [TESTING.md](TESTING.md).
    3. **Blog Comment Submission Failure**
       - *Bug*: Registered users could not submit comments due to missing CSRF token in the blog comment form.
       - *Fix*: Added `{% csrf_token %}` to the comment form template and verified comment posting functionality.
-   # 9 Deployment
-   ## 9.1 via VS Code
+# 11. Deployment
+   ## 11.1 via VS Code
    To deploy this project locally using VS Code:
 
    - **Clone the repository**  
@@ -216,7 +276,7 @@ See [TESTING.md](TESTING.md).
    - **Access the admin panel**  
       Visit `http://127.0.0.1:8000/admin/` and log in with your superuser credentials.
 
-   ## 9.2 via Heroku
+   ## 11.2 via Heroku
    To deploy this project to Heroku, follow these steps:
 
    - **Log in to Heroku**  
@@ -270,11 +330,11 @@ See [TESTING.md](TESTING.md).
    - **Open your deployed app**  
        In Heroku open the new app. (https://green-heaven-online-garden-cen-2439019d4b13.herokuapp.com/)
 
-# 10. Credits
-- images from kaggle.com and Microsoft Copilot.
-- I used Microsoft Copilot for check and debug code, write articles for the blog, write product descriptions.
-- thanks for w3school.com.
-- thanks for RHS for the plant description and growing information.
+# 12. Credits
+- Images from kaggle.com and Microsoft Copilot.
+- I used Microsoft Copilot for check and debug code, helping with README.md, and to write articles for the blog, to write product descriptions.
+- Thanks for w3school.com. I used their code as a base for my project.
+- Thanks for RHS for the plant description and growing information.
 - I used Antonio Melé: Django 5 By Example to create the blog app for this project.
 - How to use [google logo](https://developers.google.com/identity/branding-guidelines).
 - I got some help to Allauth from Pretty Printed on [Youtube](https://www.youtube.com/watch?v=mIlgzn2zuFE).
