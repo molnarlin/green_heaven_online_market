@@ -23,6 +23,24 @@ This document outlines the testing strategies, tools, and procedures used in the
    There were no issues during HTML validation with [W3C](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fgreen-heaven-online-garden-cen-2439019d4b13.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).\
    ![W3C CSS validation](media/testing/css-val.PNG)
    ### 1.3 JS validation
+Multiple JavaScript components are distributed throughout the project, requiring validation across 13 separate scripts. Each script was individually tested for errors and best practices compliance. Below are the validation results, organized by script, with corresponding screenshots for each:
+
+| Script Name/Location | Validation Tool Used | Result | Screenshot |
+|----------------------|---------------------|--------|------------|
+| base.html           | [JSHint](https://jshint.com/)| No issues found | ![base.html validation](media/testing/base-html.png) |
+| bag.html            | JSHint    | No issues found | ![bag.html validation](media/testing/bag-js.png) |
+| add_article.html    | JSHint    | No issues found | ![add_article.html validation](/media/testing/add-article-js.PNG) |
+| edit_article.html   | JSHint    | No issues found | ![edit_article.html validation](media/testing/edit-article-js.PNG) |
+| stripe_elements.js   | JSHint    | No issues found | ![stripe_elements.js validation](media/testing/stripe-elements-js.PNG) |
+| subscription_success.html   | JSHint    | No issues found | ![subscription_success.html validation](media/testing/subscription-success-html.PNG) |
+| quantity_input_script.html   | JSHint    | No issues found | ![ quantity_input_script.html validation](media/testing/quantity-input-script.PNG) |
+| add_product.html    | JSHint    | No issues found | ![add_product.html validation](media/testing/add-product.PNG) |
+| products.html       | JSHint    | No issues found | ![products.html validation](media/testing/products.PNG) |
+| countryfield.js     | JSHint    | No issues found | ![countryfield.js validation](media/testing/countryfield.PNG) |
+| accounts.js         | JSHint    | No issues found | ![accounts.js validation](media/testing/accounts-js.PNG) |
+| edit_product.html   | JSHint    | No issues found | ![edit_product.html validation](media/testing/edit-product.PNG) |
+| onload.js           | JSHint    | No issues found | ![onload.js validation](media/testing/onload-js.PNG) |
+
    ### 1.4 Python validation
    ### 1.5 Lighthouse
    I opened the website in Chrome Incognito mode (so the extensions doesn't influence the report), and I run the Lighthouse report, I got the following results:\
