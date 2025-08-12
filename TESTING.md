@@ -45,18 +45,26 @@ Multiple JavaScript components are distributed throughout the project, requiring
    ### 1.5 Lighthouse
    I opened the website in Chrome Incognito mode (so the extensions doesn't influence the report), and I run the Lighthouse report, I got the following results:\
     **Home page:**\
-    ![Lighthouse report](media/testing/lighthouse.PNG)
+    ![Lighthouse report for home page](media/testing/lighthouse.PNG)\
     **Product list page:**\
     **Product page:**\
+    ![Lighthouse report for product page](media/testing/lighthouse_product.PNG)\
     **Check out page:**\
     **List of blog articles page:**\
+    ![Lighthouse report blog article list page](media/testing/lighthouse_blog_list.PNG)\
     **Blog article page:**\
+    ![Lighthouse report blog article page](media/testing/lighthouse_blog_article.PNG)\
     **User profile page:**\
+    ![Lighthouse report for Profile page](media/testing/lighthouse_profile.PNG)\
     **Shopping bag page:**\
+    ![Lighthouse report for shopping bag page](media/testing/lighthouse_shopping_bag.PNG)\
     **Sign up/sign in page:**\
+    ![Lighthouse report for Sign in page](media/testing/lighthouse_sign_in.PNG)\
     **Order confirmation page:**\
     **Admin dashboard (product management):**\
+    ![Lighthouse report Product management page](media/testing/lighthouse_product_man.PNG)\
     **Admin dashboard (blog management):**\
+    ![Lighthouse report for blog management page](media/testing/lighthouse_blog_man.PNG)\
 
    ## 2. Manual testings
 
