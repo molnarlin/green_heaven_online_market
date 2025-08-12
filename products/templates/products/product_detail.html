@@ -15,15 +15,15 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
-                <div class="image-container my-5">
-                    {% if product.image %}
-                        <div style="width: 400px; height: 800px; overflow: hidden;">
+                <div class="image-container my-1">
+                    {% if product.image and product.image.url %}
+                        <div class="ratio ratio-1x1 rounded overflow-hidden">
                             <a href="{{ product.image.url }}" target="_blank">
-                                <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                <img class="card-img-top img-fluid object-fit-cover w-100 h-100" src="{{ product.image.url }}" alt="{{ product.name }}">
                             </a>
                         </div>
-                        {% else %}
-                        <a href="">
+                    {% else %}
+                        <a href="#">
                             <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}no_image.png" alt="{{ product.name }}">
                         </a>
                     {% endif %}
