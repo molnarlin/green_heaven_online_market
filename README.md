@@ -1,8 +1,38 @@
-![Mock up for this project](media/readme/mockup.png)
-# green_heaven_online_market
+## Table of Contents
+
+1. [Project Overview](#project-overview)
+2. [Purpose of the Project](#1-purpose-of-the-project)
+3. [User Stories](#2-user-stories)
+4. [Typography and Color Scheme](#3-typography-and-color-scheme)
+5. [Technology](#4-technology)
+   - [ERD](#41-erd)
+   - [Wireframes](#42-wireframes)
+6. [Features](#5-features)
+   - [Product Catalog](#51-product-catalog)
+   - [Shopping Bag & Checkout](#52-shopping-bag--checkout)
+   - [User Accounts](#53-user-accounts)
+   - [Admin Features](#54-admin-features)
+   - [Blog & Community](#55-blog--community)
+   - [Responsive Design](#56-responsive-design)
+   - [Security & Validation](#57-security--validation)
+   - [Email Notifications](#58-email-notifications)
+   - [Accessibility](#59-accessibility)
+   - [Future Features](#510-future-features)
+7. [Testing](#6-testing)
+8. [Fixed Bugs](#7-fixed-bugs)
+9. [Deployment](#8-deployment)
+   - [Via VS Code](#81-via-vs-code)
+   - [Via Heroku](#82-via-heroku)
+10. [Credits](#9-credits)
+
+---
+# 1. Project overview: green_heaven_online_market
 This is my fourth milestone project with Code Institute and Runshaw College. I used Django for this project.
-# 1. Purpose of the project
-# 2. User Stories
+# 2. Purpose of the project
+
+The aim of this project is to develop an online garden center for an imaginary company, enabling them to effectively sell gardening products, plants, and seeds. This platform will enhance their marketing reach, providing a convenient 24/7 online presence and allowing customers to browse and shop from the comfort of their homes. The project seeks to streamline the shopping experience by offering easy navigation, personalized account features, and seamless checkout. Additionally, it will empower customers to discover new products, while helping the company attract a broader audience and increase sales.
+
+# 3. User Stories
 
 ## As a Shopper
 - I want to browse and search for gardening products, plants, and seeds so I can find what I need easily.
@@ -28,59 +58,7 @@ This is my fourth milestone project with Code Institute and Runshaw College. I u
 - I want to manage blog posts and moderate user comments to ensure quality content.
 - I want to assist users with account or order issues to provide good customer support.
 
-# 3. Features
-
-### 3.1 Product Catalog
-- Browse products by category (plants, seeds, tools, etc.).
-- View detailed product pages with images, descriptions, price.
-- Search and filter products by name, category, price, and rating.
-
-### 3.2 Shopping Bag & Checkout
-- Add products to shopping bag, update quantity, remove items.
-- View shopping bag summary with total cost.
-- Secure checkout process with order confirmation and email receipt.
-
-### 3.3 User Accounts
-- Register and log in/out with email verification.
-- Manage profile information and view order history.
-- Password recovery and profile updates.
-
-### 3.4 Admin Features
-- Add, edit, and delete products.
-- Manage blog posts and moderate user comments.
-- Assist users with account or order issues.
-
-### 3.5 Blog & Community
-- Read gardening articles and tips.
-- Registered users can comment on blog posts.
-- Admins can publish, update, or delete blog content.
-
-### 3.6 Responsive Design
-- Fully responsive layout for mobile, tablet, and desktop.
-- Navigation bar adapts to all screen sizes.
-
-### 3.7 Security & Validation
-- CSRF protection for forms.
-- Input validation for user data and checkout.
-
-### 3.8 Email Notifications
-- Confirmation emails for registration and orders.
-
-### 3.9 Accessibility
-- Clear navigation and readable typography.
-- Alt text for images and accessible forms.
-# 4. Future features
-It could be possible to upgrade the customer experince with these other features.
-
-1. **Wishlist Functionality**  
-   Allow users to save products to a wishlist for future purchase, making it easier to track items they are interested in.
-
-2. **Loyalty Program**  
-   Implement a points-based loyalty system where customers earn rewards for purchases, reviews, or referrals.
-
-3. **Live Chat Support**  
-   Add a live chat feature for real-time customer assistance, helping users with product questions and order issues.
-# 5. Typography and color scheme
+# 4. Typography and color scheme
 ## Typography
 
 The site uses the **Roboto** font for body text and navigation, chosen for its readability and modern appearance. Headings use **Montserrat** for a clean, bold look that stands out. Both fonts are loaded via Google Fonts for consistency across devices.
@@ -100,7 +78,13 @@ The color palette is inspired by nature and gardening:\
 - **Secondary text:** #555 (medium gray) — used for less prominent text, such as captions and hints.
 
 This combination creates a fresh, inviting, and accessible interface suitable for a garden center.
-# 6. Wireframes
+
+# 5. Technology
+## 5.1. ERD
+I would like to use the django admin pannel for adding and updating product, and I would like to work with a delivery company to arrange deliveries.
+![ERD image](media/readme/Database%20ER%20diagram%20(crow's%20foot).png)
+
+# 5.2 Wireframes
 - Home page
 ![Home page wireframe](media/readme/Home%20page.png)
 - Product list page
@@ -113,46 +97,67 @@ This combination creates a fresh, inviting, and accessible interface suitable fo
 ![List of blog articles page](media/readme/Blog%20articles%20list%20page.png)
 - Blog page
 ![Blog page wireframe](media/readme/Blog%20page.png)
-# 7. Technology
-## 7.1. ERD
-I would like to use the django admin pannel for adding and updating product, and I would like to work with a delivery company to arrange deliveries.
-![ERD image](media/readme/Database%20ER%20diagram%20(crow's%20foot).png)
-# 8. Testing
-   ## 8.1 code validation
-   ### 8.1.1 HTML validation
-   There were no issues during HTML validation with [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fgreen-heaven-online-garden-cen-2439019d4b13.herokuapp.com%2F).\
-   ![W3C HTML validation](media/readme/html-val.PNG) 
-   ### 8.1.2 CSS validation
-   There were no issues during HTML validation with [W3C](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fgreen-heaven-online-garden-cen-2439019d4b13.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).\
-   ![W3C CSS validation](media/readme/css-val.PNG)
-   ### 8.1.3 Lighthouse
-   I opened the website in Chrome Incognito mode (so the extensions doesn't influence the report), and I run the Lighthouse report, I got the following results:\
-   ![Lighthouse report](media/readme/lighthouse.PNG)
-   ## 8.2 test cases (user story based with screenshots)
-   ### User Account Features
-   |Feature|User requirements addressed|Expected result|Actual result|Screenshot|Pass/Fail|Date|Correction|
-   |-------|---------------------------|---------------|-------------|----------|---------|----|----------|
-   |Sign Up|New users can register by providing essential information, enabling personalized access.|Registration is successful and user redirected to dashboard or login.|As expected.|[Sign Up](media/readme/Signup.png)|Pass|4/8/25|None|
-   |Sign in|Registered users authenticate their identity to access their accounts securely.|User logs in and is redirected to homepage or dashboard.|As expected.|[Sign In](media/readme/signin.PNG)|Pass|4/8/25|None|
-   |Sign Out|Registered users can log out, when theydon't use their account.|Session ends and user is redirected to landing page.|As expected.|[Sign Out](media/readme/Signout.PNG)|Pass|4/8/25|None|
-   |Profile display|Users can view their profile dashboard.|All user details and recent activity are visible.|As expected.|[Profile display](media/readme/Myprofile.PNG)|Pass|4/8/25|None|
-   |Profile management|Users can edit personal details, check their placed orders from their profile dashboard.|Changes are saved correctly and order history displays accurate information.|As expected.|[Profile management](media/readme/Myprofile.PNG)|Pass|4/8/25|None|
-   ### Content and Community Features
-   |Feature|User requirements addressed|Expected result|Actual result|Pass/Fail|Date|Correction|
-   |-------|---------------------------|---------------|-------------|---------|----|----------|
-   |Blog display|Visitors can view blog posts, and read content.|Blog pages load correctly with title, content, and metadata.|As expected.|[Blog display](media/readme/blog_display.PNG)|Pass|4/8/25|None|
-   |Blog management|Admins can publish, update, or delete blog posts.|Changes are reflected in real time; content updates correctly.|As expected.|[Blog management](media/readme/blog-man.PNG)|Pass|4/8/25|None|
-   |Comments display|Users can view other user's comments.|Comments appear in chronological order with usernames.|As expected.|[Comments display](media/readme/comments-display.PNG)|Pass|4/8/25|None|
-   |Comments management|Registered users can leave, update, delete comments on blog posts.|Comments are posted/edited/deleted with correct permissions.|As expected.|[Comment management](media/readme/comment-man.PNG)|Pass|4/8/25|None|
-   ### E-Commerce Features
-   |Feature|User requirements addressed|Expected result|Actual result|Pass/Fail|Date|Correction|
-   |-------|---------------------------|---------------|-------------|---------|----|----------|
-   |Product display|Products are showcased with images, descriptions, prices, rating.|Product listings load correctly with full details.|As expected.|[Product display](/media/readme/product-display.PNG)|Pass|4/8/25|None|
-   |Product management|Admins can add, edit, or remove listings.|Product catalog updates reflect changes instantly.|As expected.|[Add product](media/readme/add-product.PNG) and [Edit product](media/readme/edit-product.PNG)|Pass|4/8/25|None|
-   |Bag display|Users can view their shopping bag.|Items in bag are visible and accurately totaled.|As expected.|[Bag display](media/readme/shopping-bag.PNG)|Pass|4/8/25|None|
-   |Bag management|Users select products to add to their shopping bag, quantity, selection can be updated before checkout.|Bag updates instantly; correct price and stock shown.|As expected.|[Bag management](media/readme/shopping-bag.PNG)|Pass|4/8/25|None|
-   |Check out|Registered users can securely checkout.|Secure payment and order confirmation occurs with email.|As expected.|[Check Out](/media/readme/checkout.PNG)|Pass|4/8/25|None|
-   ## 8.3 fixed bugs
+
+
+# 6. Features
+
+### 6.1 Product Catalog
+- Browse products by category (plants, seeds, tools, etc.).
+- View detailed product pages with images, descriptions, price.
+- Search and filter products by name, category, price, and rating.
+
+### 6.2 Shopping Bag & Checkout
+- Add products to shopping bag, update quantity, remove items.
+- View shopping bag summary with total cost.
+- Secure checkout process with order confirmation and email receipt.
+
+### 6.3 User Accounts
+- Register and log in/out with email verification.
+- Manage profile information and view order history.
+- Password recovery and profile updates.
+
+### 6.4 Admin Features
+- Add, edit, and delete products.
+- Manage blog posts and moderate user comments.
+- Assist users with account or order issues.
+
+### 6.5 Blog & Community
+- Read gardening articles and tips.
+- Registered users can comment on blog posts.
+- Admins can publish, update, or delete blog content.
+
+### 6.6 Responsive Design
+- Fully responsive layout for mobile, tablet, and desktop.
+- Navigation bar adapts to all screen sizes.
+
+### 6.7 Security & Validation
+- CSRF protection for forms.
+- Input validation for user data and checkout.
+
+### 6.8 Email Notifications
+- Confirmation emails for registration and orders.
+
+### 6.9 Accessibility
+- Clear navigation and readable typography.
+- Alt text for images and accessible forms.
+
+### 6.10 Future features
+It could be possible to upgrade the customer experince with these other features.
+
+1. **Wishlist Functionality**  
+   Allow users to save products to a wishlist for future purchase, making it easier to track items they are interested in.
+
+2. **Loyalty Program**  
+   Implement a points-based loyalty system where customers earn rewards for purchases, reviews, or referrals.
+
+3. **Live Chat Support**  
+   Add a live chat feature for real-time customer assistance, helping users with product questions and order issues.
+
+
+# 7. Testing
+See [TESTING.md](TESTING.md).
+
+# 8. Fixed bugs
 
    1. **Incorrect Product Image Upload**
       - *Bug*: Uploaded product images were not displaying due to incorrect media path configuration.
@@ -165,23 +170,7 @@ I would like to use the django admin pannel for adding and updating product, and
    3. **Blog Comment Submission Failure**
       - *Bug*: Registered users could not submit comments due to missing CSRF token in the blog comment form.
       - *Fix*: Added `{% csrf_token %}` to the comment form template and verified comment posting functionality.
-   ## 8.4 supported screens and browsers
-   ### Supported Screens and Browsers
-
-   | Device/Screen Size          | Page Tested           | Browser(s) Tested         | Result                                  | Screenshot                                   | Pass/Fail | Date    | 
-   |----------------------------|-----------------------|---------------------------|------------------------------------------|-----------------------------------------------|-----------|---------|
-   | Mobile (iPhone SE)| Homepage Navigation   | Chrome            | Menu collapses, navigation works         | [iPhone SE Home](media/readme/mobile-hp-navbar.png) | Pass      | 4/8/25  | 
-   | Mobile (iPhone SE)| Product Display Page  | Chrome           | Product info visible, images scale       | [iPhone SE Product](media/readme/mobile-pp.png) | Pass      | 4/8/25  | 
-   | Mobile (iPhone SE)| Checkout              | Chrome           | Form fields accessible, payment works    | [iPhone SE Checkout](media/readme/phone-checkout.png) | Pass      | 4/8/25  | 
-   | Mobile (iPhone SE)| Blog Page             | Chrome            | Blog readable, comments visible          | [iPhone SE Blog](media/readme/mobile-blog.png) | Pass      | 4/8/25  | 
-   | Tablet (Nest Hub)| Homepage Navigation   | Chrome, Edge                    | Navigation bar visible, links work       | [Nest Hub Home](media/readme/tablet-hp-navbar.png) | Pass      | 4/8/25  | 
-   | Tablet (Nest Hub)| Product Display Page  | Chrome, Edge                    | Product grid adapts, images clear        | [Nest Hub Product](media/readme/tablet-pp.png) | Pass      | 4/8/25  | 
-   | Tablet (Nest Hub)| Checkout              | Chrome, Edge                   | All fields accessible, summary visible   | [Nest Hub Checkout](media/readme/tablet-checkout.png) | Pass      | 4/8/25  | 
-   | Tablet (Nest Hub)| Blog Page             | Chrome, Edge                    | Blog and comments readable               | [Nest Hub Blog](media/readme/tablet-blog.png) | Pass      | 4/8/25  | 
-   | Desktop         | Homepage Navigation   | Chrome, Edge    | Full menu, navigation works              | [Desktop Home](media/readme/desktop-hp-navbar.png) | Pass      | 4/8/25  | 
-   | Desktop        | Product Display Page  | Chrome, Edge     | Product grid, images sharp               | [Desktop Product](media/readme/desktop-pp.png) | Pass      | 4/8/25  | 
-   | Desktop         | Checkout              | Chrome, Edge   | All fields, payment, summary visible     | [Desktop Checkout](media/readme/desktop-checkout.png) | Pass      | 4/8/25  |
-   | Desktop        | Blog Page             | Chrome, Edge    | Blog and comments visible, formatted     | [Desktop Blog](media/readme/desktop-blog.png) | Pass      | 4/8/25 |
+   # 9 Deployment
    ## 9.1 via VS Code
    To deploy this project locally using VS Code:
 
