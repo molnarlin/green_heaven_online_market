@@ -127,7 +127,8 @@ I would like to use the django admin pannel for adding and updating product, and
    There were no issues during HTML validation with [W3C](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fgreen-heaven-online-garden-cen-2439019d4b13.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).\
    ![W3C CSS validation](media/readme/css-val.PNG)
    ### 8.1.3 Lighthouse
-   
+   I opened the website in Chrome Incognito mode (so the extensions doesn't influence the report), and I run the Lighthouse report, I got the following results:\
+   ![Lighthouse report](media/readme/lighthouse.PNG)
    ## 8.2 test cases (user story based with screenshots)
    ### User Account Features
    |Feature|User requirements addressed|Expected result|Actual result|Screenshot|Pass/Fail|Date|Correction|
