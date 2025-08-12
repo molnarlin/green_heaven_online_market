@@ -51,20 +51,40 @@
                             <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
                         </small>
                     {% endif %}
-                    <p class="mt-3"><strong>Description:</strong> {{ product.description }}</p>
-                    <p class="mt-3"><strong>Care info:</strong></p>
-                    <p class="mt-3 ps-3"><i>Light:</i> {{ product.care_info.light}}</p>
-                    <p class="mt-3 ps-3"><i>Water:</i> {{ product.care_info.water}}</p>
-                    <p class="mt-3 ps-3"><i>Temperature:</i> {{ product.care_info.temperature}}</p>
-                    <p class="mt-3 ps-3"><i>Humidity:</i> {{ product.care_info.humidity}}</p>
-                    <p class="mt-3"><strong>Colour:</strong> {{ product.color}}</p>
-                    <p class="mt-3"><strong>Delivery info:</strong> {{ product.delivery}}</p>
-                    <p class="mt-3"><strong>Planting tips:</strong> {{ product.planting}}</p>
-                    <p class="mt-3"><strong>Harvesting tips:</strong> {{ product.harvesting}}</p>
-                    <p class="mt-3"><strong>Fertilizer:</strong> {{ product.fertilizer}}</p>
-                    <p class="mt-3"><strong>Pests:</strong> {{ product.pests}}</p>
+                    {% if product.description %}
+                        <p class="mt-3"><strong>Description:</strong> {{ product.description }}</p>
+                    {% endif %}
+                    {% if product.care_info %}
+                        <p class="mt-3"><strong>Care info:</strong></p>
+                        <p class="mt-3 ps-3"><i>Light:</i> {{ product.care_info.light}}</p>
+                        <p class="mt-3 ps-3"><i>Water:</i> {{ product.care_info.water}}</p>
+                        <p class="mt-3 ps-3"><i>Temperature:</i> {{ product.care_info.temperature}}</p>
+                        <p class="mt-3 ps-3"><i>Humidity:</i> {{ product.care_info.humidity}}</p>
+                    {% endif %}
+                    {% if product.color %}
+                        <p class="mt-3"><strong>Colour:</strong> {{ product.color}}</p>
+                    {% endif %}
+                    {% if product.delivery %}
+                        <p class="mt-3"><strong>Delivery info:</strong> {{ product.delivery}}</p>
+                    {% endif %}
+                    {% if product.planting %}
+                        <p class="mt-3"><strong>Planting tips:</strong> {{ product.planting}}</p>
+                    {% endif %}
+                    {% if product.harvesting %}
+                        <p class="mt-3"><strong>Harvesting tips:</strong> {{ product.harvesting}}</p>
+                    {% endif %}
+                    {% if product.fertilizer %}
+                        <p class="mt-3"><strong>Fertilizer:</strong> {{ product.fertilizer}}</p>
+                    {% endif %}
+                    {% if product.pests %}
+                        <p class="mt-3"><strong>Pests:</strong> {{ product.pests}}</p>
+                    {% endif %}
+                    {% if product.pruning %}
                     <p class="mt-3"><strong>Pruning:</strong> {{ product.pruning}}</p>
-                    <p class="mt-3"><strong>Repotting:</strong> {{ product.repotting}}</p>
+                    {% endif %}
+                    {% if product.repotting %}
+                        <p class="mt-3"><strong>Repotting:</strong> {{ product.repotting}}</p>
+                    {% endif %}
                     <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-row">
