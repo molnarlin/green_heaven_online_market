@@ -2,33 +2,32 @@
 # green_heaven_online_market
 This is my fourth milestone project with Code Institute and Runshaw College. I used Django for this project.
 # 1. Purpose of the project
-The aim of this project is to develop an online garden center for an imaginary company, enabling them to effectively sell gardening products, plants, and seeds. This platform will enhance their marketing reach, providing a convenient 24/7 online presence and allowing customers to browse and shop from the comfort of their homes. The project seeks to streamline the shopping experience by offering easy navigation, personalized account features, and seamless checkout. Additionally, it will empower customers to discover new products, while helping the company attract a broader audience and increase sales.
-# 2. User stories
-## Epic: As a shopper
-- I want to browse a list of available products so I can explore my options.
-- I want each product to have a detailed description so I can make informed decisions.
-- I want to receive shopping inspirations and recommendations so I can discover new items.
-- I want to easily identify deals and discounts so I can save money.
-- I want to see the total cost of my purchases at any time so I can manage my budget.
-- I want to search for items on the website so I can quickly find what I need.
-- I want to select the quantity, color, and size of a product easily so I can customize my order.
-- I want to receive an email confirmation after checking out so I can verify my purchase.
-## Epic: As a registered user
-- I want a navigation bar visible on all pages and screen sizes so I can easily move between sections.
-- I want to create an account so I can access exclusive features.
-- I want to sign in so I can use functions available to logged-in users.
-- I want to sign out so my account remains secure.
-- I want clear sign-in, sign-up, and log-out options so I can manage my account.
-- I want to update my profile so I can keep my personal information accurate.
-- I want to view my shopping history so I can review past purchases.
-- I want to recover my password easily so I can regain access if I forget it.
-- I want to receive a confirmation email when registering so I can verify my account.
-- I want to save my payment information so I can speed up future purchases.
-## Epic: As an administrator
-- I want to add products to the website so I can sell new inventory.
-- I want to edit product details such as image, description, and price so I can keep listings accurate.
-- I want to delete products so I can remove items no longer available.
-- I want to assist users with profile or order issues so I can provide customer support.
+# 2. User Stories
+
+## As a Shopper
+- I want to browse and search for gardening products, plants, and seeds so I can find what I need easily.
+- I want to view detailed product information, including images, descriptions, prices, and ratings, to make informed decisions.
+- I want to see deals, discounts, and recommendations so I can discover new items and save money.
+- I want to add products to my shopping bag, adjust quantities, and see the total cost at any time to manage my purchases.
+- I want a smooth and secure checkout process with email confirmation so I can trust my order is placed correctly.
+
+## As a Registered User
+- I want to create an account and log in/out so I can access personalized features and keep my information secure.
+- I want to update my profile and view my order history so I can manage my account and track my purchases.
+- I want to recover my password easily if I forget it.
+- I want to save my payment information for faster future checkouts.
+- I want to receive confirmation emails for registration and orders.
+
+## As a Community Member
+- I want to read gardening blog articles and tips to learn and get inspired.
+- I want to comment on blog posts and interact with other users to share experiences.
+- I want to see comments from other users in a clear and organized way.
+
+## As an Administrator
+- I want to add, edit, or remove products so the catalog stays up to date.
+- I want to manage blog posts and moderate user comments to ensure quality content.
+- I want to assist users with account or order issues to provide good customer support.
+
 # 3. Features
 
 ### 3.1 Product Catalog
