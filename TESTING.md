@@ -1,22 +1,49 @@
 # Testing
+## Table of Contents
 
+1. [Validations](#1-code-validation)
+    - [HTML validation](#11-html-validation)
+    - [CSS validation](#12-css-validation)
+    - [JS validation](#13-js-validation)
+    - [Python validation](#14-python-validation)
+    - [Lighthouse](#15-lighthouse)
+2. [Manual testings](#2-manual-testings)
+    - [Test cases (user story based with screenshots)](#21-test-cases-user-story-based-with-screenshots)
+        - [User Account Features](#user-account-features)
+        - [Content and Community Features](#content-and-community-features)
+        - [E-Commerce Features](#e-commerce-features)
+    - [Supported screens and browsers](#22-supported-screens-and-browsers)
 
 This document outlines the testing strategies, tools, and procedures used in the Green Heaven Online Market project. It provides an overview of the types of tests implemented, including unit, integration, and end-to-end tests, as well as guidelines for running and contributing to the test suite.
-   ## 1 code validation
+   ## 1. code validation
    ### 1.1 HTML validation
    There were no issues during HTML validation with [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fgreen-heaven-online-garden-cen-2439019d4b13.herokuapp.com%2F).\
-   ![W3C HTML validation](media/readme/html-val.PNG) 
+   ![W3C HTML validation](media/testing/html-val.PNG) 
    ### 1.2 CSS validation
    There were no issues during HTML validation with [W3C](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fgreen-heaven-online-garden-cen-2439019d4b13.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).\
-   ![W3C CSS validation](media/readme/css-val.PNG)
+   ![W3C CSS validation](media/testing/css-val.PNG)
    ### 1.3 JS validation
    ### 1.4 Python validation
    ### 1.5 Lighthouse
    I opened the website in Chrome Incognito mode (so the extensions doesn't influence the report), and I run the Lighthouse report, I got the following results:\
-   ![Lighthouse report](media/readme/lighthouse.PNG)
+    **Home page:**\
+    ![Lighthouse report](media/testing/lighthouse.PNG)
+    **Product list page:**\
+    **Product page:**\
+    **Check out page:**\
+    **List of blog articles page:**\
+    **Blog article page:**\
+    **User profile page:**\
+    **Shopping bag page:**\
+    **Sign up/sign in page:**\
+    **Order confirmation page:**\
+    **Admin dashboard (product management):**\
+    **Admin dashboard (blog management):**\
 
-   ## 2 test cases (user story based with screenshots)
-   ### User Account Features
+   ## 2. Manual testings
+
+   ### 2.1 test cases (user story based with screenshots)
+   #### User Account Features
    |Feature|User requirements addressed|Expected result|Actual result|Screenshot|Pass/Fail|Date|Correction|
    |-------|---------------------------|---------------|-------------|----------|---------|----|----------|
    |Sign Up|New users can register by providing essential information, enabling personalized access.|Registration is successful and user redirected to dashboard or login.|As expected.|[Sign Up](media/readme/Signup.png)|Pass|4/8/25|None|
@@ -24,14 +51,14 @@ This document outlines the testing strategies, tools, and procedures used in the
    |Sign Out|Registered users can log out, when theydon't use their account.|Session ends and user is redirected to landing page.|As expected.|[Sign Out](media/readme/Signout.PNG)|Pass|4/8/25|None|
    |Profile display|Users can view their profile dashboard.|All user details and recent activity are visible.|As expected.|[Profile display](media/readme/Myprofile.PNG)|Pass|4/8/25|None|
    |Profile management|Users can edit personal details, check their placed orders from their profile dashboard.|Changes are saved correctly and order history displays accurate information.|As expected.|[Profile management](media/readme/Myprofile.PNG)|Pass|4/8/25|None|
-   ### Content and Community Features
+   #### Content and Community Features
    |Feature|User requirements addressed|Expected result|Actual result|Pass/Fail|Date|Correction|
    |-------|---------------------------|---------------|-------------|---------|----|----------|
    |Blog display|Visitors can view blog posts, and read content.|Blog pages load correctly with title, content, and metadata.|As expected.|[Blog display](media/readme/blog_display.PNG)|Pass|4/8/25|None|
    |Blog management|Admins can publish, update, or delete blog posts.|Changes are reflected in real time; content updates correctly.|As expected.|[Blog management](media/readme/blog-man.PNG)|Pass|4/8/25|None|
    |Comments display|Users can view other user's comments.|Comments appear in chronological order with usernames.|As expected.|[Comments display](media/readme/comments-display.PNG)|Pass|4/8/25|None|
    |Comments management|Registered users can leave, update, delete comments on blog posts.|Comments are posted/edited/deleted with correct permissions.|As expected.|[Comment management](media/readme/comment-man.PNG)|Pass|4/8/25|None|
-   ### E-Commerce Features
+   #### E-Commerce Features
    |Feature|User requirements addressed|Expected result|Actual result|Pass/Fail|Date|Correction|
    |-------|---------------------------|---------------|-------------|---------|----|----------|
    |Product display|Products are showcased with images, descriptions, prices, rating.|Product listings load correctly with full details.|As expected.|[Product display](/media/readme/product-display.PNG)|Pass|4/8/25|None|
@@ -40,8 +67,8 @@ This document outlines the testing strategies, tools, and procedures used in the
    |Bag management|Users select products to add to their shopping bag, quantity, selection can be updated before checkout.|Bag updates instantly; correct price and stock shown.|As expected.|[Bag management](media/readme/shopping-bag.PNG)|Pass|4/8/25|None|
    |Check out|Registered users can securely checkout.|Secure payment and order confirmation occurs with email.|As expected.|[Check Out](/media/readme/checkout.PNG)|Pass|4/8/25|None|
 
-   ## 3 supported screens and browsers
-   ### Supported Screens and Browsers
+   ### 2.2 supported screens and browsers
+   #### Supported Screens and Browsers
 
    | Device/Screen Size          | Page Tested           | Browser(s) Tested         | Result                                  | Screenshot                                   | Pass/Fail | Date    | 
    |----------------------------|-----------------------|---------------------------|------------------------------------------|-----------------------------------------------|-----------|---------|
