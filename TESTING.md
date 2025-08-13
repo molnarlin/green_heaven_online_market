@@ -47,6 +47,7 @@ Multiple JavaScript components are distributed throughout the project, requiring
     **Home page:**\
     ![Lighthouse report for home page](media/testing/lighthouse.PNG)\
     **Product list page:**\
+    ![Lighthouse report for product list page](/media/testing/lighthouse-product-list.PNG)
     **Product page:**\
     ![Lighthouse report for product page](media/testing/lighthouse_product.PNG)\
     **Check out page:**\
