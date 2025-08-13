@@ -47,10 +47,11 @@ Multiple JavaScript components are distributed throughout the project, requiring
     **Home page:**\
     ![Lighthouse report for home page](media/testing/lighthouse.PNG)\
     **Product list page:**\
-    ![Lighthouse report for product list page](/media/testing/lighthouse-product-list.PNG)
+    ![Lighthouse report for product list page](/media/testing/lighthouse-product-list.PNG)\
     **Product page:**\
     ![Lighthouse report for product page](media/testing/lighthouse_product.PNG)\
     **Check out page:**\
+    ![Lighthouse report for Check out page](media/testing/lighthouse-checkout.PNG)\
     **List of blog articles page:**\
     ![Lighthouse report blog article list page](media/testing/lighthouse_blog_list.PNG)\
     **Blog article page:**\
@@ -62,6 +63,7 @@ Multiple JavaScript components are distributed throughout the project, requiring
     **Sign up/sign in page:**\
     ![Lighthouse report for Sign in page](media/testing/lighthouse_sign_in.PNG)\
     **Order confirmation page:**\
+    ![Lighthouse report for order confirmation page](media/testing/lighthouse-order-conf.PNG)\
     **Admin dashboard (product management):**\
     ![Lighthouse report Product management page](media/testing/lighthouse_product_man.PNG)\
     **Admin dashboard (blog management):**\
