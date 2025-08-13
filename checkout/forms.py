@@ -27,6 +27,9 @@ class OrderForm(forms.ModelForm):
             'county': 'County, State or Locality',
         }
 
+        self.fields['full_name'].widget.attrs.update(
+            {'class': 'your-class-name'}
+        )
         self.fields['full_name'].widget.attrs['autofocus'] = True
         for field in self.fields:
             if field != 'country':
