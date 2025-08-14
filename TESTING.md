@@ -42,6 +42,16 @@ Multiple JavaScript components are distributed throughout the project, requiring
 | onload.js           | JSHint    | No issues found | ![onload.js validation](media/testing/onload-js.PNG) |
 
    ### 1.4 Python validation
+I used Flake8 to validate the Python code in this project:
+
+1. Installed Flake8 using\
+`pip install flake8`\
+![Flake8 istallation](/media/testing/flake8%20installation.PNG)
+2. Added Flake8 to the system path.
+3. Ran Flake8 on the project with\
+`flake8 .`\
+![Flake8 output](/media/testing/flake8-output.PNG)\
+The output included many lines of feedback. I reviewed the results and addressed relevant issues. I excluded `.venv` directories, migration files, and unused/empty files (such as `tests.py`) from validation. Some files still contain long lines or tabs, but these do not affect code execution.
    ### 1.5 Lighthouse
    I opened the website in Chrome Incognito mode (so the extensions doesn't influence the report), and I run the Lighthouse report, I got the following results:\
     **Home page:**\
