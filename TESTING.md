@@ -123,3 +123,8 @@ The output included many lines of feedback. I reviewed the results and addressed
    | Desktop        | Product Display Page  | Chrome, Edge     | Product grid, images sharp               | [Desktop Product](media/readme/desktop-pp.png) | Pass      | 4/8/25  | 
    | Desktop         | Checkout              | Chrome, Edge   | All fields, payment, summary visible     | [Desktop Checkout](media/readme/desktop-checkout.png) | Pass      | 4/8/25  |
    | Desktop        | Blog Page             | Chrome, Edge    | Blog and comments visible, formatted     | [Desktop Blog](media/readme/desktop-blog.png) | Pass      | 4/8/25 |
+
+## 3. Stripe webhook testing
+
+I verified that when an order is placed, the payment is successfully processed through Stripe.\
+![Stripe webhook check](media/testing/webhook-check2.PNG)
