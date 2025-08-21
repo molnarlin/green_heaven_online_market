@@ -162,34 +162,46 @@ These technologies work together to provide a robust, secure, and user-friendly 
 
 # 8. Features
 
-### 1 Product Catalog
+### 1 Product Catalogue
 - Browse products by category (plants, seeds, tools, etc.).
 - View detailed product pages with images, descriptions, price.
 - Search and filter products by name, category, price, and rating.
+
+![Product catalogue](media/readme/product-catalogue.PNG)
 
 ### 2 Shopping Bag & Checkout
 - Add products to shopping bag, update quantity, remove items.
 - View shopping bag summary with total cost.
 - Secure checkout process with order confirmation and email receipt.
 
+![Shopping bag](media/readme/shopping-bag.PNG)
+
 ### 3 User Accounts
 - Register and log in/out with email verification.
 - Manage profile information and view order history.
 - Password recovery and profile updates.
+
+![User profile page](media/readme/User-accounts.PNG)
 
 ### 4 Admin Features
 - Add, edit, and delete products.
 - Manage blog posts and moderate user comments.
 - Assist users with account or order issues.
 
+![Admin features](media/readme/Admin%20features.PNG)
+
 ### 5 Blog & Community
 - Read gardening articles and tips.
 - Registered users can comment on blog posts.
 - Admins can publish, update, or delete blog content.
 
+![Blog site](media/readme/blog-site.PNG)
+
 ### 6 Responsive Design
 - Fully responsive layout for mobile, tablet, and desktop.
 - Navigation bar adapts to all screen sizes.
+
+![Responsive design for navbar](media/readme/responsive-design.PNG)
 
 ### 7 Security & Validation
 - CSRF protection for forms.
@@ -335,10 +347,11 @@ See [TESTING.md](TESTING.md).
        In Heroku open the new app. (https://green-heaven-online-garden-cen-2439019d4b13.herokuapp.com/)
 
 # 12. Credits
+- Thank you for Code Institutet for the walkthrough projects, and for Runshaw College for the Tutoring support, which helped me a lot to build this application.
 - Images from kaggle.com and Microsoft Copilot.
-- I used Microsoft Copilot for check and debug code, helping with README.md, and to write articles for the blog, to write product descriptions.
+- I used Microsoft Copilot for check and debug code, helping with README.md, TESTING.md, and to write articles for the blog, to write product descriptions.
 - Thanks for w3school.com. I used their code as a base for my project.
 - Thanks for RHS for the plant description and growing information.
-- I used Antonio Melé: Django 5 By Example to create the blog app for this project.
+- I used Antonio Melé: Django 5 By Example to create the blog app with the comment section for this project.
 - How to use [google logo](https://developers.google.com/identity/branding-guidelines).
 - I got some help to Allauth from Pretty Printed on [Youtube](https://www.youtube.com/watch?v=mIlgzn2zuFE).
