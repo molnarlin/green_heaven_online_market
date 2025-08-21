@@ -58,6 +58,7 @@ The aim of this project is to develop an online garden center for an imaginary c
 - I want to add, edit, or remove products so the catalog stays up to date.
 - I want to manage blog posts and moderate user comments to ensure quality content.
 - I want to assist users with account or order issues to provide good customer support.
+- I want to add ratings to products.
 
 # 4. Typography and color scheme
 ## Typography
@@ -212,6 +213,9 @@ It could be possible to upgrade the customer experince with these other features
 
 3. **Live Chat Support**  
    Add a live chat feature for real-time customer assistance, helping users with product questions and order issues.
+
+4. **Rating buy customers**
+   Customers can be able to rate products, or write feedback about them.
 
 
 # 9. Testing

@@ -70,19 +70,21 @@ All JavaScript scripts were validated using JSHint. Each script passed without i
 ### 1.5 Lighthouse Reports
 
 Lighthouse audits were run in Chrome Incognito mode to avoid extension interference. Results for key pages:
+| Page                        | Screenshot                                               | Notes                |
+|-----------------------------|----------------------------------------------------------|----------------------|
+| Home page                   | ![Home](media/testing/lighthouse.PNG)                    | Performance needs work, but the rest is excellent.    |
+| Product list                | ![Product list](/media/testing/lighthouse-product-list.PNG) | Performance isn't good, mainly because of the pictures, but the rest is good.     |
+| Product page                | ![Product page](media/testing/lighthouse_product.PNG)     | Performance needs work, but the rest is excellent.      |
+| Checkout                    | ![Checkout](media/testing/lighthouse-checkout.PNG)        | Performance needs work, but the rest is excellent.   |
+| Blog list                   | ![Blog list](media/testing/lighthouse_blog_list.PNG)      | Performance needs work, but the rest is excellent.        |
+| Blog article                | ![Blog article](media/testing/lighthouse_blog_article.PNG)| Performance needs work, but the rest is excellent.      |
+| User profile                | ![Profile](media/testing/lighthouse_profile.PNG)          | Performance needs work, but the rest is excellent.           |
+| Shopping bag                | ![Shopping bag](media/testing/lighthouse_shopping_bag.PNG)| Performance needs work, but the rest is excellent.        |
+| Sign up/in                  | ![Sign in](media/testing/lighthouse_sign_in.PNG)          | Performance needs work, but the rest is excellent.          |
+| Order confirmation          | ![Order confirmation](media/testing/lighthouse-order-conf.PNG) | Performance needs work, but the rest is excellent.  |
+| Admin product management    | ![Product management](media/testing/lighthouse_product_man.PNG) | Admin only      |
+| Admin blog management       | ![Blog management](media/testing/lighthouse_blog_man.PNG) | Admin only           |
 
-- **Home page:** ![Home](media/testing/lighthouse.PNG)
-- **Product list:** ![Product list](/media/testing/lighthouse-product-list.PNG)
-- **Product page:** ![Product page](media/testing/lighthouse_product.PNG)
-- **Checkout:** ![Checkout](media/testing/lighthouse-checkout.PNG)
-- **Blog list:** ![Blog list](media/testing/lighthouse_blog_list.PNG)
-- **Blog article:** ![Blog article](media/testing/lighthouse_blog_article.PNG)
-- **User profile:** ![Profile](media/testing/lighthouse_profile.PNG)
-- **Shopping bag:** ![Shopping bag](media/testing/lighthouse_shopping_bag.PNG)
-- **Sign up/in:** ![Sign in](media/testing/lighthouse_sign_in.PNG)
-- **Order confirmation:** ![Order confirmation](media/testing/lighthouse-order-conf.PNG)
-- **Admin product management:** ![Product management](media/testing/lighthouse_product_man.PNG)
-- **Admin blog management:** ![Blog management](media/testing/lighthouse_blog_man.PNG)
 
 ## 2. Manual Testing
 
