@@ -22,14 +22,16 @@ This document describes the testing approach for the Green Heaven Online Market 
 ### 1.1 HTML Validation
 
 - Used [W3C Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fgreen-heaven-online-garden-cen-2439019d4b13.herokuapp.com%2F).
-- No issues found.
-- ![HTML validation screenshot](media/testing/html-val.PNG)
+- No issues found most of the time.\
+![HTML validation screenshot](media/testing/html-val.PNG)
+- However the CSRF token appears to have no functional impact and may interfere with HTML rendering when embedded in unquoted attribute values(Profile page, Blog management, Product management). Despite this conflict, implementing the CSRF token remains essential for maintaining security within the web application.\
+![HTML validation screenshot for Profile page](media/testing/csrf-info.PNG)
 
 ### 1.2 CSS Validation
 
 - Used [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fgreen-heaven-online-garden-cen-2439019d4b13.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).
-- No issues found.
-- ![CSS validation screenshot](media/testing/css-val.PNG)
+- No issues found.\
+![CSS validation screenshot](media/testing/css-val.PNG)
 
 ### 1.3 JavaScript Validation
 
@@ -53,12 +55,17 @@ All JavaScript scripts were validated using JSHint. Each script passed without i
 
 ### 1.4 Python Validation
 
-- Used Flake8 for linting.
-- Installed via `pip install flake8`.
-- Excluded `.venv`, migrations, and empty files.
-- Some files have long lines or tabs, but these do not affect execution.
-- ![Flake8 installation](/media/testing/flake8%20installation.PNG)
-- ![Flake8 output](/media/testing/flake8-output.PNG)
+- Linting Tool: Utilized Flake8 to perform static code analysis and enforce Python coding standards.
+- Installation: Installed via\
+ `pip install flake8`.\
+ ![Flake8 installation](/media/testing/flake8%20installation.PNG)
+- Configuration: Excluded directories and files that are not relevant to linting, including:\
+`flake8 --exclude=.venv,migrations,tests/temp.py`
+    - .venv (virtual environment)
+    - migrations/ (auto-generated files)
+    - Empty files
+- Observations: Some files contain long lines or tab characters. These were flagged by Flake8 but do not impact code execution.\
+![Flake8 output](/media/testing/flake8-output.PNG)
 
 ### 1.5 Lighthouse Reports
 
