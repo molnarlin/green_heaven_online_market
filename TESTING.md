@@ -126,5 +126,7 @@ The output included many lines of feedback. I reviewed the results and addressed
 
 ## 3. Stripe webhook testing
 
-I verified that when an order is placed, the payment is successfully processed through Stripe.\
-![Stripe webhook check](media/testing/webhook-check2.PNG)
+I checked in VS Code, that the events are created, and printed a Success message at the end in the Terminal.\
+![VS Code Success message in the terminal](media/testing/webhook-check1.PNG)\
+I verified that when an order is placed, the payment is successfully processed through Stripe. You can see a screenshot about it.\
+![Stripe webhook check in Stripe website](media/testing/webhook-check2.PNG)
