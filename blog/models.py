@@ -2,6 +2,7 @@ from django.db import models
 from django.utils import timezone
 from django.conf import settings
 from django.urls import reverse
+from .storages import OverwriteS3Storage
 
 
 class PublishedManager(models.Manager):
@@ -20,7 +21,12 @@ class Post(models.Model):
         on_delete=models.CASCADE,
         related_name='blog_posts'
     )
-    image = models.ImageField(upload_to='post_images/', blank=True, null=True)
+    image = models.ImageField(
+        upload_to='post_images/',
+        storage=OverwriteS3Storage(),
+        blank=True,
+        null=True
+    )
     body = models.TextField()
     publish = models.DateTimeField(default=timezone.now)
     status = models.CharField(
