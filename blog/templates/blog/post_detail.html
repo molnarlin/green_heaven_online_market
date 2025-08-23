@@ -17,11 +17,9 @@
         
         {% if post.image %}
             <div class="row align-items-center g-4">
-                {% if post.image %}
                 <div class="col-12 col-md-3 text-center">
                     <img src="{{ post.image.url }}" alt="{{ post.title }}" class="img-fluid rounded mx-auto d-block h-auto object-fit-cover mw-100 mh-300">
                 </div>
-                {% endif %}
                 <div class="col-12 col-md-7 text-start">
                     <h2 class="text-primary">{{ post.title }}</h2>
                     <hr class="mx-auto">
@@ -39,14 +37,16 @@
         <div class="mb-4">
             {{ post.body|linebreaksbr }}
         </div>
-        {% if request.user.is_superuser %}
-            <small class="ml-3">
+        {% if request.user.is_superuser or request.user.is_staff or request.user == post.author %}
+            <small class="ms-3">
             <a href="{% url 'blog:edit_article' post.id %}">Edit</a> | 
-            <a class="text-danger" href="{% url 'blog:delete_article' post.id %}">Delete</a>
+            <a href="{% url 'blog:delete_article' post.id %}" class="btn btn-sm btn-outline-danger">
+                <i class="bi bi-trash me-1"></i>Delete
+            <a href="{% url 'blog:delete_article' post.id %}" class="btn btn-sm btn-outline-danger">
+                <i class="bi bi-trash me-1"></i>Delete
+            </a>
             </small>
         {% endif %}
-
-        <hr class="my-4">
 
         {% with comments.count as total_comments %}
             <h4  class="text-success fw-semibold">{{ total_comments }} comment{{ total_comments|pluralize }}</h4>
@@ -58,13 +58,13 @@
             <div class="list-group-item list-group-item-action bg-white border-start border-4 border-success rounded shadow-sm mb-3">
                 <div class="d-flex justify-content-between align-items-center">
                         <small class="text-muted">
-                            <strong>{{ comment.user.username }}</strong> said on {{ comment.created|date:"F j, Y" }}
-                        </small>
-                        <span class="badge bg-light text-success fw-normal">#{{ forloop.counter }}</span>
-                </div>
-                    <p class="mb-0">{{ comment.body|linebreaksbr }}</p>
-            </div>
-            {% if user.is_authenticated and user == comment.user %}
+                            <strong>
+                                {% if comment.user %}
+                                    {{ comment.user.username }}
+                                {% else %}
+                                    Deleted user
+                                {% endif %}
+            {% if request.user.is_authenticated and request.user == comment.user %}
             <div class="m-3">
                 <a href="{% url 'blog:comment_edit' comment.id %}" class="btn btn-sm btn-outline-success me-2">
                     <i class="bi bi-pencil-square me-1"></i>Edit
@@ -74,15 +74,15 @@
                 </a>
             </div>
         {% endif %}
+                </a>
+                <a href="{% url 'blog:comment_delete' comment.id %}" class="btn btn-sm btn-outline-danger">
+                    <i class="bi bi-trash me-1"></i>Delete
+                </a>
+            </div>
+        {% endif %}
 
         {% endfor %}
-        </div>
-        {% else %}
-            <p class="text-muted fst-italic">No comments yet—be the first to leave a note!</p>
-        {% endif %}
-    </div>
-
-{% if user.is_authenticated %}
+{% if request.user.is_authenticated %}
     <div class="container my-5">
         <div class="card shadow-sm border-0">
             <div class="card-header bg-success text-white">
@@ -97,6 +97,12 @@
     <div class="container my-5">
         <div class="alert alert-light border-start border-4 border-success shadow-sm" role="alert">
             <p class="mb-0 text-muted">
+                <i class="bi bi-person-circle me-1"></i>
+                Please <a href="{% url 'account_login' %}" class="text-success fw-semibold text-decoration-underline">log in</a> to leave a comment.
+            </p>
+        </div>
+    </div>
+{% endif %}
                 <i class="bi bi-person-circle me-1"></i>
                 Please <a href="{% url 'account_login' %}" class="text-success fw-semibold text-decoration-underline">log in</a> to leave a comment.
             </p>
