@@ -14,9 +14,8 @@
 <div class="overlay"></div><hr>
 <div class="container my-5 w-md-75">
     <div class="bg-light p-4 rounded shadow-sm">
-        
-        {% if post.image %}
-            <div class="row align-items-center g-4">
+        <div class="row align-items-center g-4">
+            {% if post.image %}
                 <div class="col-12 col-md-3 text-center">
                     <img src="{{ post.image.url }}" alt="{{ post.title }}" class="img-fluid rounded mx-auto d-block h-auto object-fit-cover mw-100 mh-300">
                 </div>
@@ -42,8 +41,6 @@
             <a href="{% url 'blog:edit_article' post.id %}">Edit</a> | 
             <a href="{% url 'blog:delete_article' post.id %}" class="btn btn-sm btn-outline-danger">
                 <i class="bi bi-trash me-1"></i>Delete
-            <a href="{% url 'blog:delete_article' post.id %}" class="btn btn-sm btn-outline-danger">
-                <i class="bi bi-trash me-1"></i>Delete
             </a>
             </small>
         {% endif %}
@@ -64,7 +61,11 @@
                                 {% else %}
                                     Deleted user
                                 {% endif %}
-            {% if request.user.is_authenticated and request.user == comment.user %}
+                                {% if request.user.is_authenticated and request.user == comment.user %}
+                            </strong>
+                        </small>
+                </div>
+            </div>
             <div class="m-3">
                 <a href="{% url 'blog:comment_edit' comment.id %}" class="btn btn-sm btn-outline-success me-2">
                     <i class="bi bi-pencil-square me-1"></i>Edit
@@ -74,7 +75,6 @@
                 </a>
             </div>
         {% endif %}
-                </a>
                 <a href="{% url 'blog:comment_delete' comment.id %}" class="btn btn-sm btn-outline-danger">
                     <i class="bi bi-trash me-1"></i>Delete
                 </a>
@@ -97,12 +97,6 @@
     <div class="container my-5">
         <div class="alert alert-light border-start border-4 border-success shadow-sm" role="alert">
             <p class="mb-0 text-muted">
-                <i class="bi bi-person-circle me-1"></i>
-                Please <a href="{% url 'account_login' %}" class="text-success fw-semibold text-decoration-underline">log in</a> to leave a comment.
-            </p>
-        </div>
-    </div>
-{% endif %}
                 <i class="bi bi-person-circle me-1"></i>
                 Please <a href="{% url 'account_login' %}" class="text-success fw-semibold text-decoration-underline">log in</a> to leave a comment.
             </p>

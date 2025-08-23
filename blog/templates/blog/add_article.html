@@ -27,9 +27,12 @@
                 <form method="POST" action="{% url 'blog:add_article' %}" class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
                     {% for field in form %}
-                        {{ field|as_crispy_field }}
+                        {% if field.name != 'image' %}
+                            {{ field | as_crispy_field }}
+                        {% else %}
+                            {{ field }}
+                        {% endif %}
                     {% endfor %}
-                    <small id="filename" class="form-text text-muted mt-2"></small>
                     <div class="text-right">
                         <a class="btn btn-outline-black rounded-0" href="{% url 'blog:post_list' %}">Cancel</a>
                         <button class="btn btn-black rounded-0" type="submit">Add Article</button>
@@ -42,9 +45,9 @@
 
 {% block postloadjs %}
     {{ block.super }}
-    <script>
-        $('input[type="file"]').change(function() {
-            var file = this.files[0];
+    <script type="text/javascript">
+        $('#new-image').change(function() {
+            var file = $('#new-image')[0].files[0];
             $('#filename').text(`Image will be set to: ${file.name}`);
         });
     </script>
