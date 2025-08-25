@@ -27,13 +27,6 @@ class CareInfo(models.Model):
         return f"Care Info: Light={self.light}, Water={self.water}"
 
 
-class Color(models.Model):
-    name = models.CharField(max_length=50)
-
-    def __str__(self):
-        return self.name  # This ensures Django displays the color name
-
-
 class Product(models.Model):
     category = models.ForeignKey(
         'Category', null=True, blank=True, on_delete=models.SET_NULL
@@ -41,8 +34,6 @@ class Product(models.Model):
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
     description = models.TextField()
-    has_colors = models.BooleanField(default=False)
-    colors = models.ManyToManyField(Color, related_name="products", blank=True)
     image = models.ImageField(
         upload_to='products/',
         storage=OverwriteS3Storage(),
@@ -52,8 +43,6 @@ class Product(models.Model):
     def save(self, *args, **kwargs):
         self.clean()  # Ensure validation is run
         super().save(*args, **kwargs)
-        if not self.has_colors:
-            self.colors.clear()
 
     price = models.DecimalField(max_digits=6, decimal_places=2)
     rating = models.DecimalField(
