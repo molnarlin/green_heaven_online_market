@@ -61,9 +61,6 @@
                         <p class="mt-3 ps-3"><i>Temperature:</i> {{ product.care_info.temperature}}</p>
                         <p class="mt-3 ps-3"><i>Humidity:</i> {{ product.care_info.humidity}}</p>
                     {% endif %}
-                    {% if product.color %}
-                        <p class="mt-3"><strong>Colour:</strong> {{ product.color}}</p>
-                    {% endif %}
                     {% if product.delivery %}
                         <p class="mt-3"><strong>Delivery info:</strong> {{ product.delivery}}</p>
                     {% endif %}
@@ -85,21 +82,12 @@
                     {% if product.repotting %}
                         <p class="mt-3"><strong>Repotting:</strong> {{ product.repotting}}</p>
                     {% endif %}
+                    {% if product.size %}
+                        <p class="mt-3"><strong>Size:</strong> {{ product.size}}</p>
+                    {% endif %}
                     <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-row">
-                            {% with product.has_colors as c %}
-                            {% if c %}
-                                <div class="col-12">
-                                    <p><strong>Colour:</strong></p>
-                                    <select class="form-control rounded-0 w-50" name="product_color" id='id_product_color'>
-                                        <option value="" selected disabled>Choose a colour</option>
-                                        {% for color in product.colors.all %}
-                                            <option value="{{ color.id }}">{{ color.name }}</option>
-                                        {% endfor %}
-                                    </select>
-                                </div>
-                            {% endif %}
                             <div class="col-12">
                             <p class="mt-3"><strong>Quantity:</strong></p>
                             <div class="form-group w-50">
