@@ -95,6 +95,8 @@ class OrderLineItem(models.Model):
         blank=False,
         on_delete=models.CASCADE
     )
+    product_color = models.CharField(
+        max_length=20, null=True, blank=True)
     quantity = models.IntegerField(null=False, blank=False, default=0)
     lineitem_total = models.DecimalField(
         max_digits=6,

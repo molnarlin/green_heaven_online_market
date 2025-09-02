@@ -70,7 +70,8 @@ def checkout(request):
                         )
                         order_line_item.save()
                     else:
-                        for color, quantity in item_data.items():
+                        for color, quantity in \
+                                item_data['items_by_color'].items():
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
@@ -106,46 +107,46 @@ def checkout(request):
             )
             return redirect(reverse('products'))
 
-    current_bag = bag_contents(request)
-    total = current_bag['grand_total']
-    stripe_total = round(total * 100)
-    stripe.api_key = stripe_secret_key
-    intent = stripe.PaymentIntent.create(
-        amount=stripe_total,
-        currency=settings.STRIPE_CURRENCY,
-    )
+        current_bag = bag_contents(request)
+        total = current_bag['grand_total']
+        stripe_total = round(total * 100)
+        stripe.api_key = stripe_secret_key
+        intent = stripe.PaymentIntent.create(
+            amount=stripe_total,
+            currency=settings.STRIPE_CURRENCY,
+        )
 
-    if request.user.is_authenticated:
-        try:
-            profile = UserProfile.objects.get(user=request.user)
-            order_form = OrderForm(initial={
-                'full_name': profile.user.get_full_name(),
-                'email': profile.user.email,
-                'phone_number': profile.default_phone_number,
-                'country': profile.default_country,
-                'postcode': profile.default_postcode,
-                'town_or_city': profile.default_town_or_city,
-                'street_address1': profile.default_street_address1,
-                'street_address2': profile.default_street_address2,
-                'county': profile.default_county,
-            })
-        except UserProfile.DoesNotExist:
+        if request.user.is_authenticated:
+            try:
+                profile = UserProfile.objects.get(user=request.user)
+                order_form = OrderForm(initial={
+                    'full_name': profile.user.get_full_name(),
+                    'email': profile.user.email,
+                    'phone_number': profile.default_phone_number,
+                    'country': profile.default_country,
+                    'postcode': profile.default_postcode,
+                    'town_or_city': profile.default_town_or_city,
+                    'street_address1': profile.default_street_address1,
+                    'street_address2': profile.default_street_address2,
+                    'county': profile.default_county,
+                })
+            except UserProfile.DoesNotExist:
+                order_form = OrderForm()
+        else:
             order_form = OrderForm()
-    else:
-        order_form = OrderForm()
 
-    if not stripe_public_key:
-        messages.warning(request, 'Stripe public key is missing. \
-            Did you forget to set it in your environment?')
+        if not stripe_public_key:
+            messages.warning(request, 'Stripe public key is missing. \
+                Did you forget to set it in your environment?')
 
-    template = 'checkout/checkout.html'
-    context = {
-        'order_form': order_form,
-        'stripe_public_key': stripe_public_key,
-        'client_secret': intent.client_secret,
-    }
+        template = 'checkout/checkout.html'
+        context = {
+            'order_form': order_form,
+            'stripe_public_key': stripe_public_key,
+            'client_secret': intent.client_secret,
+        }
 
-    return render(request, template, context)
+        return render(request, template, context)
 
 
 def checkout_success(request, order_number):
