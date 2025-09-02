@@ -70,11 +70,12 @@ def checkout(request):
                         )
                         order_line_item.save()
                     else:
-                        for quantity in item_data.items():
+                        for color, quantity in item_data.items():
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
                                 quantity=quantity,
+                                product_color=color,
                             )
                             order_line_item.save()
                 except Product.DoesNotExist:

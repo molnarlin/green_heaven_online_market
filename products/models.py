@@ -34,6 +34,7 @@ class Product(models.Model):
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
     description = models.TextField()
+    has_color = models.BooleanField(default=False, null=True, blank=True)
     image = models.ImageField(
         upload_to='products/',
         storage=OverwriteS3Storage(),

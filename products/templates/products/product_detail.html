@@ -54,6 +54,21 @@
                     {% if product.description %}
                         <p class="mt-3"><strong>Description:</strong> {{ product.description }}</p>
                     {% endif %}
+                    {% with product.has_color as c %}
+                            {% if c %}
+                                <div class="col-12">
+                                    <p><strong>Colour:</strong></p>
+                                    <select class="form-control rounded-0 w-50" name="product_color" id='id_product_color'>
+                                        <option value="white">White</option>
+                                        <option value="blue" selected>Blue</option>
+                                        <option value="red">Red</option>
+                                        <option value="yellow">Yellow</option>
+                                        <option value="pink">Pink</option>
+                                        <option value="orange">Orange</option>
+                                        <option value="purple">Purple</option>
+                                    </select>
+                                </div>
+                            {% endif %}
                     {% if product.care_info %}
                         <p class="mt-3"><strong>Care info:</strong></p>
                         <p class="mt-3 ps-3"><i>Light:</i> {{ product.care_info.light}}</p>

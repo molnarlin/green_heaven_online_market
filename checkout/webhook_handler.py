@@ -142,13 +142,14 @@ class StripeWH_Handler:
                         )
                         order_line_item.save()
                     else:
-                        for quantity in (
-                            item_data.items()
+                        for color, quantity in (
+                            item_data['items_by_color'].items()
                         ):
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
                                 quantity=quantity,
+                                product_color=color,
                             )
                             order_line_item.save()
             except Exception as e:
