@@ -59,7 +59,9 @@
                                         <ul class="list-unstyled">
                                             {% for item in order.lineitems.all %}
                                                 <li class="small">
-                                                    {{ item.product.name }} x{{ item.quantity }}
+                                                   {% if item.product.has_color %}
+                                                        Colour: {{ item.product.color }}
+                                                    {% endif %}{{ item.product.name }} x{{ item.quantity }}
                                                 </li>
                                             {% endfor %}
                                         </ul>
