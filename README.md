@@ -355,3 +355,4 @@ See [TESTING.md](TESTING.md).
 - I used Antonio Melé: Django 5 By Example to create the blog app with the comment section for this project.
 - How to use [google logo](https://developers.google.com/identity/branding-guidelines).
 - I got some help to Allauth from Pretty Printed on [Youtube](https://www.youtube.com/watch?v=mIlgzn2zuFE).
+- I used [Lucidchart](https://www.lucidchart.com/) for my ERD diagram.
