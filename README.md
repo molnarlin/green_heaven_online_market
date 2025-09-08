@@ -226,7 +226,7 @@ It could be possible to upgrade the customer experince with these other features
 3. **Live Chat Support**  
    Add a live chat feature for real-time customer assistance, helping users with product questions and order issues.
 
-4. **Stock availibility visible for customers**
+4. **Stock availibility visible for customers**  
    Customers can see, how many items can order at each product.
 
 

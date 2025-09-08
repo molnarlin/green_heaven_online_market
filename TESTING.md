@@ -39,9 +39,9 @@ All JavaScript scripts were validated using JSHint. Each script passed without i
 
 | Script                | Tool    | Result         | Screenshot                                      |
 |-----------------------|---------|----------------|-------------------------------------------------|
-| base.html             | JSHint  | No issues      | ![base.html](media/testing/base-html.png)        |
-| bag.html              | JSHint  | No issues      | ![bag.html](media/testing/bag-js.png)            |
-| add_article.html      | JSHint  | No issues      | ![add_article.html](/media/testing/add-article-js.PNG) |
+| base.html             | JSHint  | No issues      | ![base.html](media/testing/base-html.PNG)        |
+| bag.html              | JSHint  | No issues      | ![bag.html](media/testing/bag-js.PNG)            |
+| add_article.html      | JSHint  | No issues      | ![add_article.html](media/testing/add-article-js.PNG) |
 | edit_article.html     | JSHint  | No issues      | ![edit_article.html](media/testing/edit-article-js.PNG) |
 | stripe_elements.js    | JSHint  | No issues      | ![stripe_elements.js](media/testing/stripe-elements-js.PNG) |
 | subscription_success.html | JSHint | No issues   | ![subscription_success.html](media/testing/subscription-success-html.PNG) |
@@ -94,7 +94,7 @@ Lighthouse audits were run in Chrome Incognito mode to avoid extension interfere
 
 | Feature           | Requirement                                   | Expected Result                                 | Actual Result | Screenshot                                 | Pass/Fail | Date    | Correction |
 |-------------------|-----------------------------------------------|-------------------------------------------------|--------------|--------------------------------------------|-----------|---------|------------|
-| Sign Up           | Register new users                            | Registration successful, redirected             | As expected  | ![Sign Up](media/readme/Signup.png)        | Pass      | 4/8/25  | None       |
+| Sign Up           | Register new users                            | Registration successful, redirected             | As expected  | ![Sign Up](media/readme/Signup.PNG)        | Pass      | 4/8/25  | None       |
 | Sign In           | Authenticate users                            | Login and redirect                              | As expected  | ![Sign In](media/readme/signin.PNG)        | Pass      | 4/8/25  | None       |
 | Sign Out          | Log out users                                 | Session ends, redirect to landing page          | As expected  | ![Sign Out](media/readme/Signout.PNG)      | Pass      | 4/8/25  | None       |
 | Profile display   | View profile dashboard                        | Details and activity visible                    | As expected  | ![Profile](media/readme/Myprofile.PNG)     | Pass      | 4/8/25  | None       |
@@ -113,7 +113,7 @@ Lighthouse audits were run in Chrome Incognito mode to avoid extension interfere
 
 | Feature           | Requirement                                   | Expected Result                                 | Actual Result | Screenshot                                 | Pass/Fail | Date    | Correction |
 |-------------------|-----------------------------------------------|-------------------------------------------------|--------------|--------------------------------------------|-----------|---------|------------|
-| Product display   | Show products with details                    | Listings load with images, prices, ratings      | As expected  | ![Product](/media/readme/product-display.PNG) | Pass   | 4/8/25  | None       |
+| Product display   | Show products with details                    | Listings load with images, prices, ratings      | As expected  | ![Product](media/readme/product-display.PNG) | Pass   | 4/8/25  | None       |
 | Product management| Admin add/edit/remove products                | Catalog updates instantly                       | As expected  | ![Add](media/readme/add-product.PNG), ![Edit](media/readme/edit-product.PNG) | Pass | 4/8/25 | None |
 | Bag display       | View shopping bag                             | Items and totals visible                        | As expected  | ![Bag](media/readme/shopping-bag.PNG)      | Pass      | 4/8/25  | None       |
 | Bag management    | Add/update items in bag                       | Bag updates, correct price/stock                | As expected  | ![Bag mgmt](media/readme/shopping-bag.PNG) | Pass      | 4/8/25  | None       |
@@ -123,18 +123,18 @@ Lighthouse audits were run in Chrome Incognito mode to avoid extension interfere
 
 | Device/Screen      | Page                | Browser(s)      | Result                                      | Screenshot                                   | Pass/Fail | Date    |
 |--------------------|---------------------|-----------------|----------------------------------------------|-----------------------------------------------|-----------|---------|
-| iPhone SE          | Homepage            | Chrome          | Menu collapses, navigation works             | ![iPhone SE Home](media/readme/mobile-hp-navbar.png) | Pass      | 4/8/25  |
-| iPhone SE          | Product Display     | Chrome          | Info visible, images scale                   | ![iPhone SE Product](media/readme/mobile-pp.png) | Pass      | 4/8/25  |
-| iPhone SE          | Checkout            | Chrome          | Fields accessible, payment works             | ![iPhone SE Checkout](media/readme/phone-checkout.png) | Pass      | 4/8/25  |
-| iPhone SE          | Blog Page           | Chrome          | Blog readable, comments visible              | ![iPhone SE Blog](media/readme/mobile-blog.png) | Pass      | 4/8/25  |
-| Nest Hub           | Homepage            | Chrome, Edge    | Nav bar visible, links work                  | ![Nest Hub Home](media/readme/tablet-hp-navbar.png) | Pass      | 4/8/25  |
-| Nest Hub           | Product Display     | Chrome, Edge    | Grid adapts, images clear                    | ![Nest Hub Product](media/readme/tablet-pp.png) | Pass      | 4/8/25  |
-| Nest Hub           | Checkout            | Chrome, Edge    | Fields accessible, summary visible           | ![Nest Hub Checkout](media/readme/tablet-checkout.png) | Pass      | 4/8/25  |
-| Nest Hub           | Blog Page           | Chrome, Edge    | Blog/comments readable                       | ![Nest Hub Blog](media/readme/tablet-blog.png) | Pass      | 4/8/25  |
-| Desktop            | Homepage            | Chrome, Edge    | Full menu, navigation works                  | ![Desktop Home](media/readme/desktop-hp-navbar.png) | Pass      | 4/8/25  |
-| Desktop            | Product Display     | Chrome, Edge    | Grid, images sharp                           | ![Desktop Product](media/readme/desktop-pp.png) | Pass      | 4/8/25  |
-| Desktop            | Checkout            | Chrome, Edge    | Fields, payment, summary visible             | ![Desktop Checkout](media/readme/desktop-checkout.png) | Pass      | 4/8/25  |
-| Desktop            | Blog Page           | Chrome, Edge    | Blog/comments visible, formatted             | ![Desktop Blog](media/readme/desktop-blog.png) | Pass      | 4/8/25  |
+| iPhone SE          | Homepage            | Chrome          | Menu collapses, navigation works             | ![iPhone SE Home](media/readme/mobile-hp-navbar.PNG) | Pass      | 4/8/25  |
+| iPhone SE          | Product Display     | Chrome          | Info visible, images scale                   | ![iPhone SE Product](media/readme/mobile-pp.PNG) | Pass      | 4/8/25  |
+| iPhone SE          | Checkout            | Chrome          | Fields accessible, payment works             | ![iPhone SE Checkout](media/readme/phone-checkout.PNG) | Pass      | 4/8/25  |
+| iPhone SE          | Blog Page           | Chrome          | Blog readable, comments visible              | ![iPhone SE Blog](media/readme/mobile-blog.PNG) | Pass      | 4/8/25  |
+| Nest Hub           | Homepage            | Chrome, Edge    | Nav bar visible, links work                  | ![Nest Hub Home](media/readme/tablet-hp-navbar.PNG) | Pass      | 4/8/25  |
+| Nest Hub           | Product Display     | Chrome, Edge    | Grid adapts, images clear                    | ![Nest Hub Product](media/readme/tablet-pp.PNG) | Pass      | 4/8/25  |
+| Nest Hub           | Checkout            | Chrome, Edge    | Fields accessible, summary visible           | ![Nest Hub Checkout](media/readme/tablet-checkout.PNG) | Pass      | 4/8/25  |
+| Nest Hub           | Blog Page           | Chrome, Edge    | Blog/comments readable                       | ![Nest Hub Blog](media/readme/tablet-blog.PNG) | Pass      | 4/8/25  |
+| Desktop            | Homepage            | Chrome, Edge    | Full menu, navigation works                  | ![Desktop Home](media/readme/desktop-hp-navbar.PNG) | Pass      | 4/8/25  |
+| Desktop            | Product Display     | Chrome, Edge    | Grid, images sharp                           | ![Desktop Product](media/readme/desktop-pp.PNG) | Pass      | 4/8/25  |
+| Desktop            | Checkout            | Chrome, Edge    | Fields, payment, summary visible             | ![Desktop Checkout](media/readme/desktop-checkout.PNG) | Pass      | 4/8/25  |
+| Desktop            | Blog Page           | Chrome, Edge    | Blog/comments visible, formatted             | ![Desktop Blog](media/readme/desktop-blog.PNG) | Pass      | 4/8/25  |
 
 ## 3. Stripe Webhook Testing
 
